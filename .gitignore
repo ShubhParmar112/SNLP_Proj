@@ -8,3 +8,7 @@ data/raw/*.csv
 .venv/
 data/external/
 models/
+
+# superseded, not part of the submission (HANDOVER.md)
+docs/Group5_Week1-2_Baseline_Report.docx
+docs/full_dump.txt
