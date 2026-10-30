@@ -1,0 +1,33 @@
+probe_id,type,text,expected
+N1,negation,The lectures were not boring at all.,teaching:positive
+N2,negation,The professor is not helpful when we ask doubts.,faculty_interaction:negative
+N3,negation,The assignments were not difficult.,assessment:positive
+N4,negation,The course material is not useful.,resources:negative
+N5,negation,I never felt the workload was too much.,workload:positive
+N6,negation,The exams were not fair.,assessment:negative
+C1,contrast,"The lectures were very informative, but the pace was too fast and the assignments were difficult.",teaching:positive;pace:negative;assessment:negative
+C2,contrast,The lectures were good but the pace was fast.,teaching:positive;pace:negative
+C3,contrast,"Great teacher, but the exams were way too hard.",teaching:positive;assessment:negative
+C4,contrast,"The content was interesting, although the slides were poorly made.",course_content:positive;resources:negative
+C5,contrast,"The professor was always available for doubts, but there were too many assignments every week.",faculty_interaction:positive;workload:negative
+C6,contrast,Labs were useless but the lectures made up for it.,other:negative;teaching:positive
+I1,implicit,We barely get enough time to finish everything.,workload:negative
+I2,implicit,I could never keep up with how quickly he moved through the topics.,pace:negative
+I3,implicit,She makes even the hardest topics easy to understand.,teaching:positive
+I4,implicit,I spent every weekend working on this course.,workload:negative
+I5,implicit,He replies to emails within an hour.,faculty_interaction:positive
+S1,sarcasm,"Another three-hour lecture, exactly what we needed.",pace:negative
+S2,sarcasm,"Oh great, another surprise quiz on Monday.",assessment:negative
+S3,sarcasm,I just love how the slides are never uploaded on time.,resources:negative
+S4,sarcasm,"Wow, only five assignments due in the same week. Brilliant planning.",workload:negative
+F1,short form,Good teaching.,teaching:positive
+F2,short form,Too fast.,pace:negative
+F3,short form,Very helpful sir.,faculty_interaction:positive
+F4,short form,Too many assignments.,workload:negative
+F5,short form,Notes were useful.,resources:positive
+F6,short form,Exams were fair.,assessment:positive
+H1,hinglish,Sir ka padhane ka tareeka bahut accha hai.,teaching:positive
+H2,hinglish,"Pace bahut fast tha, kuch samajh nahi aaya.",pace:negative
+H3,hinglish,"Assignments bahut zyada the, time hi nahi milta tha.",workload:negative
+H4,hinglish,"Ma'am doubts clear karti hai, very helpful.",faculty_interaction:positive
+H5,hinglish,Lectures acche the but exam bahut tough tha.,teaching:positive;assessment:negative

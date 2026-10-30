@@ -1,0 +1,348 @@
+{
+  "created": "2026-10-24",
+  "seed": 42,
+  "items": [
+    {
+      "id": "FB001",
+      "source_id": "ER00100",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB002",
+      "source_id": "ER01262",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB003",
+      "source_id": "ER05852",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB004",
+      "source_id": "ER04934",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB005",
+      "source_id": "ER00521",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB006",
+      "source_id": "ER03379",
+      "split": "train",
+      "synthetic": false,
+      "redacted": true,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB007",
+      "source_id": "ER02299",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB008",
+      "source_id": "ER03431",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB009",
+      "source_id": "ER03197",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB010",
+      "source_id": "ER00489",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB011",
+      "source_id": "ER03871",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB012",
+      "source_id": "ER02830",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB013",
+      "source_id": "ER01078",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB014",
+      "source_id": "ER04672",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB015",
+      "source_id": "ER00540",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB016",
+      "source_id": "ER03876",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB017",
+      "source_id": "ER01198",
+      "split": "train",
+      "synthetic": false,
+      "redacted": true,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB018",
+      "source_id": "ER01102",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB019",
+      "source_id": "ER01406",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB020",
+      "source_id": "ER00153",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB021",
+      "source_id": "ER03443",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB022",
+      "source_id": "ER03849",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB023",
+      "source_id": "ER01266",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB024",
+      "source_id": "ER03223",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB025",
+      "source_id": "ER03835",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB026",
+      "source_id": "ER00173",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB027",
+      "source_id": "ER00396",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB028",
+      "source_id": "ER00657",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB029",
+      "source_id": "ER02797",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB030",
+      "source_id": "ER00189",
+      "split": "train",
+      "synthetic": false,
+      "redacted": false,
+      "expected_category": null,
+      "source_note": null
+    },
+    {
+      "id": "FB031",
+      "source_id": "S1",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "academic",
+      "source_note": "Group 6's own example message (24 Oct 2026)"
+    },
+    {
+      "id": "FB032",
+      "source_id": "S2",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "academic",
+      "source_note": "Handout section 5 (Group 6 example)"
+    },
+    {
+      "id": "FB033",
+      "source_id": "S3",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "financial",
+      "source_note": "Written by Group 5 for the integration test"
+    },
+    {
+      "id": "FB034",
+      "source_id": "S4",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "mental_health",
+      "source_note": "Written by Group 5 for the integration test"
+    },
+    {
+      "id": "FB035",
+      "source_id": "S5",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "harassment",
+      "source_note": "Written by Group 5 for the integration test"
+    },
+    {
+      "id": "FB036",
+      "source_id": "S6",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "administrative",
+      "source_note": "Written by Group 5 for the integration test"
+    },
+    {
+      "id": "FB037",
+      "source_id": "S7",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "none",
+      "source_note": "Handout section 5 (Group 5 example)"
+    },
+    {
+      "id": "FB038",
+      "source_id": "S8",
+      "split": null,
+      "synthetic": true,
+      "redacted": false,
+      "expected_category": "none",
+      "source_note": "Written by Group 5 for the integration test"
+    }
+  ]
+}

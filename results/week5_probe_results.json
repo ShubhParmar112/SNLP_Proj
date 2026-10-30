@@ -1,0 +1,668 @@
+[
+  {
+    "probe_id": "N1",
+    "type": "negation",
+    "text": "The lectures were not boring at all.",
+    "expected": [
+      "teaching:positive"
+    ],
+    "predicted": [
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "N2",
+    "type": "negation",
+    "text": "The professor is not helpful when we ask doubts.",
+    "expected": [
+      "faculty_interaction:negative"
+    ],
+    "predicted": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.3062,
+        0.8903
+      ],
+      [
+        "faculty_interaction",
+        0.9941,
+        0.9444
+      ]
+    ]
+  },
+  {
+    "probe_id": "N3",
+    "type": "negation",
+    "text": "The assignments were not difficult.",
+    "expected": [
+      "assessment:positive"
+    ],
+    "predicted": [
+      "assessment:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "assessment",
+        0.9941,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "N4",
+    "type": "negation",
+    "text": "The course material is not useful.",
+    "expected": [
+      "resources:negative"
+    ],
+    "predicted": [
+      "resources:negative"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "resources",
+        0.9559,
+        0.8903
+      ]
+    ]
+  },
+  {
+    "probe_id": "N5",
+    "type": "negation",
+    "text": "I never felt the workload was too much.",
+    "expected": [
+      "workload:positive"
+    ],
+    "predicted": [
+      "workload:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "workload",
+        0.6318,
+        0.7692
+      ]
+    ]
+  },
+  {
+    "probe_id": "N6",
+    "type": "negation",
+    "text": "The exams were not fair.",
+    "expected": [
+      "assessment:negative"
+    ],
+    "predicted": [
+      "assessment:negative",
+      "teaching:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.3062,
+        0.9804
+      ],
+      [
+        "assessment",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "C1",
+    "type": "contrast",
+    "text": "The lectures were very informative, but the pace was too fast and the assignments were difficult.",
+    "expected": [
+      "assessment:negative",
+      "pace:negative",
+      "teaching:positive"
+    ],
+    "predicted": [
+      "assessment:negative",
+      "pace:negative",
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9128,
+        0.5021
+      ],
+      [
+        "pace",
+        0.9559,
+        0.9804
+      ],
+      [
+        "assessment",
+        0.9941,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "C2",
+    "type": "contrast",
+    "text": "The lectures were good but the pace was fast.",
+    "expected": [
+      "pace:negative",
+      "teaching:positive"
+    ],
+    "predicted": [
+      "pace:negative",
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.5021
+      ],
+      [
+        "pace",
+        0.9128,
+        0.9444
+      ]
+    ]
+  },
+  {
+    "probe_id": "C3",
+    "type": "contrast",
+    "text": "Great teacher, but the exams were way too hard.",
+    "expected": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "predicted": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.8903
+      ],
+      [
+        "assessment",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "C4",
+    "type": "contrast",
+    "text": "The content was interesting, although the slides were poorly made.",
+    "expected": [
+      "course_content:positive",
+      "resources:negative"
+    ],
+    "predicted": [
+      "course_content:positive",
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.3062,
+        0.8903
+      ],
+      [
+        "course_content",
+        0.9941,
+        0.8903
+      ],
+      [
+        "resources",
+        0.9559,
+        0.8548
+      ]
+    ]
+  },
+  {
+    "probe_id": "C5",
+    "type": "contrast",
+    "text": "The professor was always available for doubts, but there were too many assignments every week.",
+    "expected": [
+      "faculty_interaction:positive",
+      "workload:negative"
+    ],
+    "predicted": [
+      "faculty_interaction:positive",
+      "workload:negative"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "faculty_interaction",
+        0.9559,
+        0.8116
+      ],
+      [
+        "workload",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "C6",
+    "type": "contrast",
+    "text": "Labs were useless but the lectures made up for it.",
+    "expected": [
+      "other:negative",
+      "teaching:positive"
+    ],
+    "predicted": [
+      "other:negative",
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.8116
+      ],
+      [
+        "other",
+        0.8681,
+        0.5455
+      ]
+    ]
+  },
+  {
+    "probe_id": "I1",
+    "type": "implicit",
+    "text": "We barely get enough time to finish everything.",
+    "expected": [
+      "workload:negative"
+    ],
+    "predicted": [],
+    "pass": false,
+    "scores": []
+  },
+  {
+    "probe_id": "I2",
+    "type": "implicit",
+    "text": "I could never keep up with how quickly he moved through the topics.",
+    "expected": [
+      "pace:negative"
+    ],
+    "predicted": [
+      "pace:negative",
+      "teaching:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.6538,
+        0.8903
+      ],
+      [
+        "pace",
+        0.9128,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "I3",
+    "type": "implicit",
+    "text": "She makes even the hardest topics easy to understand.",
+    "expected": [
+      "teaching:positive"
+    ],
+    "predicted": [
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.9952
+      ]
+    ]
+  },
+  {
+    "probe_id": "I4",
+    "type": "implicit",
+    "text": "I spent every weekend working on this course.",
+    "expected": [
+      "workload:negative"
+    ],
+    "predicted": [],
+    "pass": false,
+    "scores": []
+  },
+  {
+    "probe_id": "I5",
+    "type": "implicit",
+    "text": "He replies to emails within an hour.",
+    "expected": [
+      "faculty_interaction:positive"
+    ],
+    "predicted": [
+      "faculty_interaction:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "faculty_interaction",
+        0.9128,
+        0.9444
+      ]
+    ]
+  },
+  {
+    "probe_id": "S1",
+    "type": "sarcasm",
+    "text": "Another three-hour lecture, exactly what we needed.",
+    "expected": [
+      "pace:negative"
+    ],
+    "predicted": [],
+    "pass": false,
+    "scores": []
+  },
+  {
+    "probe_id": "S2",
+    "type": "sarcasm",
+    "text": "Oh great, another surprise quiz on Monday.",
+    "expected": [
+      "assessment:negative"
+    ],
+    "predicted": [],
+    "pass": false,
+    "scores": []
+  },
+  {
+    "probe_id": "S3",
+    "type": "sarcasm",
+    "text": "I just love how the slides are never uploaded on time.",
+    "expected": [
+      "resources:negative"
+    ],
+    "predicted": [
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.6023,
+        0.9804
+      ],
+      [
+        "resources",
+        0.6318,
+        0.8903
+      ]
+    ]
+  },
+  {
+    "probe_id": "S4",
+    "type": "sarcasm",
+    "text": "Wow, only five assignments due in the same week. Brilliant planning.",
+    "expected": [
+      "workload:negative"
+    ],
+    "predicted": [
+      "assessment:positive",
+      "course_content:positive"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "course_content",
+        0.6023,
+        0.9952
+      ],
+      [
+        "assessment",
+        0.6318,
+        0.8903
+      ]
+    ]
+  },
+  {
+    "probe_id": "F1",
+    "type": "short form",
+    "text": "Good teaching.",
+    "expected": [
+      "teaching:positive"
+    ],
+    "predicted": [
+      "teaching:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "F2",
+    "type": "short form",
+    "text": "Too fast.",
+    "expected": [
+      "pace:negative"
+    ],
+    "predicted": [
+      "pace:negative"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "pace",
+        0.7593,
+        0.9444
+      ]
+    ]
+  },
+  {
+    "probe_id": "F3",
+    "type": "short form",
+    "text": "Very helpful sir.",
+    "expected": [
+      "faculty_interaction:positive"
+    ],
+    "predicted": [
+      "faculty_interaction:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "faculty_interaction",
+        0.9941,
+        0.9952
+      ]
+    ]
+  },
+  {
+    "probe_id": "F4",
+    "type": "short form",
+    "text": "Too many assignments.",
+    "expected": [
+      "workload:negative"
+    ],
+    "predicted": [
+      "workload:negative"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "workload",
+        0.9128,
+        0.9444
+      ]
+    ]
+  },
+  {
+    "probe_id": "F5",
+    "type": "short form",
+    "text": "Notes were useful.",
+    "expected": [
+      "resources:positive"
+    ],
+    "predicted": [
+      "resources:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "resources",
+        0.9559,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "F6",
+    "type": "short form",
+    "text": "Exams were fair.",
+    "expected": [
+      "assessment:positive"
+    ],
+    "predicted": [
+      "assessment:positive"
+    ],
+    "pass": true,
+    "scores": [
+      [
+        "assessment",
+        0.9941,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "H1",
+    "type": "hinglish",
+    "text": "Sir ka padhane ka tareeka bahut accha hai.",
+    "expected": [
+      "teaching:positive"
+    ],
+    "predicted": [],
+    "pass": false,
+    "scores": []
+  },
+  {
+    "probe_id": "H2",
+    "type": "hinglish",
+    "text": "Pace bahut fast tha, kuch samajh nahi aaya.",
+    "expected": [
+      "pace:negative"
+    ],
+    "predicted": [
+      "course_content:negative",
+      "pace:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "course_content",
+        0.6023,
+        0.8548
+      ],
+      [
+        "pace",
+        0.6538,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "H3",
+    "type": "hinglish",
+    "text": "Assignments bahut zyada the, time hi nahi milta tha.",
+    "expected": [
+      "workload:negative"
+    ],
+    "predicted": [
+      "assessment:positive"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "assessment",
+        0.6318,
+        0.0
+      ]
+    ]
+  },
+  {
+    "probe_id": "H4",
+    "type": "hinglish",
+    "text": "Ma'am doubts clear karti hai, very helpful.",
+    "expected": [
+      "faculty_interaction:positive"
+    ],
+    "predicted": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "teaching",
+        0.9559,
+        0.9804
+      ],
+      [
+        "faculty_interaction",
+        0.9941,
+        0.9804
+      ]
+    ]
+  },
+  {
+    "probe_id": "H5",
+    "type": "hinglish",
+    "text": "Lectures acche the but exam bahut tough tha.",
+    "expected": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "predicted": [
+      "assessment:negative"
+    ],
+    "pass": false,
+    "scores": [
+      [
+        "assessment",
+        0.9559,
+        0.8903
+      ]
+    ]
+  }
+]

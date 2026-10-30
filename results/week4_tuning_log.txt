@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3216.40it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3462.59it/s]
+embedding: class_weight=None  argmax 0.470 -> tuned 0.507
+v1 0.712 -> v1.1 0.720 | ensemble 0.730 -> 0.735
+  peak rel=0.5 (v1)      J>=0.5 0.137  overlap 0.769  words 1 (gold 6)
+  peak rel=0.01          J>=0.5 0.231  overlap 0.802  words 1 (gold 6)
+  clause, max 6 words    J>=0.5 0.541  overlap 0.861  words 5 (gold 6)
+  clause, max 8 words    J>=0.5 0.552  overlap 0.866  words 5 (gold 6)
+  clause, max 10 words   J>=0.5 0.550  overlap 0.869  words 5 (gold 6)
+  clause, max 14 words   J>=0.5 0.543  overlap 0.872  words 5 (gold 6)
+  clause, no cap         J>=0.5 0.541  overlap 0.872  words 5 (gold 6)
+span rule -> clause, max 8 words
+frozen -> C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 4)\Group5_Student_Feedback_Intelligence\data\processed\decision_settings.json

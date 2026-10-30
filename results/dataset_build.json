@@ -1,0 +1,51 @@
+{
+  "dataset_version": "v1.1-edurabsa",
+  "source": "EduRABSA v2.1 (Zenodo 18500517)",
+  "stats": {
+    "source_entries": 6500,
+    "polarity_positive": 5853,
+    "comments_kept": 5998,
+    "type_course_review": 2998,
+    "polarity_negative": 3414,
+    "quads_without_aspect": 4852,
+    "comments_no_aspect": 466,
+    "polarity_conflict": 1047,
+    "type_teacher_review": 3000,
+    "dropped_out_of_scope_type": 500,
+    "polarity_neutral": 901,
+    "dropped_no_doc_sentiment": 2
+  },
+  "source_categories": {
+    "Staff - Teaching": 4797,
+    "Course - Overall": 3922,
+    "Staff - Overall": 3092,
+    "Course - Assessment": 2525,
+    "Course - Content": 2270,
+    "Course - Difficulty": 2227,
+    "Staff - Attitude": 1535,
+    "Course - Learning activity": 1364,
+    "Staff - Personal traits": 922,
+    "Course - Course materials": 802,
+    "Staff - Helpfulness": 797,
+    "Course - Workload": 619,
+    "Staff - Knowledge & skills": 341,
+    "Course - Technology & tools": 102,
+    "University - Programme": 16,
+    "University - Overall": 8,
+    "University - Campus & facilities": 3,
+    "University - Information & services": 2,
+    "University - Cost": 1,
+    "University - Technology & tools": 1
+  },
+  "mapped_aspects": {
+    "teaching": 8429,
+    "course_content": 4460,
+    "assessment": 2525,
+    "faculty_interaction": 2332,
+    "other": 1074,
+    "resources": 904,
+    "workload": 619,
+    "pace": 151
+  },
+  "n_pace_relabelled": 151
+}

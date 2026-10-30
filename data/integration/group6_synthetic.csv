@@ -1,0 +1,9 @@
+synthetic_id,text,expected_category,source
+S1,I have fallen behind and I am thinking of dropping out.,academic,Group 6's own example message (24 Oct 2026)
+S2,"I have missed several classes because of difficulties at home and I am worried that I may not be able to complete the course.",academic,Handout section 5 (Group 6 example)
+S3,"I had to take a part-time job to pay the fees, so I keep missing the morning lectures.",financial,Written by Group 5 for the integration test
+S4,"The deadlines this semester have left me anxious and unable to sleep most nights.",mental_health,Written by Group 5 for the integration test
+S5,"A senior in the lab keeps making comments about me that make me uncomfortable.",harassment,Written by Group 5 for the integration test
+S6,"My scholarship form has been pending at the office for six weeks and nobody replies.",administrative,Written by Group 5 for the integration test
+S7,"The lectures were very informative, but the pace was too fast and the assignments were difficult.",none,Handout section 5 (Group 5 example)
+S8,"Great course, the professor explains every concept clearly.",none,Written by Group 5 for the integration test

@@ -1,0 +1,606 @@
+{
+ "course_id": "DEMO-COURSE",
+ "note": "150 real public student reviews, a random sample (seed 7) of the EduRABSA test split (CC BY-NC-SA 4.0), used only to demonstrate the course report",
+ "items": [
+  {
+   "feedback_id": "ER04644",
+   "text": "this professor is great!! He does not make you take unnecessary steps to succeed. He is straight to the point, fair and hilarious! I hope to see him next semester and every other after that!"
+  },
+  {
+   "feedback_id": "ER04069",
+   "text": "Meh. Boring course. Not very easy unless you know some of the language already."
+  },
+  {
+   "feedback_id": "ER04883",
+   "text": "Exellent teacher, helps you apply this stuff the real world."
+  },
+  {
+   "feedback_id": "ER05748",
+   "text": "Talk about making an online class harder than what it needs to be... Heath does just that. His quizzes are too hard. He asks questions that aren't really relevant to the subject. He doesn't keep his grades up to date so you have no idea how you're doing in the class, then all of a sudden your final grade shows up. He grades hard also."
+  },
+  {
+   "feedback_id": "ER03658",
+   "text": "I found the course was just one fact after another, and the way they're laid out in the online version, you're rushing to keep up and struggling not to fall asleep because of the lack of any expression in the voice talking whatsoever. I haven't taken the exam yet but I've received the outline, and I don't think it could possibly be finished in two and a half hours, the amount of essays small and large we have to write plus the random dates, fill in the blanks and information needed... it doesn't seem like a 200 level course at all."
+  },
+  {
+   "feedback_id": "ER03760",
+   "text": "this class is kind of a joke"
+  },
+  {
+   "feedback_id": "ER06309",
+   "text": "Interesting material but not easy to comprehend at first glance. Effort required. Also, the textbook is about as useless as a horse with no legs. It is near impossible to read and makes no sense. You must rely on her dizzying lectures."
+  },
+  {
+   "feedback_id": "ER05358",
+   "text": "Negotiation strategy is a great class. I would highly recommend it as a good 3 credit class that is enjoyable and isn't crazy with the work. Great in class exercises and very funny prof. Very worthwhile."
+  },
+  {
+   "feedback_id": "ER03844",
+   "text": "Great prof! Prompt grading and helpful feedback!"
+  },
+  {
+   "feedback_id": "ER04787",
+   "text": "i am slow at math i have to admit. i also know that people drop classes for personal reasons. but when 75 % of the class has a failing grade the teacher has to take alot on the blame."
+  },
+  {
+   "feedback_id": "ER05522",
+   "text": "Decent class, not a ton of work required outside of class since the lectures were fairly similar to the textbook reading. One assignment all term that was interesting and helpful. Definitely a relevant and interesting course for anyone hoping to pursue a career in the health care field."
+  },
+  {
+   "feedback_id": "ER03704",
+   "text": "This course is unbelievably important for an undergraduate student wanting to do research later in his/ her career. All labs taught different techniques that are important to different physiological streams of research. Class + lab sizes are very small allowing for a dynamic learning experience. Make sure you participate at all times to get the best out of this course!"
+  },
+  {
+   "feedback_id": "ER05263",
+   "text": "Take notes and be prepared to engage in discussion! Requires you to think deep and question."
+  },
+  {
+   "feedback_id": "ER04279",
+   "text": "Miss Blahusiak is awesome. she tend to help her students, and she explains whatever you find difficulties with. I was glad to have her in this semester as one of my teachers. Just study for the quizzes and do whatever she asks for, and you will get an easy A."
+  },
+  {
+   "feedback_id": "ER03611",
+   "text": "This is the 2nd class I've had Tom for and he is NOT a good teacher. He waste a lot of class time setting up things( like still-life). When you ask a particular question he does not explain with clarity. He also does not hold you accountable for things like attendance, which makes it easier to be lazy. I will not take a class with him again."
+  },
+  {
+   "feedback_id": "ER03806",
+   "text": "Professor Davis really tries to teach how to write. The one thing I disliked is that she has HER style and anyone who has a style which differs from hers will get a low grade. Her classes are interesting and she actually TEACHES. She comes on time and is a fair grader. Very good Professor."
+  },
+  {
+   "feedback_id": "ER05017",
+   "text": "This is a bit of a bird course, at least it was the term I took it. It was nice because my other courses were pretty heavy, and this ended up being one I could afford to skip lectures for and put assignments off to the last minute and still perform very well. The content was a bit dry, but useful stuff, whether you're planning on developing desktop apps or web apps. I don't know if the content was cutting edge, but it was more up to date than my own UI / web dev knowledge from the early 2000s."
+  },
+  {
+   "feedback_id": "ER04967",
+   "text": "Very interesting class, and professor Lektzian is also very helpful. Tests are just like the lectures. He does not take attendance but he does give out a few quizzes every now and then."
+  },
+  {
+   "feedback_id": "ER03753",
+   "text": "I like this lab a lot- the techniques you learn are very practical if you were to go to do biochemical experiments in the future. 6 lab reports+ 6 lab quizzes+ lab performance+ lab final. The reports are all not formal lab reports but some of them are very very long, so be prepared to spend hours on a few of them. Start writing early and do not try to cram them- they are where the most marks are from. The lab final is only 35% but consists of a lot of information and you are not given any formula or amino acid structures- so make sure you spend some time studying for it. Overall it is fun and would recommend."
+  },
+  {
+   "feedback_id": "ER04369",
+   "text": "Read the text, know the concepts, easy if you read the text ahead and participate"
+  },
+  {
+   "feedback_id": "ER03824",
+   "text": "Placeholder timeslot"
+  },
+  {
+   "feedback_id": "ER05408",
+   "text": "Mark heavily dependent on TA preference. Group members are a pain to work with."
+  },
+  {
+   "feedback_id": "ER04986",
+   "text": "Great instructor. She has rules about tardiness, so don't plan on coming late to class. Very professional, organized, and grades assignments quickly. I learned a lot in her class, and would highly recommend her."
+  },
+  {
+   "feedback_id": "ER03708",
+   "text": "AWSOME !!!! WHEN I HAD HER SHE TOOK US TO THE COURTS IN BROWARD COUNTY, WE ALL GOT TO MEET WITH HER FRIEND\" HELP ME HOWARD\" AT HIS OFFICE. VERY CLEAR, UNDERSTANDING, AND COOL TEACHER. HER CLASS CONSISTS OF DEFINITIONS, BRIEFING CASES, AND AN EASY MIDTERM AND FINAL. JUST PAY ATTENTION AND YOU WILL BE FINE! JUST MAKE SURE YOU READ BOOK BEFORE CLASS."
+  },
+  {
+   "feedback_id": "ER06330",
+   "text": "Wonderful professor as long as you do the work and do it on time. Doesn't respond to emails very quick though. I had her for ENC 1101 too and attendance is mandatory. As long as you try you will do well."
+  },
+  {
+   "feedback_id": "ER05465",
+   "text": "Does not know how to teach or explain herself"
+  },
+  {
+   "feedback_id": "ER03981",
+   "text": "interesting labs but vague rubric in grading"
+  },
+  {
+   "feedback_id": "ER04316",
+   "text": "Do the weekly assignments and do the textbook readings and you will ace this course even if you hate physics."
+  },
+  {
+   "feedback_id": "ER05678",
+   "text": "Gilreath is a passionate, but poor teacher. For Reading 150, you are supposed to learn critical thinking, and how to reason for yourself, but if it's not exactly how she wants it , you're wrong! She's very unclear about what she wants, and is extremely subjective in her grading. One of my least favorite teachers in my entire schooling EVER."
+  },
+  {
+   "feedback_id": "ER05670",
+   "text": "The course wasn't that easy( at least for me) but make sure pay attention in class and understand all the concepts before move on to next topic!!! and make sure you know how to do the assignments!"
+  },
+  {
+   "feedback_id": "ER06464",
+   "text": "Davis, she thinks she's the queen of everything. i would 100 % not recommend this class to anyone there are a lot of other teachers out there. trust me!"
+  },
+  {
+   "feedback_id": "ER03719",
+   "text": "he is a every good pro!!"
+  },
+  {
+   "feedback_id": "ER05497",
+   "text": "Fun course; learned about different encryption schemes and the math behind them. Our prof spent a large chunk of the course on a sample application field: Blockchain."
+  },
+  {
+   "feedback_id": "ER05530",
+   "text": "Professor Anita Fabos is a very dynamic , creative and highly energetic instructor. She is passionate to nurture her students intellect."
+  },
+  {
+   "feedback_id": "ER04889",
+   "text": "Awesome professor! Loved the class and would definitely recommend it to anyone else. If you work hard and follow along you'll do great."
+  },
+  {
+   "feedback_id": "ER03661",
+   "text": "AWFUL EXPERIENCE !! Wish I had dropped after first meeting. Very rude, short tempered and makes things more difficult than they need to be! No clarity or consistency. Very egocentric!"
+  },
+  {
+   "feedback_id": "ER04307",
+   "text": "Cat is amazing. Speech is not a pleasant class but she makes it do-able. This was my 2nd attempt at speech and she helped me hang in there. She is encouraging and creates a comfortable environment. I got an A at something I was sure I would fail. Thanks Cat!"
+  },
+  {
+   "feedback_id": "ER03653",
+   "text": "Shes is monotone and easy to be sidetracted in her class. I never read the book and almost failed. She teaches right from the book. If you read the book you will be fine. Also make sure You always go to class. If yoou miss a class you get way behind and miss a lot of material. She is very knowledgable and knows her stuff."
+  },
+  {
+   "feedback_id": "ER05427",
+   "text": "to me it's just boring to play around with Order of stuff, no offense but we are not SE students, XD. Sorry that they made it mandatory."
+  },
+  {
+   "feedback_id": "ER04013",
+   "text": "Confusing for someone who has never coded in their life"
+  },
+  {
+   "feedback_id": "ER04532",
+   "text": "This was a good course, even though the final exam was incredibly difficult."
+  },
+  {
+   "feedback_id": "ER04968",
+   "text": "This class is as bland as oatmeal and so is she. No passion, quiet. Nice person. MANDATORY attendance. Leave 10 minutes earlier? She'll make sure she deducts that for points. Useless class- didn't learn a thing. I want a refund!"
+  },
+  {
+   "feedback_id": "ER04050",
+   "text": "Useful for various grad school programs but incredibly boring, detailed, and with a lot to memorize."
+  },
+  {
+   "feedback_id": "ER05374",
+   "text": "Dr. Voss is the best bio professor at Behrend( even though they'll all good). She's a great teacher, helpful, and always makes time for students outside of class. She's amazing to listen to too- absolutely brilliant person."
+  },
+  {
+   "feedback_id": "ER03956",
+   "text": "5 quizzes every two weeks 8% each, 40% final, 10% bridge project, rest was online quizzes and participation. Bridge project takes way too much time given how its only worth 10% of your final mark. Fun project but its when all the other major projects are due"
+  },
+  {
+   "feedback_id": "ER05482",
+   "text": "Great Professor. Put my ECO 110 professor to shame... His accent isn't THAT bad compared to what other people have said( especially if you have listened to other UAlbany Econ professors. Got a guaranteed B, which later became a B+, on the final for answering a question in class. He want all his students to do very well. Big recommendation for him."
+  },
+  {
+   "feedback_id": "ER04593",
+   "text": "Not even a week into this class and I want to drop out. Modules are super dry and they basically consist of long youtube videos and random articles on the internet. Why am I paying this much if I can get this all for free ? Textbook readings are also very long and makes my eyes hurt cause all the text is compacted together. Also the first quiz I took asked very specific questions which I was not a fan of. Only recommend taking this course if you are into religion."
+  },
+  {
+   "feedback_id": "ER05438",
+   "text": "Ms. Bratton is a great teacher, she is very soft spoken though.( lol) She is always helpful and she makes you feel like you can do anything when it comes to math. I will give her an A +++"
+  },
+  {
+   "feedback_id": "ER06291",
+   "text": "Epstein used to teach in Murrow, I had him a few times when I was in high school. He is a great professor and if I had to take a political science class than I would DEFINITELY take it with him. He knows how to teach !!! take him !!! you wont regret it"
+  },
+  {
+   "feedback_id": "ER05853",
+   "text": "Weekly assignments are not worth much , but are difficult. Weekly labs. 1 midterm, 1 final. Doing the labs will greatly help with the assignments. Asking questions to TAs and prof will help a lot."
+  },
+  {
+   "feedback_id": "ER04177",
+   "text": "Dr. Neibergall is no where near as bad as all of the other whining nursing students say he is. He will help you out if you are truly interested in learning the material. He is also one of the nicest profs I have had so just talk to him if you have any problems. He would love to help you!"
+  },
+  {
+   "feedback_id": "ER03891",
+   "text": "Took it with David Jao. There was heavy emphasis on the mathematical theories which made the course seem not immediately useful, but the theories made the concepts more memorable. You would learn enough basics of game theory to learn more on your own. Final project was writing an AI for a variant of chess game, and mark was given based on standings( zero/ constant sum game!). Assignments were short and exams were fair imo. But concepts were tough."
+  },
+  {
+   "feedback_id": "ER05520",
+   "text": "Best Elective Ever."
+  },
+  {
+   "feedback_id": "ER06352",
+   "text": "He is tough but fair."
+  },
+  {
+   "feedback_id": "ER05700",
+   "text": "Brian is the man. If you need a math gened then take this class. Not only is the class material easy its practical. You will learn useful information and it's all very straight forward. Brian is clear cut in what he expects and the way he teaches. He teaches math the way it should be taught. Very nice guy and should take this class."
+  },
+  {
+   "feedback_id": "ER04200",
+   "text": "This class really whoops you into shape if you want to pass. I loved how it transformed me into doing daily problem questions and practices."
+  },
+  {
+   "feedback_id": "ER04813",
+   "text": "Good introduction to political science, 30% is free discussion marks, everything else is marked pretty leniently. Not every week is super interesting, but you get a good overview of a bunch of topics"
+  },
+  {
+   "feedback_id": "ER03859",
+   "text": "Great course! Really interesting! If you pay attention to what she says in class you will do fine, watch out for writing in detail on midterms and exams."
+  },
+  {
+   "feedback_id": "ER05396",
+   "text": "used to be a stats related course. now it's just vague bullshit thanks to Carrie Mitchell, a typical SJW vague arts prof. Vague arts is a term coined by our Urban Planning cohort to describe this kind of BS profs: https:// www. urbandictionary. com/ define. php? term= Vague% 20Arts"
+  },
+  {
+   "feedback_id": "ER05952",
+   "text": "Kind of boring, but the assignments were easy enough?"
+  },
+  {
+   "feedback_id": "ER03730",
+   "text": "Amazing Professor who really knows his material. If you go to lecture and actually do the homework and pay attention, you will do fine on the midterms. Makes Econometrics very easy to understand."
+  },
+  {
+   "feedback_id": "ER05457",
+   "text": "Interesting course if you like anthropology, quizzes are very easy that you can find everything from the textbook."
+  },
+  {
+   "feedback_id": "ER03713",
+   "text": "Nothing happened in this slot all term. It's not even a make-up lecture slot anymore."
+  },
+  {
+   "feedback_id": "ER05637",
+   "text": "Professor Lisses can come off as a bit intimidating because she's loud and sarcastic, but she's actually really nice and explains things very clearly. Unfortunately, 30 % of the final grade is \" class participation\", so if she likes you , I guess you get an A so... make sure you review your vocabulary before coming to class."
+  },
+  {
+   "feedback_id": "ER04250",
+   "text": "She is hands down the best professor I have ever had. She has gotten me to take her class every semester in a row and I have learned so much from her. She is kind and caring and you just have to do what you can do, she never pushes you. She is the reason I have gotten into the best shape of my life. Take her class and you will not regret it."
+  },
+  {
+   "feedback_id": "ER05225",
+   "text": "lectures were extremely boring, some of the stuff if probably outdated , but still pretty useful"
+  },
+  {
+   "feedback_id": "ER05844",
+   "text": "Awesome teacher, extremely helpful!!"
+  },
+  {
+   "feedback_id": "ER05351",
+   "text": "wasn't very helpful, made a lot of people feel bad for not knowing what to do"
+  },
+  {
+   "feedback_id": "ER04997",
+   "text": "The course was extremely boring and a complete waste of time. I think most sections of this course were organized well, but some profs like to teach their own way, and that could make the organization a nightmare. Fairly easy, but the essays take a couple of hours even if you're speedrunning. If you like writing then you might enjoy the class somewhat, but you definitely won't learn anything meaningful. If you're taking this as a communication course in the Math faculty then you most likely would benefit more from taking an SPCOM class instead of this one, even if the SPCOM classes are borderline useless as well."
+  },
+  {
+   "feedback_id": "ER06168",
+   "text": "Honestly the only people that will complain about this teacher are the students who take more time to grasp concepts. She gets straight to the point and doesn't dwell on it. If you're into that kinda thing , shes the right person to go to( especially if you're proficient in math). AND SHE DOES ANSWER YOUR QUESTIONS!!!-.-"
+  },
+  {
+   "feedback_id": "ER04609",
+   "text": "The most useless course I've ever taken. The standards for the assignments are ridiculously low. You'd think in a design class, you'd learn how to design / plan / implement projects were economically or, at very least, physically feasible, but that really wasn't the case. Many of the groups that retrieved high marks had issues with hindering their entire designs on technologies that did not yet exist, were clearly economically unfeasible, or didn't really solve the problem they were tasked to solve. The first two out of three major projects were designing a poster and re-design of a room/ space. The course really wasn't challenging, didn't introduce any novel material about design or design strategies, and no real concern seemed to go towards the viability of designs / solutions."
+  },
+  {
+   "feedback_id": "ER05123",
+   "text": "Really easy class! I definitely recommend it! There is a good amount of\" busywork\" but it does help you out in the long run. The prof is very nice and grades fairly. I took this class online and it was great! There are a lot of assignments that go fairly quickly, but just keep track of them and you'll be fine. Textbook is used a lot."
+  },
+  {
+   "feedback_id": "ER06400",
+   "text": "Did not like it!"
+  },
+  {
+   "feedback_id": "ER05081",
+   "text": "What can I say LOL? This was without a doubt the worst educational experience I've had at UW( and that's saying something considering I've taken ECE 105 and ECE 124 which I'm taking right now). Each week is entirely irrelevant to previous or following weeks, and it makes it feel like everything I learn in this course is pointless. Way too much work assigned, and a terrible textbook that you need to focus on for hours just to understand what's being\" explained\". It doesn't help that the prof can't teach for **** either."
+  },
+  {
+   "feedback_id": "ER04778",
+   "text": "It's a great concept to integrate two areas of accounting into one course but considering the time given the organization is horrible, Tax gets curved a lot so there's nothing to worry about. However, in audit, there's no clarity regarding the marking of the integrated audit case, it was difficult to achieve a good mark. Final doesn't get curved a lot and I personally found it harder than the tax exam."
+  },
+  {
+   "feedback_id": "ER04564",
+   "text": "There was definitely a lot of reading in this class, but it is all very interesting. I enjoyed this class very much, and Prof. Reisman had good insights. She helped me to read more analytically into the text, and encouraged input from the class. Do the work, and you will get a good grade."
+  },
+  {
+   "feedback_id": "ER04391",
+   "text": "This was by far my favourite biology course to date! The content is very interesting, particularly for those with an interest in exploring the microbial world. The content is relatively straightforward, particularly if you've taken cell biology or genetics prior to this course. The mid-term exam and the final exam were both very fair! The content came directly from the slides and from the profs lecture, just be sure to take detailed notes. The textbook( I read each chapter) was helpful, but did not really give any advantage on the exams. Finally, Dr Neufeld is an amazing professor! He is so engaging and is truly passionate about his field. I highly recommend taking the course with him."
+  },
+  {
+   "feedback_id": "ER06225",
+   "text": "This is a prep course for your actual capstone design project( SE 490 and SE 491). You work on a few mini-projects with the goal of finding a topic you like and a group you work with well. By the end of the course, you should have made some progress on your final capstone project. Most marks are for showing an honest effort."
+  },
+  {
+   "feedback_id": "ER04169",
+   "text": "Very easy course and can be fun too."
+  },
+  {
+   "feedback_id": "ER05908",
+   "text": "This guy is hard to rate because he's stuck with the unfortunate task of teaching PSYC Intro Research Methods, which is both totally boring and mandatory. Considering this, I think he showed valiant effort to make the class as painless and as interesting as could have been reasonably expected by any prof. So really, points for effort!"
+  },
+  {
+   "feedback_id": "ER06175",
+   "text": "Don't take it unless you enjoy memorizing multiple studies for tests."
+  },
+  {
+   "feedback_id": "ER04376",
+   "text": "Fairly interesting course, and really easy if you did well in your first and second year math courses."
+  },
+  {
+   "feedback_id": "ER03793",
+   "text": "His classes lean heavily on participation and discussion. Lots of reading and case studies. Not a fan of him as a person( he can be very condescending and definitely plays favorites."
+  },
+  {
+   "feedback_id": "ER05495",
+   "text": "Lot of good material about basics of neural networks and fuzzy sets. Assignments and exams were fair and fun. The end of the course involves a project which was the best part. Being able to research and implement learning on a topic of our own choice was really encouraging. Course material was well organized."
+  },
+  {
+   "feedback_id": "ER04567",
+   "text": "He is good at what he does, don't get me wrong. But it feels like we actually \" learn \" at the end of class( the last 10 minutes or so) feeling a bit rushed. Homework can be a bit overwhelming at times too, considering the pre-req classes leading up to this have about half the amount of work. Sometimes a bit too critical with students/ views too."
+  },
+  {
+   "feedback_id": "ER05325",
+   "text": "She is absolutely the BEST professor I ever had! IF you have the chance please take her. She is very inspirational and her lectures are very fun. She will give you a book you can buy off Amazon instead of the pricey ones from the book store. I would definitely take another class with her."
+  },
+  {
+   "feedback_id": "ER05219",
+   "text": "Very basic course, never went since it was 8: 30. Easy but annoying since final exam seemed tedious and unnecessary"
+  },
+  {
+   "feedback_id": "ER04707",
+   "text": "Wonderful professor. Interesting, funny, and extremely helpful. I learned so much about writing that I never knew. I wish I could have her again!"
+  },
+  {
+   "feedback_id": "ER06011",
+   "text": "Pretty straight forward and simple. I know a lot of people take ECON101 as a bird course and it really is."
+  },
+  {
+   "feedback_id": "ER05067",
+   "text": "awful course. absolutely useless"
+  },
+  {
+   "feedback_id": "ER04529",
+   "text": "She just rambles on in class about things that will NOT pertain to her essay questions."
+  },
+  {
+   "feedback_id": "ER05608",
+   "text": "amazing teacher, so understanding and really helps every student learn. She's greattttt i love herrr"
+  },
+  {
+   "feedback_id": "ER06483",
+   "text": "Just adding him because he hasn't been on the list of professors. Only have had him for two weeks, but he already seems boring. He kind of expects you to know things that you definitely do not know. Hopefully his tests aren't hard, but the material definitely is. More to come..."
+  },
+  {
+   "feedback_id": "ER06358",
+   "text": "There is a reading response due every class day. Two reasearch papers. A midterm and a final. Easy class. Just read and take notes and you'll do fine."
+  },
+  {
+   "feedback_id": "ER05279",
+   "text": "I loved this course. Material was interesting. Weekly assignments were fun and challenging, as long as you did them early and had time to ask questions!"
+  },
+  {
+   "feedback_id": "ER06443",
+   "text": "The bird of bird classes."
+  },
+  {
+   "feedback_id": "ER04116",
+   "text": "Awesome course! Very easy course to do well in if you attend lectures."
+  },
+  {
+   "feedback_id": "ER06100",
+   "text": "I agree she's nice but to slow. Honestly she should retire. Her examples are outdated and she's hard to hear, and its difficult to stay awake in her class. I've also had her for 3 other classes and they're all the same. It's an easy A if you don't mind being bored."
+  },
+  {
+   "feedback_id": "ER04705",
+   "text": "So hard. You need it to graduate so pay attention. Some of the concepts are amazing once you understand."
+  },
+  {
+   "feedback_id": "ER04075",
+   "text": "My favorite professor I have ever had. So fun, so helpful, and keeps you engaged the ENTIRE time. Love her."
+  },
+  {
+   "feedback_id": "ER05195",
+   "text": "Easy exams, the assignments get kinda hard towards the end of the course."
+  },
+  {
+   "feedback_id": "ER04972",
+   "text": "Easy class but content can get boring, especially depending on the prof..."
+  },
+  {
+   "feedback_id": "ER03620",
+   "text": "Her accent is not too big a problem for me. However what annoys me the most attending her class was she doesn't seem to be prepare. Her grading system and homework system are over-complicated. She make her life and the student life harder."
+  },
+  {
+   "feedback_id": "ER05809",
+   "text": "Great teacher, will work with you to help you pass."
+  },
+  {
+   "feedback_id": "ER03776",
+   "text": "The course itself is a little challenging as we basically did 1 unit per week but Tais was a great prof and the method of attack guaranteed a lot of free marks even if you didn't know how to solve the question. The quizzes were lengthy but nothing that wasn't doable. The midterm was fair and the final was fair but very very long."
+  },
+  {
+   "feedback_id": "ER06122",
+   "text": "My anus was torn apart by George Labahn's exams"
+  },
+  {
+   "feedback_id": "ER05429",
+   "text": "Very useful course!"
+  },
+  {
+   "feedback_id": "ER05488",
+   "text": "I thought this elective was going to be easy. Quizzes were super hard even if you studied. Way too much reading needed for a first-year level course. Please, take another course instead of this one."
+  },
+  {
+   "feedback_id": "ER06278",
+   "text": "I enjoyed this course a great deal, unprecedented circumstances aside."
+  },
+  {
+   "feedback_id": "ER04698",
+   "text": "Fairly bland course, mostly review for high school as well. Just make sure you keep up with readings before each lecture, and also make sure you do the assigned practice questions and MapleTA assignments to reinforce concepts."
+  },
+  {
+   "feedback_id": "ER05893",
+   "text": "lots of content and most of the tested material is from the text book. But if you are interested in anthropology a good course"
+  },
+  {
+   "feedback_id": "ER04735",
+   "text": "Super nice and very approachable. Thought class was very interesting and Maureen has a way of keeping students involved in lectures. good class to take"
+  },
+  {
+   "feedback_id": "ER05554",
+   "text": "This course is fairly easy, definitely go to class if you have Merrin, her midterms are 30% each but are really easy if you actually study; with that said you should be spending at least 2-3 days before the midterm understanding all the concepts; memorization is not key here, you really need to understand the information to do well"
+  },
+  {
+   "feedback_id": "ER06290",
+   "text": "Course material on corporate finance and finance theory is interesting but derivation heavy. The course has some easy sections that are purely based on calculations of numbers and sections that are proof-heavy. However, the exams will only ask for re-creation for some proofs. Course material is also applicable to real-world uses in the finance industry."
+  },
+  {
+   "feedback_id": "ER05508",
+   "text": "Very fun class. You'll learn a lot; not just about defending yourself but feeling confident in yourself, too. Attendance is mandatory. A man will come in for the final to perform an attack on each student and you'll have to properly fight back. It's really easy. Such a great class!"
+  },
+  {
+   "feedback_id": "ER05091",
+   "text": "I took her Medial Terminology course. Great teacher! She is helpful and provides articles and additional material that pertain to her teachings. Very helpful!"
+  },
+  {
+   "feedback_id": "ER03752",
+   "text": "Interesting books! Easy to doze off during most of the semester, but at the end when you start writing papers you realize you haven't been taught enough to understand networks and the tools you need to write the papers.."
+  },
+  {
+   "feedback_id": "ER03838",
+   "text": "She was always so helpful and willing to take as much as needed to make sure everyone understood the material. Learned more from her in one semester than 3 years of french in High School."
+  },
+  {
+   "feedback_id": "ER04469",
+   "text": "She's a little boring in lectures but the homework is easy and the tests are straight off the study guide."
+  },
+  {
+   "feedback_id": "ER05151",
+   "text": "Straightforward class. Do practice questions, and you should get a good mark."
+  },
+  {
+   "feedback_id": "ER05904",
+   "text": "Bird material, but unbearably boring. Only looked at the course whenever an assignment was coming up, but the 30 + pages of readings you get per assignment could have been explained in 3 pages. This course is a neglected middle child who bothers you every 2 weeks. Not worth."
+  },
+  {
+   "feedback_id": "ER05797",
+   "text": "Don't be fooled by the exams being multiple choice... you really need to study for the exams. Overall a very interesting course, and especially with BJ Rye as the professor, she was incredible!"
+  },
+  {
+   "feedback_id": "ER03732",
+   "text": "Most boring course I've ever taken. All raw memorization. Taking the online course will force you to watch boring decades old documentaries to have proper knowledge for the final."
+  },
+  {
+   "feedback_id": "ER03715",
+   "text": "THE BEST TEACHER AT CTU ONLINE PERIOD. i am almost done with my BSBA so it has been a while since i have had him for a teacher, but his lessons stick with me to the day. he has prepared me for classes at higher levels, and is truely concerned about the students , and their performance. i will stop here, because 350 characters is just not enough."
+  },
+  {
+   "feedback_id": "ER06014",
+   "text": "I hated that the lectures were asynchronous. The prof who teaches the lectures changes so the quality of the lectures vary. When you get a weak instructor or content is not clear, go to the WEEF TAs. Generally, it was not that bad and the tutorials were in-person which was nice. The main challange in this course was balancing it with all the other courses and finding time to study and learn the content."
+  },
+  {
+   "feedback_id": "ER05916",
+   "text": "Not super hard considering the curve. If you can get a good intuitive grasp of the concepts it won't be super tough."
+  },
+  {
+   "feedback_id": "ER04598",
+   "text": "Easily the toughest course of the term. You will definitely fall behind the pace. The lack of marked assignments makes it even easier to procrastinate( trust me, DON'T). The problems are challenging and require lots of practice and cramming. But once you get past your frustrations with the course, you might end up seeing the beauty and elegance in those succinct equations Maxwell came up with all those years ago that perfectly describe a major part of our reality."
+  },
+  {
+   "feedback_id": "ER05732",
+   "text": "This course is not easy but also not hard. Going to the lectures helps a lot , but it's not required. However, if you do go to the lectures and you don't understand something, you can ask her questions after and she'll explain more in depth until you get the concept. The midterm / final is pretty straight forward, you just need to know your content, and be able to write continuously through the entire time given because it's short/ long answers."
+  },
+  {
+   "feedback_id": "ER05498",
+   "text": "Dedicated guy. He seem to love what his doing. Tough class with a participation grade."
+  },
+  {
+   "feedback_id": "ER05846",
+   "text": "I had the best time learning design theory. I was so lucky to have this professor, he was wonderful. I want to learn more about architecture and I hope to be in his class next term."
+  },
+  {
+   "feedback_id": "ER05053",
+   "text": "Simple introduction to tools and processes used in Photoshop"
+  },
+  {
+   "feedback_id": "ER04519",
+   "text": "Teacher was great, but loves the sound of his own voice."
+  },
+  {
+   "feedback_id": "ER05964",
+   "text": "useless course to SE student. just pass and delete all info from the brain. midterm and final were MC cuz prof and TA too lazy to mark. Heard that in-person version was pretty chill tho. But this is one of the courses where the online version is harder than in person. If you wanna pass, grind all the ungraded assignment problems. watching vids will not get you through the course. lecture notes r gucci."
+  },
+  {
+   "feedback_id": "ER04855",
+   "text": "Great course! Teaches you the fundamentals of programming which will be very useful for interviews and future CS courses"
+  },
+  {
+   "feedback_id": "ER06170",
+   "text": "Too easy for a 3rd year PMATH course"
+  },
+  {
+   "feedback_id": "ER04724",
+   "text": "A lot of fun and easy to do well. Study for the quizzes because they are written answer; they aren't that hard but you need to actually know the theory and steps of the labs. Exam was actually difficult but multiple choice."
+  },
+  {
+   "feedback_id": "ER03538",
+   "text": "Lots of group work done in-class, which builds up to what you need to hand in for assignments."
+  },
+  {
+   "feedback_id": "ER05110",
+   "text": "Professor Roberts shouldn't even be a PROFESSOR !!! She can not teach, very rude , sarcastic and not caring about her students Why is she still there ? I've only been in college for two quarters and I only pray not to get another teacher like her. I had to drop the course, couldn't understand a word she was saying, and she didn't like answering quest"
+  },
+  {
+   "feedback_id": "ER04747",
+   "text": "Took this course online, think we were one of the first offerings to do multivariable calc in the first half, then do sequences/ series afterwards. IMO, this flowed a bit better from 117. No complaints, I learned some more math and both the prof( Zack Cramer) and the grading scheme were good."
+  },
+  {
+   "feedback_id": "ER04131",
+   "text": "He is easy going. However, he did not give any outline in class."
+  },
+  {
+   "feedback_id": "ER05616",
+   "text": "Do research and prepare beforehand , otherwise you'll fall behind. If you prepare well, however, it's definitely possible to finish your experiments a week early. The acceptable margin of error is small, though, so you have to be careful( the emphasis is on getting the right value, not just on doing the procedure right as in first-year chemistry labs)."
+  },
+  {
+   "feedback_id": "ER03951",
+   "text": "Fabian is a very straightforward, funny , sarcastic professor. Her teaching style is power points , with long blocks of info and charts at a time. She gives great help when you're confused. Very easy quizzes on the past readings so book is a must. Midtermsfinals are essay format so know the material very well so you can pour your soul into it."
+  },
+  {
+   "feedback_id": "ER05217",
+   "text": "PROS:( 1) Readings itself were simple to understand.( 2) Nicely arranged content on Learn and Mobius( I took it online).( 3) Decent grade , task , and submission period distribution. CONS:( 1) Too many readings for a first-time learner of econ.( 2) One collective zoom office hour( 1 hour long) at the beginning of the week felt very unfair( 3) Found a need for more OHs each week and a MS teams GC.( 4) Felt isolated from the rest of the class.( 5) lack of one-to-one instructional support( unless you email every question).( 6) Had to refer to external resources for quicker understanding because readings were too time consuming.( 7) Weren't taught at all on how to approach an article / case study. TIPS:( 1) Finish all readings in the first two days of the week,( 2) repeat quizzes till you get them correct( you get 4 chances per graded quiz every week, please use these well).( 3) Don’t just read to study, answer a lot of MCQs."
+  },
+  {
+   "feedback_id": "ER06423",
+   "text": "Definately the most interesting course I've ever taken in my life. It really gave me a deep appreciation for how software works. And the assignments! Oh man, those were awesome! Building a Assembler and a Compiler from scratch! Wow! Sidenote, I made a emulator for the MIPS architecture used the course, and added some nice features unavailable on the java based one( i. e: step-by-step debugging). Check it out at http:// prilik. ca/ mips241"
+  },
+  {
+   "feedback_id": "ER04300",
+   "text": "You cannot go wrong with taking him. He is the best. Very nice guy and the class is very doable. TAKE HIM!!"
+  },
+  {
+   "feedback_id": "ER06216",
+   "text": "The textbook was extremely expensive and didn't really feel worth its price. All you really needed were 20 pages on Sonata form for the final, and the electronic portion was useful for finding pieces that were not on YouTube. Overall, the course material was straightforward and easy to follow. The listening pieces were the only area that could be tripped up on, but with detailed notes( Prof. Laura Gray provided her own notes for us) it was very easy to study for them. I would recommend this course, even to those with no knowledge of music!"
+  },
+  {
+   "feedback_id": "ER04000",
+   "text": "Do It. He makes no sense sometimes but helps you so much. If you dont get something BAM! Ill help you with it next class then you can turn it in the week after! And I mean seriously everything. Ive gotten 4 extensions, out of like 6 assignments. If it werent for him being so laid back I probably would have failed my other classes."
+  },
+  {
+   "feedback_id": "ER04387",
+   "text": "No idea why this is a core SYDE course. Did not seem useful to me or most people in the class. Not that hard though."
+  },
+  {
+   "feedback_id": "ER04893",
+   "text": "boring"
+  },
+  {
+   "feedback_id": "ER04873",
+   "text": "really enjoyed the class- good mix of theory and case studies. There was no final exam. Easy participation marks and the tests are fairly easy too! There were a couple assignments- short essays and a creative component as well."
+  }
+ ]
+}

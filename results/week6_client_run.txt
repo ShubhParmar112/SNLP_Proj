@@ -1,0 +1,75 @@
+health: {'status': 'ok', 'model_loaded': True, 'model_version': 'transformer-absa-0.2.2', 'device': 'cuda', 'error': None}
+
+analyze-feedback 200
+{
+  "feedback_id": "F001",
+  "model_version": "transformer-absa-0.2.2",
+  "schema_version": "1.0",
+  "doc_sentiment": {
+    "label": "negative",
+    "score": 0.5728,
+    "score_type": "calibrated_probability"
+  },
+  "aspects": [
+    {
+      "aspect": "teaching",
+      "polarity": "positive",
+      "aspect_score": 0.9128,
+      "aspect_score_type": "calibrated_probability",
+      "polarity_score": 0.5021,
+      "polarity_score_type": "calibrated_probability",
+      "span": {
+        "text": "The lectures were very informative",
+        "start": 0,
+        "end": 34
+      }
+    },
+    {
+      "aspect": "pace",
+      "polarity": "negative",
+      "aspect_score": 0.9559,
+      "aspect_score_type": "calibrated_probability",
+      "polarity_score": 0.9804,
+      "polarity_score_type": "calibrated_probability",
+      "span": {
+        "text": "the pace was too fast",
+        "start": 40,
+        "end": 61
+      }
+    },
+    {
+      "aspect": "assessment",
+      "polarity": "negative",
+      "aspect_score": 0.9941,
+      "aspect_score_type": "calibrated_probability",
+      "polarity_score": 0.9804,
+      "polarity_score_type": "calibrated_probability",
+      "span": {
+        "text": "the assignments were difficult",
+        "start": 66,
+        "end": 96
+      }
+    }
+  ],
+  "warnings": []
+}
+
+analyze-feedback/batch 200
+{
+  "n_analyzed": 6,
+  "top_positive_aspects": [],
+  "top_concerns": [
+    "workload"
+  ],
+  "emerging_concerns": [],
+  "caveats": [
+    "Aggregates over fewer than 20 comments are unstable and should not drive decisions.",
+    "Scores are calibrated on held-out data but remain estimates.",
+    "Advisory only: not a basis for decisions about an individual student or staff member.",
+    "Topic clustering is not part of pipeline v1."
+  ]
+}
+
+empty text -> (400, {'error': {'code': 'EMPTY_TEXT', 'message': 'text is empty after redaction', 'field': 'text'}})
+
+mean round trip over 20 calls: 45 ms

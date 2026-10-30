@@ -1,0 +1,185 @@
+{
+  "model_version": "transformer-absa-0.1.0",
+  "name": "deberta-v3-base_sw0.5_s43",
+  "encoder": "microsoft/deberta-v3-base",
+  "max_length": 256,
+  "aspects": [
+    "teaching",
+    "faculty_interaction",
+    "course_content",
+    "pace",
+    "assessment",
+    "workload",
+    "resources",
+    "other"
+  ],
+  "slot_labels": [
+    "none",
+    "positive",
+    "negative",
+    "neutral",
+    "conflict"
+  ],
+  "doc_labels": [
+    "positive",
+    "neutral",
+    "negative"
+  ],
+  "hyperparameters": {
+    "data": "C:\\Users\\Krish\\SynologyDrive\\Personal Projects\\SNLP Sem 11 Project\\Group5_Student_Feedback_Intelligence (till week 3)\\Group5_Student_Feedback_Intelligence\\data\\raw\\annotations.csv",
+    "encoder": "microsoft/deberta-v3-base",
+    "epochs": 6,
+    "batch": 16,
+    "lr": 3e-05,
+    "head_lr": 0.0005,
+    "warmup": 0.06,
+    "span_weight": 0.5,
+    "max_length": 256,
+    "seed": 43,
+    "freeze_embeddings": 1,
+    "token_budget": 1024,
+    "name": null
+  },
+  "best_epoch": 6,
+  "validation": {
+    "tuple_f1": 0.7091609842869848,
+    "tuple_p": 0.7106357694592988,
+    "tuple_r": 0.7076923076923077,
+    "polarity_acc_on_detected": 0.8328690807799443,
+    "n_detected": 1436,
+    "aspect_micro_f1": 0.851467536317818,
+    "aspect_macro_f1": 0.8075258665784264,
+    "doc_accuracy": 0.85,
+    "doc_macro_f1": 0.8309891734077111
+  },
+  "trained": "2026-09-25T13:48:25",
+  "train_size": 4198,
+  "validation_size": 900,
+  "dataset_version": "v1.0-edurabsa",
+  "test_split_used": false,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": {
+        "slot": 0.6969268829222547,
+        "doc": 0.6168132049358444,
+        "span": 1.3783162353446226
+      },
+      "val": {
+        "tuple_f1": 0.5183391003460208,
+        "tuple_p": 0.6241666666666666,
+        "tuple_r": 0.44319526627218936,
+        "polarity_acc_on_detected": 0.7335945151811949,
+        "n_detected": 1021,
+        "aspect_micro_f1": 0.7065743944636678,
+        "aspect_macro_f1": 0.3857392823859626,
+        "doc_accuracy": 0.8011111111111111,
+        "doc_macro_f1": 0.7683076664542853
+      },
+      "epoch_seconds": 52.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": {
+        "slot": 0.4489526626290075,
+        "doc": 0.3023685682688328,
+        "span": 0.7077701588027142
+      },
+      "val": {
+        "tuple_f1": 0.6498912705809258,
+        "tuple_p": 0.684107259646828,
+        "tuple_r": 0.6189349112426036,
+        "polarity_acc_on_detected": 0.7960426179604262,
+        "n_detected": 1314,
+        "aspect_micro_f1": 0.8164026095060578,
+        "aspect_macro_f1": 0.6461063041768513,
+        "doc_accuracy": 0.8111111111111111,
+        "doc_macro_f1": 0.778816383957886
+      },
+      "epoch_seconds": 52.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": {
+        "slot": 0.3487209568404599,
+        "doc": 0.16825070918001087,
+        "span": 0.48454311120127047
+      },
+      "val": {
+        "tuple_f1": 0.6835048331774244,
+        "tuple_p": 0.7224785761371127,
+        "tuple_r": 0.6485207100591716,
+        "polarity_acc_on_detected": 0.8173005219985086,
+        "n_detected": 1341,
+        "aspect_micro_f1": 0.8362956033676333,
+        "aspect_macro_f1": 0.756161841653219,
+        "doc_accuracy": 0.84,
+        "doc_macro_f1": 0.8190837994767154
+      },
+      "epoch_seconds": 53.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": {
+        "slot": 0.28883478607340957,
+        "doc": 0.07512845424626836,
+        "span": 0.3610138121215316
+      },
+      "val": {
+        "tuple_f1": 0.6949352179034157,
+        "tuple_p": 0.6916764361078547,
+        "tuple_r": 0.6982248520710059,
+        "polarity_acc_on_detected": 0.8200138985406532,
+        "n_detected": 1439,
+        "aspect_micro_f1": 0.8474676089517079,
+        "aspect_macro_f1": 0.7911220096704139,
+        "doc_accuracy": 0.8466666666666667,
+        "doc_macro_f1": 0.8276056802208583
+      },
+      "epoch_seconds": 52.5
+    },
+    {
+      "epoch": 5,
+      "train_loss": {
+        "slot": 0.23960911768753798,
+        "doc": 0.03251819894803281,
+        "span": 0.2673393039791058
+      },
+      "val": {
+        "tuple_f1": 0.699404761904762,
+        "tuple_p": 0.7035928143712575,
+        "tuple_r": 0.6952662721893491,
+        "polarity_acc_on_detected": 0.8234057463209531,
+        "n_detected": 1427,
+        "aspect_micro_f1": 0.8494047619047619,
+        "aspect_macro_f1": 0.7984922855971235,
+        "doc_accuracy": 0.8477777777777777,
+        "doc_macro_f1": 0.8270996811714729
+      },
+      "epoch_seconds": 52.8
+    },
+    {
+      "epoch": 6,
+      "train_loss": {
+        "slot": 0.20072189439088106,
+        "doc": 0.01624016295995144,
+        "span": 0.20968785733711176
+      },
+      "val": {
+        "tuple_f1": 0.7091609842869848,
+        "tuple_p": 0.7106357694592988,
+        "tuple_r": 0.7076923076923077,
+        "polarity_acc_on_detected": 0.8328690807799443,
+        "n_detected": 1436,
+        "aspect_micro_f1": 0.851467536317818,
+        "aspect_macro_f1": 0.8075258665784264,
+        "doc_accuracy": 0.85,
+        "doc_macro_f1": 0.8309891734077111
+      },
+      "epoch_seconds": 53.3
+    }
+  ],
+  "train_minutes": 5.4,
+  "peak_gpu_mb": 3070,
+  "checkpoint_dir": "D:\\snlp-feedback\\checkpoints\\deberta-v3-base_sw0.5_s43"
+}

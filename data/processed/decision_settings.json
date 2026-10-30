@@ -1,0 +1,26 @@
+{
+  "chosen_on": "validation split (900 comments)",
+  "dataset_version": "v1.1-edurabsa",
+  "frozen_at": "2026-10-02T18:47:16",
+  "min_mentions": {
+    "absolute": 3,
+    "share": 0.05
+  },
+  "model_version": "transformer-absa-0.2.1",
+  "span_rule": {
+    "clause_max_words": 8,
+    "rel": 0.5
+  },
+  "span_rule_name": "clause, max 8 words",
+  "thresholds": {
+    "assessment": 0.5,
+    "course_content": 0.5,
+    "faculty_interaction": 0.5,
+    "other": 0.7,
+    "pace": 0.55,
+    "resources": 0.6,
+    "teaching": 0.2,
+    "workload": 0.6
+  },
+  "weights": "D:\\snlp-feedback\\checkpoints\\deberta-v3-base_sw0.5_s42_d1.1"
+}

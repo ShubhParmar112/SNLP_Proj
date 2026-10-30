@@ -1,0 +1,155 @@
+{
+  "n_comments": 5998,
+  "n_aspect_annotations": 11271,
+  "mean_aspects_per_comment": 1.8791263754584862,
+  "comments_no_aspect": 466,
+  "source_type": {
+    "teacher review": 3000,
+    "course review": 2998
+  },
+  "doc_sentiment": {
+    "negative": 1568,
+    "positive": 3013,
+    "neutral": 1417
+  },
+  "aspect_counts": {
+    "teaching": 3184,
+    "faculty_interaction": 1582,
+    "course_content": 2718,
+    "pace": 141,
+    "assessment": 1513,
+    "workload": 522,
+    "resources": 663,
+    "other": 948
+  },
+  "polarity_counts": {
+    "positive": 5880,
+    "negative": 3441,
+    "neutral": 900,
+    "conflict": 1050
+  },
+  "tokens": {
+    "median": 37.0,
+    "mean": 41.137545848616206,
+    "p95": 86.0,
+    "max": 442
+  },
+  "quality": {
+    "missing_or_empty": 0,
+    "exact_duplicates": 15,
+    "near_duplicate_threshold": 0.95,
+    "near_duplicate_groups": 16,
+    "comments_in_near_duplicate_groups": 35,
+    "very_short_lt3_tokens": 134,
+    "very_long_gt100_tokens": 214,
+    "aspect_imbalance_max_over_min": 22.6,
+    "polarity_share": {
+      "positive": 0.522,
+      "negative": 0.305,
+      "neutral": 0.08,
+      "conflict": 0.093
+    },
+    "non_ascii_comments": 28,
+    "uncertain_rows": 0
+  },
+  "split_sizes": {
+    "train": 4198,
+    "validation": 900,
+    "test": 900
+  },
+  "split_balance": [
+    {
+      "label": "teaching",
+      "total": 3184,
+      "train": 2229,
+      "validation": 478,
+      "test": 477
+    },
+    {
+      "label": "faculty_interaction",
+      "total": 1582,
+      "train": 1108,
+      "validation": 237,
+      "test": 237
+    },
+    {
+      "label": "course_content",
+      "total": 2718,
+      "train": 1902,
+      "validation": 408,
+      "test": 408
+    },
+    {
+      "label": "pace",
+      "total": 141,
+      "train": 99,
+      "validation": 21,
+      "test": 21
+    },
+    {
+      "label": "assessment",
+      "total": 1513,
+      "train": 1059,
+      "validation": 227,
+      "test": 227
+    },
+    {
+      "label": "workload",
+      "total": 522,
+      "train": 366,
+      "validation": 78,
+      "test": 78
+    },
+    {
+      "label": "resources",
+      "total": 663,
+      "train": 464,
+      "validation": 99,
+      "test": 100
+    },
+    {
+      "label": "other",
+      "total": 948,
+      "train": 664,
+      "validation": 142,
+      "test": 142
+    }
+  ],
+  "split_polarity": {
+    "train": {
+      "negative": 2393,
+      "positive": 4158,
+      "neutral": 598,
+      "conflict": 742
+    },
+    "validation": {
+      "neutral": 141,
+      "negative": 529,
+      "conflict": 152,
+      "positive": 868
+    },
+    "test": {
+      "negative": 519,
+      "positive": 854,
+      "neutral": 161,
+      "conflict": 156
+    }
+  },
+  "split_doc_sentiment": {
+    "train": {
+      "negative": 1078,
+      "positive": 2116,
+      "neutral": 1004
+    },
+    "validation": {
+      "negative": 235,
+      "positive": 441,
+      "neutral": 224
+    },
+    "test": {
+      "negative": 255,
+      "neutral": 189,
+      "positive": 456
+    }
+  }
+}

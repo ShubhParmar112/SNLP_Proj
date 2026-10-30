@@ -1,0 +1,446 @@
+{
+  "handout_example": {
+    "feedback_id": "HANDOUT-1",
+    "model_version": "transformer-absa-0.1.0",
+    "schema_version": "1.0",
+    "doc_sentiment": {
+      "label": "negative",
+      "score": 0.9912,
+      "score_type": "uncalibrated_probability"
+    },
+    "aspects": [
+      {
+        "aspect": "pace",
+        "polarity": "negative",
+        "aspect_score": 0.9763,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.9883,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "fast",
+          "start": 57,
+          "end": 61
+        }
+      },
+      {
+        "aspect": "assessment",
+        "polarity": "negative",
+        "aspect_score": 0.9983,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.9933,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "assignments",
+          "start": 70,
+          "end": 81
+        }
+      },
+      {
+        "aspect": "other",
+        "polarity": "negative",
+        "aspect_score": 0.9153,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.6847,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "lectures",
+          "start": 4,
+          "end": 12
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "guideline_examples": [
+    {
+      "feedback_id": "G1",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9823,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [
+        {
+          "aspect": "pace",
+          "polarity": "negative",
+          "aspect_score": 0.967,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.9824,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "fast",
+            "start": 51,
+            "end": 55
+          }
+        },
+        {
+          "aspect": "other",
+          "polarity": "negative",
+          "aspect_score": 0.8375,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.4869,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "lectures",
+            "start": 4,
+            "end": 12
+          }
+        }
+      ],
+      "warnings": [
+        "low_confidence"
+      ]
+    },
+    {
+      "feedback_id": "G2",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9998,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [
+        {
+          "aspect": "assessment",
+          "polarity": "conflict",
+          "aspect_score": 0.9968,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.4362,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "Assignments",
+            "start": 0,
+            "end": 11
+          }
+        }
+      ],
+      "warnings": [
+        "low_confidence"
+      ]
+    },
+    {
+      "feedback_id": "G3",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "negative",
+        "score": 0.9533,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G4",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9997,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G5",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "positive",
+        "score": 0.9999,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [
+        {
+          "aspect": "other",
+          "polarity": "positive",
+          "aspect_score": 0.833,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.5471,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "lecture",
+            "start": 19,
+            "end": 26
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G6",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "positive",
+        "score": 1.0,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G7",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9993,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [
+        {
+          "aspect": "faculty_interaction",
+          "polarity": "positive",
+          "aspect_score": 0.9906,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.9497,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "available",
+            "start": 14,
+            "end": 23
+          }
+        },
+        {
+          "aspect": "resources",
+          "polarity": "negative",
+          "aspect_score": 0.5973,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.9092,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "slides",
+            "start": 43,
+            "end": 49
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G8",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9973,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [
+        {
+          "aspect": "course_content",
+          "polarity": "positive",
+          "aspect_score": 0.9931,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.7662,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "content",
+            "start": 4,
+            "end": 11
+          }
+        },
+        {
+          "aspect": "pace",
+          "polarity": "negative",
+          "aspect_score": 0.9772,
+          "aspect_score_type": "uncalibrated_probability",
+          "polarity_score": 0.9784,
+          "polarity_score_type": "uncalibrated_probability",
+          "span": {
+            "text": "quickly",
+            "start": 50,
+            "end": 57
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G9",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "neutral",
+        "score": 0.9995,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [],
+      "warnings": []
+    },
+    {
+      "feedback_id": "G10",
+      "model_version": "transformer-absa-0.1.0",
+      "schema_version": "1.0",
+      "doc_sentiment": {
+        "label": "negative",
+        "score": 1.0,
+        "score_type": "uncalibrated_probability"
+      },
+      "aspects": [],
+      "warnings": []
+    }
+  ],
+  "batch_report_validation_sample": {
+    "course_id": "VALIDATION-SAMPLE-120",
+    "model_version": "transformer-absa-0.1.0",
+    "n_analyzed": 120,
+    "n_failed": 0,
+    "failures": [],
+    "sentiment_distribution": {
+      "positive": 53,
+      "neutral": 36,
+      "negative": 31
+    },
+    "aspect_summary": [
+      {
+        "aspect": "teaching",
+        "mentions": 56,
+        "polarity_distribution": {
+          "positive": 38,
+          "negative": 14,
+          "neutral": 0,
+          "conflict": 4
+        },
+        "net_sentiment": 0.429,
+        "representative_examples": [
+          "she is a great teacher",
+          "Awesome teacher",
+          "Although it's a long course once a week, Buffy really makes it interesting and fun."
+        ]
+      },
+      {
+        "aspect": "faculty_interaction",
+        "mentions": 30,
+        "polarity_distribution": {
+          "positive": 21,
+          "negative": 9,
+          "neutral": 0,
+          "conflict": 0
+        },
+        "net_sentiment": 0.4,
+        "representative_examples": [
+          "Grading is fair and professor was nice.",
+          "He was very helpful and flexible with doing the assignments.",
+          "Marta is also very willing to give you the answers to lab reports during his office hours if you show that you have tried to work them out for yourself first."
+        ]
+      },
+      {
+        "aspect": "assessment",
+        "mentions": 29,
+        "polarity_distribution": {
+          "positive": 10,
+          "negative": 14,
+          "neutral": 0,
+          "conflict": 5
+        },
+        "net_sentiment": -0.138,
+        "representative_examples": [
+          "His tests were very difficult.",
+          "A lot of talking about goals, things that you need to improve on, useless assignment.",
+          "Her test were pretty difficult."
+        ]
+      },
+      {
+        "aspect": "course_content",
+        "mentions": 23,
+        "polarity_distribution": {
+          "positive": 16,
+          "negative": 3,
+          "neutral": 2,
+          "conflict": 2
+        },
+        "net_sentiment": 0.565,
+        "representative_examples": [
+          "Easy and worthwhile course",
+          "Easy 90 + lab.",
+          "Super engaging and easy to learn"
+        ]
+      },
+      {
+        "aspect": "resources",
+        "mentions": 18,
+        "polarity_distribution": {
+          "positive": 7,
+          "negative": 10,
+          "neutral": 1,
+          "conflict": 0
+        },
+        "net_sentiment": -0.167,
+        "representative_examples": [
+          "Labs were a mess, manual was awful.",
+          "After five co-op terms, I can safely say that I've never seen the course material being used in industry.",
+          "The notes she writes on the board can be disorganized."
+        ]
+      },
+      {
+        "aspect": "other",
+        "mentions": 16,
+        "polarity_distribution": {
+          "positive": 9,
+          "negative": 6,
+          "neutral": 1,
+          "conflict": 0
+        },
+        "net_sentiment": 0.188,
+        "representative_examples": [
+          "Photo shoots are great because all the students have a part in it if they so choose!",
+          "Such an easy lab and fun lab.",
+          "I did the online one and all the online modules were fun for me atleast"
+        ]
+      },
+      {
+        "aspect": "workload",
+        "mentions": 5,
+        "polarity_distribution": {
+          "positive": 3,
+          "negative": 2,
+          "neutral": 0,
+          "conflict": 0
+        },
+        "net_sentiment": 0.2,
+        "representative_examples": [
+          "There is homework, but it is online and doesn't take long.",
+          "Must take his class easy and not too much quiz.",
+          "The workload was perfect for a college course- not too little , not too much."
+        ]
+      },
+      {
+        "aspect": "pace",
+        "mentions": 2,
+        "polarity_distribution": {
+          "positive": 0,
+          "negative": 2,
+          "neutral": 0,
+          "conflict": 0
+        },
+        "net_sentiment": -1.0,
+        "representative_examples": [
+          "You get less than a minute per question and it is very rushed.",
+          "She also seemed to go over some problems quickly or skip a few steps."
+        ]
+      }
+    ],
+    "top_positive_aspects": [
+      "teaching",
+      "faculty_interaction",
+      "course_content"
+    ],
+    "top_concerns": [
+      "assessment",
+      "resources",
+      "pace"
+    ],
+    "topics": [],
+    "caveats": [
+      "Scores are uncalibrated; do not read them as probabilities.",
+      "Advisory only: not a basis for decisions about an individual student or staff member.",
+      "Topic clustering is not part of pipeline v1."
+    ]
+  }
+}

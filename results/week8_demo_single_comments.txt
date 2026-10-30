@@ -1,0 +1,16 @@
+INPUT: The lectures were very informative, but the pace was too fast and the assignments were difficult.
+  doc_sentiment: negative 0.5728
+  teaching positive  aspect 0.9128  polarity 0.5021  "The lectures were very informative"
+  pace negative  aspect 0.9559  polarity 0.9804  "the pace was too fast"
+  assessment negative  aspect 0.9941  polarity 0.9804  "the assignments were difficult"
+  warnings: 
+
+INPUT: Oh great, another surprise quiz on Monday.
+  doc_sentiment: negative 0.4
+  aspects: (none)
+  warnings: 
+
+INPUT: Sir ka padhane ka tareeka bahut accha hai.
+  doc_sentiment: positive 0.8977
+  aspects: (none)
+  warnings: 

@@ -1,0 +1,380 @@
+{
+  "split": "test",
+  "n": 900,
+  "model_version": "transformer-absa-0.2.2",
+  "overall": {
+    "tuple_f1": 0.7036272485992332,
+    "precision": 0.6992966002344666,
+    "recall": 0.7080118694362018,
+    "ci": {
+      "point": 0.7036272485992332,
+      "ci_low": 0.6833458062451416,
+      "ci_high": 0.7233020715216459
+    },
+    "polarity_acc_on_detected": 0.8221915920055134,
+    "aspect_micro_f1": 0.8557947508109702,
+    "exact_comment_match": 0.45111111111111113
+  },
+  "categories": {
+    "teaching": {
+      "precision": 0.7771428571428571,
+      "recall": 0.8292682926829268,
+      "f1": 0.8023598820058998,
+      "support": 492,
+      "low_support": false,
+      "f1_ci": [
+        0.7704872815166811,
+        0.8330257662106221
+      ]
+    },
+    "faculty_interaction": {
+      "precision": 0.7445255474452555,
+      "recall": 0.8607594936708861,
+      "f1": 0.7984344422700587,
+      "support": 237,
+      "low_support": false,
+      "f1_ci": [
+        0.755267178203037,
+        0.8368208867722999
+      ]
+    },
+    "course_content": {
+      "precision": 0.6480582524271845,
+      "recall": 0.6544117647058824,
+      "f1": 0.651219512195122,
+      "support": 408,
+      "low_support": false,
+      "f1_ci": [
+        0.6083660296556676,
+        0.6951412995007301
+      ]
+    },
+    "pace": {
+      "precision": 0.75,
+      "recall": 0.5714285714285714,
+      "f1": 0.6486486486486486,
+      "support": 21,
+      "low_support": false,
+      "f1_ci": [
+        0.42846320346320343,
+        0.8182400932400933
+      ]
+    },
+    "assessment": {
+      "precision": 0.6866359447004609,
+      "recall": 0.6563876651982379,
+      "f1": 0.6711711711711712,
+      "support": 227,
+      "low_support": false,
+      "f1_ci": [
+        0.6092541492206024,
+        0.7264977185115253
+      ]
+    },
+    "workload": {
+      "precision": 0.6527777777777778,
+      "recall": 0.6025641025641025,
+      "f1": 0.6266666666666667,
+      "support": 78,
+      "low_support": false,
+      "f1_ci": [
+        0.5301153331273813,
+        0.7169876382563435
+      ]
+    },
+    "resources": {
+      "precision": 0.4948453608247423,
+      "recall": 0.48,
+      "f1": 0.4873096446700507,
+      "support": 100,
+      "low_support": false,
+      "f1_ci": [
+        0.3978494623655914,
+        0.5761033872598584
+      ]
+    },
+    "other": {
+      "precision": 0.6236559139784946,
+      "recall": 0.47540983606557374,
+      "f1": 0.5395348837209303,
+      "support": 122,
+      "low_support": false,
+      "f1_ci": [
+        0.45132629906966193,
+        0.6203703703703703
+      ]
+    }
+  },
+  "error_profile": {
+    "teaching": {
+      "spurious": 51,
+      "wrong_polarity": 66,
+      "correct": 408,
+      "missed": 18
+    },
+    "faculty_interaction": {
+      "correct": 204,
+      "spurious": 56,
+      "missed": 19,
+      "wrong_polarity": 14
+    },
+    "course_content": {
+      "correct": 267,
+      "spurious": 48,
+      "missed": 44,
+      "wrong_polarity": 97
+    },
+    "pace": {
+      "correct": 12,
+      "wrong_polarity": 2,
+      "missed": 7,
+      "spurious": 2
+    },
+    "assessment": {
+      "correct": 149,
+      "wrong_polarity": 37,
+      "missed": 41,
+      "spurious": 31
+    },
+    "workload": {
+      "spurious": 20,
+      "missed": 26,
+      "correct": 47,
+      "wrong_polarity": 5
+    },
+    "resources": {
+      "correct": 48,
+      "spurious": 30,
+      "missed": 33,
+      "wrong_polarity": 19
+    },
+    "other": {
+      "spurious": 17,
+      "missed": 46,
+      "correct": 58,
+      "wrong_polarity": 18
+    }
+  },
+  "polarity_confusion": {
+    "positive": {
+      "positive": 721,
+      "negative": 6,
+      "neutral": 7,
+      "conflict": 19
+    },
+    "negative": {
+      "positive": 10,
+      "negative": 385,
+      "neutral": 14,
+      "conflict": 25
+    },
+    "neutral": {
+      "positive": 48,
+      "negative": 28,
+      "neutral": 31,
+      "conflict": 9
+    },
+    "conflict": {
+      "positive": 56,
+      "negative": 34,
+      "neutral": 2,
+      "conflict": 56
+    }
+  },
+  "doc_sentiment": {
+    "accuracy": 0.8588888888888889,
+    "macro_f1": 0.8312528810528316,
+    "per_class": {
+      "positive": {
+        "precision": 0.9164835164835164,
+        "recall": 0.9144736842105263,
+        "f1": 0.9154774972557629,
+        "support": 456
+      },
+      "neutral": {
+        "precision": 0.6553398058252428,
+        "recall": 0.7142857142857143,
+        "f1": 0.6835443037974683,
+        "support": 189
+      },
+      "negative": {
+        "precision": 0.9246861924686193,
+        "recall": 0.8666666666666667,
+        "f1": 0.8947368421052632,
+        "support": 255
+      }
+    }
+  },
+  "doc_confusion": {
+    "positive": {
+      "positive": 417,
+      "neutral": 38,
+      "negative": 1
+    },
+    "neutral": {
+      "positive": 37,
+      "neutral": 135,
+      "negative": 17
+    },
+    "negative": {
+      "positive": 1,
+      "neutral": 33,
+      "negative": 221
+    }
+  },
+  "slices": {
+    "length_words": {
+      "1-10": {
+        "n": 109,
+        "tuple_f1": 0.7169811320754716,
+        "exact_comment_match": 0.6788990825688074
+      },
+      "11-40": {
+        "n": 369,
+        "tuple_f1": 0.7280334728033472,
+        "exact_comment_match": 0.5067750677506775
+      },
+      "41-80": {
+        "n": 360,
+        "tuple_f1": 0.7068126520681266,
+        "exact_comment_match": 0.38055555555555554
+      },
+      "81+": {
+        "n": 62,
+        "tuple_f1": 0.6106870229007633,
+        "exact_comment_match": 0.12903225806451613
+      }
+    },
+    "review_type": {
+      "course review": {
+        "n": 442,
+        "tuple_f1": 0.634983498349835,
+        "exact_comment_match": 0.4230769230769231
+      },
+      "teacher review": {
+        "n": 458,
+        "tuple_f1": 0.7590618336886994,
+        "exact_comment_match": 0.4781659388646288
+      }
+    },
+    "gold_aspects": {
+      "0": {
+        "n": 67,
+        "tuple_f1": 0.0,
+        "exact_comment_match": 0.7313432835820896
+      },
+      "1": {
+        "n": 282,
+        "tuple_f1": 0.6688102893890675,
+        "exact_comment_match": 0.5709219858156028
+      },
+      "2": {
+        "n": 340,
+        "tuple_f1": 0.7498154981549815,
+        "exact_comment_match": 0.4588235294117647
+      },
+      "3": {
+        "n": 211,
+        "tuple_f1": 0.6833810888252149,
+        "exact_comment_match": 0.1895734597156398
+      }
+    },
+    "has_negation": {
+      "False": {
+        "n": 474,
+        "tuple_f1": 0.7387862796833773,
+        "exact_comment_match": 0.5210970464135021
+      },
+      "True": {
+        "n": 426,
+        "tuple_f1": 0.6752,
+        "exact_comment_match": 0.3732394366197183
+      }
+    },
+    "has_contrast_word": {
+      "False": {
+        "n": 515,
+        "tuple_f1": 0.7599009900990099,
+        "exact_comment_match": 0.5533980582524272
+      },
+      "True": {
+        "n": 385,
+        "tuple_f1": 0.652394366197183,
+        "exact_comment_match": 0.3142857142857143
+      }
+    }
+  },
+  "robustness": {
+    "original": {
+      "tuple_f1": 0.7036272485992332,
+      "unchanged_share": 1.0
+    },
+    "typos (10% of longer words)": {
+      "tuple_f1": 0.6781780291753498,
+      "ci": {
+        "point": 0.6781780291753498,
+        "ci_low": 0.6583540498510102,
+        "ci_high": 0.6978157169278927
+      },
+      "unchanged_share": 0.7755555555555556,
+      "example": "\u840c\u840c\u54d2\uff5e"
+    },
+    "all lowercase": {
+      "tuple_f1": 0.6995277449822904,
+      "ci": {
+        "point": 0.6995277449822904,
+        "ci_low": 0.676974464017035,
+        "ci_high": 0.7202565911172526
+      },
+      "unchanged_share": 0.8955555555555555,
+      "example": "\u840c\u840c\u54d2\uff5e"
+    },
+    "no punctuation": {
+      "tuple_f1": 0.6917293233082706,
+      "ci": {
+        "point": 0.6917293233082706,
+        "ci_low": 0.6696856500176422,
+        "ci_high": 0.7132245193740624
+      },
+      "unchanged_share": 0.7766666666666666,
+      "example": "\u840c\u840c\u54d2\uff5e"
+    }
+  },
+  "probes": {
+    "by_type": {
+      "negation": {
+        "n": 6,
+        "passed": 4,
+        "tuple_f1": 0.8571428571428571
+      },
+      "contrast": {
+        "n": 6,
+        "passed": 5,
+        "tuple_f1": 0.962962962962963
+      },
+      "implicit": {
+        "n": 5,
+        "passed": 2,
+        "tuple_f1": 0.6666666666666665
+      },
+      "sarcasm": {
+        "n": 4,
+        "passed": 0,
+        "tuple_f1": 0.25
+      },
+      "short form": {
+        "n": 6,
+        "passed": 6,
+        "tuple_f1": 1.0
+      },
+      "hinglish": {
+        "n": 5,
+        "passed": 0,
+        "tuple_f1": 0.5
+      }
+    },
+    "total_passed": 17,
+    "total": 32
+  },
+  "n_error_comments": 494
+}

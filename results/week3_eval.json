@@ -1,0 +1,1212 @@
+{
+  "split": "validation",
+  "n": 900,
+  "model_dir": "D:\\snlp-feedback\\checkpoints\\deberta-v3-base_sw0.5_s42",
+  "latency_ms": {
+    "single_call_mean": 23.3,
+    "batched_per_comment": 2.7,
+    "device": "cuda"
+  },
+  "task_c": [
+    {
+      "model": "Majority class",
+      "micro_f1": 0.2254826254826255,
+      "precision": 0.3244444444444444,
+      "recall": 0.1727810650887574,
+      "ci": {
+        "point": 0.2254826254826255,
+        "ci_low": 0.20583834538250204,
+        "ci_high": 0.24522572651576727
+      },
+      "polarity_acc_on_detected": 0.6108786610878661,
+      "n_detected": 478,
+      "aspect_micro_f1": 0.3691119691119691,
+      "per_category": {
+        "teaching": {
+          "precision": 0.3244444444444444,
+          "recall": 0.6108786610878661,
+          "f1": 0.42380261248185774,
+          "support": 478,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 99,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "TF-IDF LogReg baseline (Week 1-2)",
+      "micro_f1": 0.4757834757834758,
+      "precision": 0.45879120879120877,
+      "recall": 0.4940828402366864,
+      "ci": {
+        "point": 0.4757834757834758,
+        "ci_low": 0.45265551628114287,
+        "ci_high": 0.5007034036755148
+      },
+      "polarity_acc_on_detected": 0.6383792048929664,
+      "n_detected": 1308,
+      "aspect_micro_f1": 0.7452991452991453,
+      "per_category": {
+        "teaching": {
+          "precision": 0.7037861915367484,
+          "recall": 0.6610878661087866,
+          "f1": 0.6817691477885652,
+          "support": 478,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.6589147286821705,
+          "recall": 0.7172995780590717,
+          "f1": 0.6868686868686869,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.36683417085427134,
+          "recall": 0.35784313725490197,
+          "f1": 0.36228287841191065,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.7142857142857143,
+          "recall": 0.47619047619047616,
+          "f1": 0.5714285714285714,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.2837370242214533,
+          "recall": 0.36123348017621143,
+          "f1": 0.3178294573643411,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.3076923076923077,
+          "recall": 0.41025641025641024,
+          "f1": 0.3516483516483517,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.24427480916030533,
+          "recall": 0.32323232323232326,
+          "f1": 0.2782608695652174,
+          "support": 99,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.2655367231638418,
+          "recall": 0.33098591549295775,
+          "f1": 0.2946708463949843,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "Transformer ABSA v1 (Week 3)",
+      "micro_f1": 0.7121980316134804,
+      "precision": 0.7179795550210463,
+      "recall": 0.7065088757396449,
+      "ci": {
+        "point": 0.7121980316134804,
+        "ci_low": 0.692142112973199,
+        "ci_high": 0.7333965529899376
+      },
+      "polarity_acc_on_detected": 0.8378947368421052,
+      "n_detected": 1425,
+      "aspect_micro_f1": 0.8499850879809127,
+      "per_category": {
+        "teaching": {
+          "precision": 0.8471337579617835,
+          "recall": 0.8347280334728033,
+          "f1": 0.8408851422550052,
+          "support": 478,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.7992424242424242,
+          "recall": 0.890295358649789,
+          "f1": 0.8423153692614769,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6323529411764706,
+          "f1": 0.6490566037735849,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.6428571428571429,
+          "recall": 0.42857142857142855,
+          "f1": 0.5142857142857143,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.6633165829145728,
+          "recall": 0.5814977973568282,
+          "f1": 0.619718309859155,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.7564102564102564,
+          "recall": 0.7564102564102564,
+          "f1": 0.7564102564102565,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.45454545454545453,
+          "recall": 0.5050505050505051,
+          "f1": 0.4784688995215311,
+          "support": 99,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.5428571428571428,
+          "recall": 0.5352112676056338,
+          "f1": 0.5390070921985815,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    }
+  ],
+  "paired_diff_transformer_minus_baseline": {
+    "diff": 0.2364145558300046,
+    "ci_low": 0.2124244120167987,
+    "ci_high": 0.26125565395329453,
+    "p_b_not_better": 0.0
+  },
+  "task_a": {
+    "majority": {
+      "accuracy": 0.49,
+      "macro_f1": 0.21923937360178972,
+      "per_class": {
+        "positive": {
+          "precision": 0.49,
+          "recall": 1.0,
+          "f1": 0.6577181208053692,
+          "support": 441
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 224
+        },
+        "negative": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 235
+        }
+      }
+    },
+    "baseline": {
+      "accuracy": 0.7366666666666667,
+      "macro_f1": 0.710177766917675,
+      "per_class": {
+        "positive": {
+          "precision": 0.8470588235294118,
+          "recall": 0.8163265306122449,
+          "f1": 0.8314087759815243,
+          "support": 441
+        },
+        "neutral": {
+          "precision": 0.5622489959839357,
+          "recall": 0.625,
+          "f1": 0.5919661733615222,
+          "support": 224
+        },
+        "negative": {
+          "precision": 0.7212389380530974,
+          "recall": 0.6936170212765957,
+          "f1": 0.7071583514099783,
+          "support": 235
+        }
+      }
+    },
+    "transformer": {
+      "accuracy": 0.85,
+      "macro_f1": 0.8306277252671475,
+      "per_class": {
+        "positive": {
+          "precision": 0.9121621621621622,
+          "recall": 0.9183673469387755,
+          "f1": 0.9152542372881356,
+          "support": 441
+        },
+        "neutral": {
+          "precision": 0.691358024691358,
+          "recall": 0.75,
+          "f1": 0.7194860813704497,
+          "support": 224
+        },
+        "negative": {
+          "precision": 0.9014084507042254,
+          "recall": 0.8170212765957446,
+          "f1": 0.8571428571428571,
+          "support": 235
+        }
+      }
+    }
+  },
+  "spans": {
+    "n_compared": 1425,
+    "share_jaccard_ge_0.5": 0.1375438596491228,
+    "share_any_overlap": 0.7663157894736842,
+    "mean_jaccard": 0.19257734658998604
+  },
+  "week2_error_recheck": {
+    "by_category": {
+      "Rare category": {
+        "n": 1,
+        "fixed": 1,
+        "improved": 1,
+        "worse": 0
+      },
+      "Implicit aspect": {
+        "n": 7,
+        "fixed": 3,
+        "improved": 4,
+        "worse": 2
+      },
+      "Polarity on correct aspect": {
+        "n": 6,
+        "fixed": 2,
+        "improved": 5,
+        "worse": 0
+      },
+      "Conflict / mixed": {
+        "n": 11,
+        "fixed": 1,
+        "improved": 10,
+        "worse": 1
+      },
+      "Boundary confusion": {
+        "n": 7,
+        "fixed": 3,
+        "improved": 2,
+        "worse": 1
+      },
+      "Multi-aspect": {
+        "n": 5,
+        "fixed": 2,
+        "improved": 5,
+        "worse": 0
+      },
+      "Annotation error": {
+        "n": 2,
+        "fixed": 0,
+        "improved": 0,
+        "worse": 0
+      },
+      "Negation": {
+        "n": 1,
+        "fixed": 0,
+        "improved": 0,
+        "worse": 0
+      }
+    },
+    "items": [
+      {
+        "sample_rank": 1,
+        "category": "Rare category",
+        "text": "professor crowe is 2 funny !!!!! 1 ! and he will call you out so fast! but he's really good at explaning stuf and i think he really cares about his students. i know he's always available to talk or explain something to him. will make you laugh and you will learn.",
+        "gold": [
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "faculty_interaction:positive",
+          "pace:neutral",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 2,
+        "category": "Implicit aspect",
+        "text": "This is the bird course of all bird courses. I took this course online fall 2021. There are only 5 or so assignments in the entire course. I did most of them in around 5 hours each, over one or two days. I got an 80. Sometimes I forgot I even was taking it. The content is somewhat Interesting, but there is very little actual information. In my opinion, the entirety of the course could be learned in a weekend, unless you have literally never thought about geography concepts before. A good course to take to get used to the uni workflow in your first semester.",
+        "gold": [
+          "course_content:conflict",
+          "workload:positive"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict"
+        ],
+        "transformer": [
+          "course_content:conflict"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.4,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 3,
+        "category": "Implicit aspect",
+        "text": "Prof. Lampert is REALLY passionate about jazz history and is upset that many students don't take the class seriously. He will comment on that every so often. Gives few exams but gives a review sheet right before them so you know exactly what's on it. Listening quizzes to identify instruments also. Very easy class and so relaxed. Take for sure",
+        "gold": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:neutral",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:positive",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.5714285714285715,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 4,
+        "category": "Polarity on correct aspect",
+        "text": "Lectures are boring, reads straight from PowerPoint. 3 tests, drops lowest grade. Mc and short answers. The questions are more in depth than what's on the pp so should study from textbook. 1 group presentation and paper. She makes me want to fall asleep",
+        "gold": [
+          "assessment:neutral",
+          "teaching:negative"
+        ],
+        "baseline": [
+          "assessment:negative",
+          "resources:negative",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "other:negative",
+          "resources:neutral",
+          "teaching:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.4
+      },
+      {
+        "sample_rank": 5,
+        "category": "Polarity on correct aspect",
+        "text": "She is a great professor, but attendance does major damage to your grade even if you pass all of your exams. You have to be there on time and read the textbook in order to pass.",
+        "gold": [
+          "assessment:negative",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:neutral",
+          "resources:neutral",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "other:negative",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.4,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 6,
+        "category": "Conflict / mixed",
+        "text": "The prerequisites are the * bare minimum * you need to take this course. The material regularly involves upper-year optimization / statistics content which is only covered in 1 or 2 review lectures at the beginning. With Yaoliang, the material was very theoretical and mathematical, and I only understood 50 % of the content--- enough to have an intuitive understanding of the concepts, but not enough to really understand all of the proofs presented in the lectures. Fortunately, this was enough to get a grade of 90+. For the students who want to go further and gain a deeper understanding, the professor was very helpful in answering questions and providing pointers/ resources on Piazza.",
+        "gold": [
+          "course_content:negative",
+          "faculty_interaction:positive"
+        ],
+        "baseline": [
+          "course_content:conflict",
+          "faculty_interaction:positive",
+          "other:conflict",
+          "resources:conflict"
+        ],
+        "transformer": [
+          "course_content:neutral",
+          "faculty_interaction:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.3333333333333333,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 7,
+        "category": "Boundary confusion",
+        "text": "She's very nice!! Very clear on everything. Pretty Easy class. Just do the work she assigns and you'll get a good grade. Her test reviews are VERY Helpful. Know that and you'll ace the tests, SOMETIMES she'll let you use the review and notes during the test too. I recommend ms mayer, shes really cool :)",
+        "gold": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "other:positive",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "other:positive",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.888888888888889,
+        "tuple_f1_transformer": 0.6666666666666665
+      },
+      {
+        "sample_rank": 8,
+        "category": "Conflict / mixed",
+        "text": "EASY A! Read his handouts. ALL the test questions are ONLY from his handouts! His lectures are very boring. But he is a very easy going professor; not a tough grader. Only two exams( Midterm& final) and papers. Take him if you want an easy A",
+        "gold": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict",
+          "teaching:conflict"
+        ],
+        "transformer": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "other:negative",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.28571428571428575,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 9,
+        "category": "Polarity on correct aspect",
+        "text": "I thought this course was good, but many of the topics seem like things I've already gone through in my undergrad career. It's probably because I took it in 4B, though, so I already had some work terms and courses that covered some of the things this course touched upon.",
+        "gold": [
+          "course_content:negative"
+        ],
+        "baseline": [
+          "course_content:neutral",
+          "workload:negative"
+        ],
+        "transformer": [
+          "course_content:negative"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 10,
+        "category": "Boundary confusion",
+        "text": "This course will be useful only if you are gonna enter Storage Industry( e. g. data center, initiator, expander, target etc.) Teaches you parallel serial interface and protocol and other random stuff. The course content becomes messy when entering DAC and ADC. These are just for matching with content in 318. IMO this course should be moved to a hard core 4th year TE instead of a mandatory 2nd/ 3rd year course. 327 is way more useful than this. Labs are useless and painful to debug( hardware issue, project creating issue, random issues.. not your logic/ code problem!) which eventually makes the lab room a vortex of retardness.",
+        "gold": [
+          "course_content:negative",
+          "other:negative"
+        ],
+        "baseline": [
+          "course_content:negative",
+          "other:negative",
+          "resources:negative"
+        ],
+        "transformer": [
+          "course_content:negative",
+          "other:negative"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 11,
+        "category": "Implicit aspect",
+        "text": "Hands down; the greatest professor Ive ever had! Speeches are so easy! Show up; participate and youll pass! Great sense of humor, very enthusiastic!",
+        "gold": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "other:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 0.7499999999999999
+      },
+      {
+        "sample_rank": 12,
+        "category": "Conflict / mixed",
+        "text": "Okay guys be warned this class is tricky , but also really cool. You'll pretty much learn how to take a group of images of a 3D object( top view, side view, etc), and extrapolate that into the 3D object itself, as well as draw alternate views, all using very specific methods. I'm a very visual thinker, and having done lots of 3D modelling using Google Sketchup( free to download) beforehand, I dealt with this course much easier than many of my classmates. For those who aren't visual thinkers, you will have to bend your mind in strange ways to comprehend the sorcery that is occuring in front of you. Also in this course you learn how to use- a very old and annoying version of - AutoCAD( A 2D and 3D modelling software). If you want to do some pre-study( I recommend it, at least to see what you're getting into) the main thing to take a look at is called\" Orthographic diagrams\". There are some really cool principles you'll learn about how to draw these, but if you don't get a SOLID understanding of them , it will go from cool to absolute torture and you will probably die.",
+        "gold": [
+          "course_content:conflict",
+          "resources:conflict"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "resources:conflict"
+        ],
+        "transformer": [
+          "course_content:conflict"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 13,
+        "category": "Polarity on correct aspect",
+        "text": "Danby is so nice and helpful. I signed up for his class over summer which was scheduled to be a 4 hour long class, but he made it enjoyable. He wants his students to succeed. He is helpful and makes sure you really understand the material. Pretty easy A ! DONT BUY THE BOOK! Also attendance is a grade so show up!",
+        "gold": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:neutral",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:neutral",
+          "teaching:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.75,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 14,
+        "category": "Conflict / mixed",
+        "text": "Course concepts covered were comparatively easier than ME 322. However, the bulk of the final grade for ME 423 is based off one long final project. The project requires submission of three reports, and one final report. All reports are long and tedious. There were two exams: midterm and final. The midterm was reasonable, but the final was relatively more difficult. Only choose this course if you want to enter the already over-saturated Product Design job market that requires knowledge of CAD and mechanical design.",
+        "gold": [
+          "assessment:conflict",
+          "course_content:positive"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "course_content:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.4,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 15,
+        "category": "Implicit aspect",
+        "text": "friggin GENIUS! too bad the automotive dean is such a B *** H cause we lost a great one with him!",
+        "gold": [
+          "teaching:positive"
+        ],
+        "baseline": [],
+        "transformer": [
+          "teaching:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 16,
+        "category": "Multi-aspect",
+        "text": "Arrogant , inconsiderate , and unreasonable. For a professor teaching argumentation, Zunic employs textbook fallacies against his own students. Assignment expectations are vague and understated, marks aggressively like he has a personal vendetta with his students, and will not , under any circumstance , yield to alternative justified reasoning. Everything besides his opinions is wrong and irrelevant in his eyes. For any student taking this course outside of their major as an elective, your intelligence will be shamed and disregarded in favor of the subjective flavor of\" common sense\" the professor employs. A near unwavering offline class consensus was reached on the disapproval of this professor. However, the course itself is somewhat useful in all real-life forms of communication, so I recommend it but stay away from this prof.",
+        "gold": [
+          "assessment:negative",
+          "faculty_interaction:negative",
+          "teaching:negative"
+        ],
+        "baseline": [
+          "faculty_interaction:negative",
+          "teaching:negative"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "faculty_interaction:negative",
+          "teaching:negative"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 17,
+        "category": "Polarity on correct aspect",
+        "text": "Guerrero is a great spanish professor! You must attend class or she will begin to mark grade down but her class is fun so this shouldn't be too hard. Lots of homework but it's easy points do it all! Some assignments only take 5-10 minutes. She is a very sweet and professional and you can tell she cares. I was not a fluent speaker and I got an A!",
+        "gold": [
+          "assessment:positive",
+          "faculty_interaction:positive",
+          "other:positive",
+          "teaching:positive",
+          "workload:negative"
+        ],
+        "baseline": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "other:positive",
+          "teaching:positive",
+          "workload:positive"
+        ],
+        "transformer": [
+          "assessment:positive",
+          "faculty_interaction:positive",
+          "other:neutral",
+          "teaching:positive",
+          "workload:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.7272727272727272,
+        "tuple_f1_transformer": 0.8000000000000002
+      },
+      {
+        "sample_rank": 18,
+        "category": "Conflict / mixed",
+        "text": "Although his tax class is tough, he doesn't purposely do it to spite the students. Tax is hard. If you need help, he gives it to you. If you have a question, he'll answer it. If you stay up on his homework assignments and reading, it makes more sense. The class itself is difficult, but he is a great professor and very helpful.",
+        "gold": [
+          "course_content:negative",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "faculty_interaction:conflict",
+          "teaching:conflict",
+          "workload:negative"
+        ],
+        "transformer": [
+          "course_content:negative",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 19,
+        "category": "Annotation error",
+        "text": "Notes are from the book. She doesn't collect hw but quiz/ test problems are related to them. If you go to her office hours she answers all your questions.",
+        "gold": [
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:neutral",
+          "faculty_interaction:positive",
+          "resources:neutral"
+        ],
+        "transformer": [
+          "faculty_interaction:positive",
+          "resources:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 20,
+        "category": "Annotation error",
+        "text": "He is a very nice guy and funny. Makes class enjoyable. However, he is disorganized and is not good at making sure everyone understands the material.",
+        "gold": [
+          "teaching:conflict"
+        ],
+        "baseline": [
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "transformer": [
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.6666666666666666,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 21,
+        "category": "Conflict / mixed",
+        "text": "Day 1 of this course it seemed like it was going to be extremely overwhelming and a lot of work. Stick through it though, it's a lot easier than it seems. She's an extremely nice professor. A lot of reading, but nothing difficult. The mid-term and final have I. D. questions where you have to remember a lot of specifics but if you study you're fine.",
+        "gold": [
+          "assessment:positive",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:positive",
+          "workload:negative"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "faculty_interaction:conflict",
+          "other:negative",
+          "teaching:conflict",
+          "workload:negative"
+        ],
+        "transformer": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "workload:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.1818181818181818,
+        "tuple_f1_transformer": 0.7499999999999999
+      },
+      {
+        "sample_rank": 22,
+        "category": "Implicit aspect",
+        "text": "Black this, Black that, and Black the other thing. That's all the guy can talk about all the time.",
+        "gold": [
+          "teaching:negative"
+        ],
+        "baseline": [],
+        "transformer": [
+          "teaching:negative"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 23,
+        "category": "Implicit aspect",
+        "text": "Interesting and fun course that doesn't weigh too heavily on your schedule. Great for any language credit requirement!",
+        "gold": [
+          "workload:positive"
+        ],
+        "baseline": [],
+        "transformer": [
+          "workload:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 1.0
+      },
+      {
+        "sample_rank": 24,
+        "category": "Conflict / mixed",
+        "text": "Very easy teacher. Most of everyone got an A in the class. She will not teach you everything that you need to know for future classes with other teachers. The only topics she covers are racism and feminism. She was cool, but there are better English teachers.",
+        "gold": [
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "baseline": [
+          "course_content:conflict",
+          "teaching:conflict"
+        ],
+        "transformer": [
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.4,
+        "tuple_f1_transformer": 0.8
+      },
+      {
+        "sample_rank": 25,
+        "category": "Polarity on correct aspect",
+        "text": "It could've been a lot harder than it was, since we were assessed on the simple ideas while being presented with much harder concepts. Full-on abuse of mathematics, if you took AMATH 231 instead of MATH 227, it'll take some adapting to it. Also, some understanding of DEs( like AMATH 250) is necessary for this course.",
+        "gold": [
+          "course_content:neutral"
+        ],
+        "baseline": [
+          "course_content:negative"
+        ],
+        "transformer": [
+          "course_content:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 26,
+        "category": "Negation",
+        "text": "Not to strict on the grading, as long as you get the idea of what is being said and can translate it then she will give you most of the points. A little bit of extra credit here and there to help keep your grade up. The homework is ridiculous though, 30 page workbook for 10 points, a paragraph in the bluebook 10 points, exams are usually 50 points",
+        "gold": [
+          "assessment:negative",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:negative",
+          "faculty_interaction:negative",
+          "teaching:negative"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "teaching:conflict",
+          "workload:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.4,
+        "tuple_f1_transformer": 0.4
+      },
+      {
+        "sample_rank": 27,
+        "category": "Boundary confusion",
+        "text": "He is a nice guy, i'll give him that. but he doesn't give you any leverage if you don't understand the material. Atleast thats how it seemed to me. I felt like he only taught what he wanted the class to hear. I did not like his teaching methods.",
+        "gold": [
+          "teaching:negative"
+        ],
+        "baseline": [
+          "faculty_interaction:negative",
+          "teaching:negative"
+        ],
+        "transformer": [
+          "faculty_interaction:positive",
+          "teaching:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.6666666666666666,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 28,
+        "category": "Conflict / mixed",
+        "text": "One of my favorite courses in CE thus far. Course was pretty dry. Exams was pretty hard. But, the labs were sweet. You build a 32 bit RISCV processor in Verilog. Very challenging and massive time sink. Especially for the last lab, lots of people left it to last minute and could not finish in time( myself included). But, I feel like I learned infinite about the intricacies of both CPUs and the RISCV ISA. Talked about the project in interviews and landed a sweet job.",
+        "gold": [
+          "assessment:negative",
+          "course_content:negative",
+          "other:conflict",
+          "workload:negative"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict",
+          "workload:negative"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "other:positive",
+          "workload:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.5,
+        "tuple_f1_transformer": 0.5714285714285715
+      },
+      {
+        "sample_rank": 29,
+        "category": "Boundary confusion",
+        "text": "I love Dubins class!!!!",
+        "gold": [],
+        "baseline": [
+          "teaching:positive"
+        ],
+        "transformer": [
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 30,
+        "category": "Multi-aspect",
+        "text": "He is one of the best math professor I've seen, I love how he teach things with getting our attention. However since I'm not good at anything about math or calculating, I feel like there is too less time for too many questions for tests that I couldn't complete.",
+        "gold": [
+          "assessment:negative",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "teaching:negative"
+        ],
+        "transformer": [
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 31,
+        "category": "Boundary confusion",
+        "text": "If you get the point of his class you will write a reinforcer of a review. If you don't, take it again because you missed a point that will serve you for life. Specially with your clients.",
+        "gold": [],
+        "baseline": [
+          "teaching:negative"
+        ],
+        "transformer": [],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 32,
+        "category": "Multi-aspect",
+        "text": "Incredibly boring and dry course. If it weren't for Professor Alice Gao's online notes and problem sets, this would have been a lost cause. Midterm was easy and the class did super well, and so they made the final ridiculously long and difficult to pull down the average. They succeeded :(",
+        "gold": [
+          "assessment:conflict",
+          "resources:positive"
+        ],
+        "baseline": [
+          "assessment:negative",
+          "course_content:negative",
+          "resources:negative"
+        ],
+        "transformer": [
+          "assessment:positive",
+          "resources:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 33,
+        "category": "Conflict / mixed",
+        "text": "Not a hard course if you go to class and listen to the prof( Bill Bishop). Too many slides to cram, but they are a strong resource, especially if you annotate them during lectures. Plenty of past midterms and exams but don't expect a really high mark just from those. A lot of content that can be dry at times, but overall an enjoyable course. Labs are very long and can go wrong just about anywhere if not set up properly so get help from the TA's while you can.",
+        "gold": [
+          "course_content:conflict",
+          "other:negative",
+          "resources:conflict"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict",
+          "resources:conflict"
+        ],
+        "transformer": [
+          "course_content:conflict",
+          "other:negative",
+          "resources:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.5714285714285715,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 34,
+        "category": "Boundary confusion",
+        "text": "The course is interesting!",
+        "gold": [],
+        "baseline": [
+          "course_content:positive"
+        ],
+        "transformer": [],
+        "fixed": true,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 35,
+        "category": "Implicit aspect",
+        "text": "I always knew this course wasn\u2019t going to be easy, but online courses made it ultra hard and bad. 70 % of my time was dedicated to this course and I still didn\u2019t learn anything!",
+        "gold": [
+          "course_content:negative",
+          "workload:negative"
+        ],
+        "baseline": [
+          "course_content:conflict"
+        ],
+        "transformer": [
+          "course_content:neutral",
+          "other:negative"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.0
+      },
+      {
+        "sample_rank": 36,
+        "category": "Multi-aspect",
+        "text": "really enjoy his part in the class, his questions were not very exicting at all, but the teaching process was grear",
+        "gold": [
+          "assessment:negative",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "teaching:conflict"
+        ],
+        "transformer": [
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.0,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 37,
+        "category": "Boundary confusion",
+        "text": "He is a good professor. Lectures are great. Gives homework for points. Tests come straight from the multiple-choice questions at the back of the chapters. DO NOT SCREW UP ON HOMEWORK!",
+        "gold": [
+          "other:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:neutral",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.5,
+        "tuple_f1_transformer": 0.6666666666666666
+      },
+      {
+        "sample_rank": 38,
+        "category": "Conflict / mixed",
+        "text": "Solid professor. Knowledgeable and enthusiastic. The midterm and final were incredibly difficult, and he's not a fan of curving. Even though it's difficult, it's fair. I ended up learning a lot.",
+        "gold": [
+          "assessment:negative",
+          "course_content:negative",
+          "faculty_interaction:positive",
+          "teaching:conflict"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "teaching:conflict"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "course_content:conflict",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.28571428571428575,
+        "tuple_f1_transformer": 0.5
+      },
+      {
+        "sample_rank": 39,
+        "category": "Conflict / mixed",
+        "text": "Had the course with Professor Bill Bishop. Honestly he's a legend, and truly cares about ECE students. He really tried to keep us engaged in the lecture content. High quality videos going over a lot of content that is useful for co-op. However, the course was incredibly easy. Very little critical thinking involved. It was basically memorize the slides. My routine for the course was to binge the~ 1 hour of weekly content on 2x speed, then do the weekly quiz. Our lab was replaced by a research report which was very disappointing. In summary, while the content was useful, I really wish there was more application and that we had done the labs. They should have either sent us out hardware, or required us to purchase it. It really sucked not getting to do the lab, as the research report was trivial and didn't contribute to my abilities as a CE student",
+        "gold": [
+          "assessment:negative",
+          "course_content:conflict",
+          "faculty_interaction:positive",
+          "other:negative",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "assessment:conflict",
+          "course_content:conflict",
+          "other:conflict",
+          "resources:conflict"
+        ],
+        "transformer": [
+          "assessment:negative",
+          "course_content:positive",
+          "faculty_interaction:positive",
+          "resources:positive",
+          "teaching:positive"
+        ],
+        "fixed": false,
+        "tuple_f1_baseline": 0.2,
+        "tuple_f1_transformer": 0.7272727272727272
+      },
+      {
+        "sample_rank": 40,
+        "category": "Multi-aspect",
+        "text": "Tom's a fantastic teacher. Has a good sense of humor, ALWAYS willing to help you. Fair grader, tests are reasonable. Is a knowledgeable instructor and is flexible with his students as long as you aren't a screw off!!!",
+        "gold": [
+          "assessment:positive",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "baseline": [
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "transformer": [
+          "assessment:positive",
+          "faculty_interaction:positive",
+          "teaching:positive"
+        ],
+        "fixed": true,
+        "tuple_f1_baseline": 0.8,
+        "tuple_f1_transformer": 1.0
+      }
+    ]
+  },
+  "transformer_error_count": 472
+}

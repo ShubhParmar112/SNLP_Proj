@@ -1,0 +1,55 @@
+{
+    "model_version": "transformer-absa-0.2.2",
+    "model": "DeBERTa-v3-base fine-tuned for aspect-category sentiment, with one attention query per aspect (Week 3), decision settings tuned on validation (Week 4), isotonic score calibration (Week 5)",
+    "training_data": "EduRABSA (Hua et al., 2025; CC BY-NC-SA 4.0): 5,998 public English course and teacher reviews, mapped to 8 aspects (dataset v1.1-edurabsa); 4,198 train / 900 validation / 900 test",
+    "intended_use": "Course-level summaries of anonymised feedback for coordinators and faculty; advisory only",
+    "out_of_scope": [
+        "Any decision about an individual student or staff member",
+        "Ranking or comparing instructors",
+        "Non-academic text (hostel, admin, placement)",
+        "Languages other than English (Hinglish is not supported)"
+    ],
+    "known_failure_modes": [
+        "Sarcasm is read literally",
+        "Hinglish / code-switched comments are mostly missed",
+        "Neutral and mixed (conflict) opinions are often read as positive or negative",
+        "Negative comments about a teacher can add a spurious teaching:negative",
+        "Long reviews (80+ words) score lower; minor aspects get missed",
+        "Names without any title are not redacted; emails written with spaces are redacted only in report quotes"
+    ],
+    "test_results": {
+        "split": "test, 900 comments, never used for any decision",
+        "tuple_f1": 0.704,
+        "tuple_f1_95ci": [
+            0.683,
+            0.723
+        ],
+        "baseline_tuple_f1_tfidf": 0.452,
+        "polarity_accuracy_on_found_aspects": 0.822,
+        "per_aspect_f1": {
+            "teaching": 0.802,
+            "faculty_interaction": 0.798,
+            "course_content": 0.651,
+            "pace": 0.649,
+            "assessment": 0.671,
+            "workload": 0.627,
+            "resources": 0.487,
+            "other": 0.54
+        },
+        "probe_set_passed": "17/32"
+    },
+    "calibration_ece_test": {
+        "aspect": {
+            "before": 0.03,
+            "after": 0.008
+        },
+        "polarity": {
+            "before": 0.05,
+            "after": 0.026
+        },
+        "doc": {
+            "before": 0.116,
+            "after": 0.021
+        }
+    }
+}

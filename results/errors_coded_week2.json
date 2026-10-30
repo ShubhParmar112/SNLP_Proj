@@ -1,0 +1,891 @@
+[
+  {
+    "text": "professor crowe is 2 funny !!!!! 1 ! and he will call you out so fast! but he's really good at explaning stuf and i think he really cares about his students. i know he's always available to talk or explain something to him. will make you laugh and you will learn.",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "pace:neutral",
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "pace:neutral"
+    ],
+    "category": "Rare category",
+    "note": "'call you out so fast' fires a spurious pace aspect on the keyword 'fast'",
+    "sample_rank": 1,
+    "error_index": 654
+  },
+  {
+    "text": "This is the bird course of all bird courses. I took this course online fall 2021. There are only 5 or so assignments in the entire course. I did most of them in around 5 hours each, over one or two days. I got an 80. Sometimes I forgot I even was taking it. The content is somewhat Interesting, but there is very little actual information. In my opinion, the entirety of the course could be learned in a weekend, unless you have literally never thought about geography concepts before. A good course to take to get used to the uni workflow in your first semester.",
+    "gold": [
+      "course_content:conflict",
+      "workload:positive"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict"
+    ],
+    "missed": [
+      "workload:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "other:conflict"
+    ],
+    "category": "Implicit aspect",
+    "note": "workload is only implied ('5 hours each'); conflict tone also copied onto assessment/other",
+    "sample_rank": 2,
+    "error_index": 114
+  },
+  {
+    "text": "Prof. Lampert is REALLY passionate about jazz history and is upset that many students don't take the class seriously. He will comment on that every so often. Gives few exams but gives a review sheet right before them so you know exactly what's on it. Listening quizzes to identify instruments also. Very easy class and so relaxed. Take for sure",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "course_content:positive",
+      "faculty_interaction:neutral"
+    ],
+    "spurious": [
+      "faculty_interaction:positive"
+    ],
+    "category": "Implicit aspect",
+    "note": "'Very easy class' = course difficulty (course_content), never named",
+    "sample_rank": 3,
+    "error_index": 25
+  },
+  {
+    "text": "Lectures are boring, reads straight from PowerPoint. 3 tests, drops lowest grade. Mc and short answers. The questions are more in depth than what's on the pp so should study from textbook. 1 group presentation and paper. She makes me want to fall asleep",
+    "gold": [
+      "assessment:neutral",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "resources:negative",
+      "teaching:positive"
+    ],
+    "missed": [
+      "assessment:neutral",
+      "teaching:negative"
+    ],
+    "spurious": [
+      "assessment:negative",
+      "resources:negative",
+      "teaching:positive"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "'Lectures are boring' -> teaching predicted positive",
+    "sample_rank": 4,
+    "error_index": 281
+  },
+  {
+    "text": "She is a great professor, but attendance does major damage to your grade even if you pass all of your exams. You have to be there on time and read the textbook in order to pass.",
+    "gold": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:neutral",
+      "resources:neutral",
+      "teaching:positive"
+    ],
+    "missed": [
+      "assessment:negative"
+    ],
+    "spurious": [
+      "assessment:neutral",
+      "resources:neutral"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "attendance penalty is assessment:negative; predicted neutral",
+    "sample_rank": 5,
+    "error_index": 250
+  },
+  {
+    "text": "The prerequisites are the * bare minimum * you need to take this course. The material regularly involves upper-year optimization / statistics content which is only covered in 1 or 2 review lectures at the beginning. With Yaoliang, the material was very theoretical and mathematical, and I only understood 50 % of the content--- enough to have an intuitive understanding of the concepts, but not enough to really understand all of the proofs presented in the lectures. Fortunately, this was enough to get a grade of 90+. For the students who want to go further and gain a deeper understanding, the professor was very helpful in answering questions and providing pointers/ resources on Piazza.",
+    "gold": [
+      "course_content:negative",
+      "faculty_interaction:positive"
+    ],
+    "pred": [
+      "course_content:conflict",
+      "faculty_interaction:positive",
+      "other:conflict",
+      "resources:conflict"
+    ],
+    "missed": [
+      "course_content:negative"
+    ],
+    "spurious": [
+      "course_content:conflict",
+      "other:conflict",
+      "resources:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "one conflict label copied onto every detected aspect",
+    "sample_rank": 6,
+    "error_index": 228
+  },
+  {
+    "text": "She's very nice!! Very clear on everything. Pretty Easy class. Just do the work she assigns and you'll get a good grade. Her test reviews are VERY Helpful. Know that and you'll ace the tests, SOMETIMES she'll let you use the review and notes during the test too. I recommend ms mayer, shes really cool :)",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "other:positive",
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "other:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "spurious other:positive",
+    "sample_rank": 7,
+    "error_index": 142
+  },
+  {
+    "text": "EASY A! Read his handouts. ALL the test questions are ONLY from his handouts! His lectures are very boring. But he is a very easy going professor; not a tough grader. Only two exams( Midterm& final) and papers. Take him if you want an easy A",
+    "gold": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict",
+      "teaching:conflict"
+    ],
+    "missed": [
+      "course_content:positive",
+      "faculty_interaction:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied to assessment, course_content, other",
+    "sample_rank": 8,
+    "error_index": 104
+  },
+  {
+    "text": "I thought this course was good, but many of the topics seem like things I've already gone through in my undergrad career. It's probably because I took it in 4B, though, so I already had some work terms and courses that covered some of the things this course touched upon.",
+    "gold": [
+      "course_content:negative"
+    ],
+    "pred": [
+      "course_content:neutral",
+      "workload:negative"
+    ],
+    "missed": [
+      "course_content:negative"
+    ],
+    "spurious": [
+      "course_content:neutral",
+      "workload:negative"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "'good, but ... already gone through' is negative on content; predicted neutral",
+    "sample_rank": 9,
+    "error_index": 558
+  },
+  {
+    "text": "This course will be useful only if you are gonna enter Storage Industry( e. g. data center, initiator, expander, target etc.) Teaches you parallel serial interface and protocol and other random stuff. The course content becomes messy when entering DAC and ADC. These are just for matching with content in 318. IMO this course should be moved to a hard core 4th year TE instead of a mandatory 2nd/ 3rd year course. 327 is way more useful than this. Labs are useless and painful to debug( hardware issue, project creating issue, random issues.. not your logic/ code problem!) which eventually makes the lab room a vortex of retardness.",
+    "gold": [
+      "course_content:negative",
+      "other:negative"
+    ],
+    "pred": [
+      "course_content:negative",
+      "other:negative",
+      "resources:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "resources:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'data center ... interface' read as resources",
+    "sample_rank": 10,
+    "error_index": 89
+  },
+  {
+    "text": "Hands down; the greatest professor Ive ever had! Speeches are so easy! Show up; participate and youll pass! Great sense of humor, very enthusiastic!",
+    "gold": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "course_content:positive"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'Speeches are so easy!' = course difficulty, not named",
+    "sample_rank": 11,
+    "error_index": 604
+  },
+  {
+    "text": "Okay guys be warned this class is tricky , but also really cool. You'll pretty much learn how to take a group of images of a 3D object( top view, side view, etc), and extrapolate that into the 3D object itself, as well as draw alternate views, all using very specific methods. I'm a very visual thinker, and having done lots of 3D modelling using Google Sketchup( free to download) beforehand, I dealt with this course much easier than many of my classmates. For those who aren't visual thinkers, you will have to bend your mind in strange ways to comprehend the sorcery that is occuring in front of you. Also in this course you learn how to use- a very old and annoying version of - AutoCAD( A 2D and 3D modelling software). If you want to do some pre-study( I recommend it, at least to see what you're getting into) the main thing to take a look at is called\" Orthographic diagrams\". There are some really cool principles you'll learn about how to draw these, but if you don't get a SOLID understanding of them , it will go from cool to absolute torture and you will probably die.",
+    "gold": [
+      "course_content:conflict",
+      "resources:conflict"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "resources:conflict"
+    ],
+    "missed": [],
+    "spurious": [
+      "assessment:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied onto a spurious assessment aspect",
+    "sample_rank": 12,
+    "error_index": 432
+  },
+  {
+    "text": "Danby is so nice and helpful. I signed up for his class over summer which was scheduled to be a 4 hour long class, but he made it enjoyable. He wants his students to succeed. He is helpful and makes sure you really understand the material. Pretty easy A ! DONT BUY THE BOOK! Also attendance is a grade so show up!",
+    "gold": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "resources:neutral"
+    ],
+    "spurious": [
+      "resources:positive"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "'DONT BUY THE BOOK' gold neutral, predicted positive (gold arguably wrong, see R8)",
+    "sample_rank": 13,
+    "error_index": 32
+  },
+  {
+    "text": "Course concepts covered were comparatively easier than ME 322. However, the bulk of the final grade for ME 423 is based off one long final project. The project requires submission of three reports, and one final report. All reports are long and tedious. There were two exams: midterm and final. The midterm was reasonable, but the final was relatively more difficult. Only choose this course if you want to enter the already over-saturated Product Design job market that requires knowledge of CAD and mechanical design.",
+    "gold": [
+      "assessment:conflict",
+      "course_content:positive"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict"
+    ],
+    "missed": [
+      "course_content:positive"
+    ],
+    "spurious": [
+      "course_content:conflict",
+      "other:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "assessment conflict copied onto course_content (gold positive) and other",
+    "sample_rank": 14,
+    "error_index": 30
+  },
+  {
+    "text": "friggin GENIUS! too bad the automotive dean is such a B *** H cause we lost a great one with him!",
+    "gold": [
+      "teaching:positive"
+    ],
+    "pred": [],
+    "missed": [
+      "teaching:positive"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'friggin GENIUS!' - teaching praise with no aspect word",
+    "sample_rank": 15,
+    "error_index": 95
+  },
+  {
+    "text": "Arrogant , inconsiderate , and unreasonable. For a professor teaching argumentation, Zunic employs textbook fallacies against his own students. Assignment expectations are vague and understated, marks aggressively like he has a personal vendetta with his students, and will not , under any circumstance , yield to alternative justified reasoning. Everything besides his opinions is wrong and irrelevant in his eyes. For any student taking this course outside of their major as an elective, your intelligence will be shamed and disregarded in favor of the subjective flavor of\" common sense\" the professor employs. A near unwavering offline class consensus was reached on the disapproval of this professor. However, the course itself is somewhat useful in all real-life forms of communication, so I recommend it but stay away from this prof.",
+    "gold": [
+      "assessment:negative",
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [
+      "assessment:negative"
+    ],
+    "spurious": [],
+    "category": "Multi-aspect",
+    "note": "third aspect (assessment: 'marks aggressively') missed",
+    "sample_rank": 16,
+    "error_index": 223
+  },
+  {
+    "text": "Guerrero is a great spanish professor! You must attend class or she will begin to mark grade down but her class is fun so this shouldn't be too hard. Lots of homework but it's easy points do it all! Some assignments only take 5-10 minutes. She is a very sweet and professional and you can tell she cares. I was not a fluent speaker and I got an A!",
+    "gold": [
+      "assessment:positive",
+      "faculty_interaction:positive",
+      "other:positive",
+      "teaching:positive",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "other:positive",
+      "teaching:positive",
+      "workload:positive"
+    ],
+    "missed": [
+      "workload:negative"
+    ],
+    "spurious": [
+      "course_content:positive",
+      "workload:positive"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "'Lots of homework' predicted workload:positive",
+    "sample_rank": 17,
+    "error_index": 238
+  },
+  {
+    "text": "Although his tax class is tough, he doesn't purposely do it to spite the students. Tax is hard. If you need help, he gives it to you. If you have a question, he'll answer it. If you stay up on his homework assignments and reading, it makes more sense. The class itself is difficult, but he is a great professor and very helpful.",
+    "gold": [
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "faculty_interaction:conflict",
+      "teaching:conflict",
+      "workload:negative"
+    ],
+    "missed": [
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "faculty_interaction:conflict",
+      "teaching:conflict",
+      "workload:negative"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied to teaching and faculty_interaction; content difficulty missed",
+    "sample_rank": 18,
+    "error_index": 517
+  },
+  {
+    "text": "Notes are from the book. She doesn't collect hw but quiz/ test problems are related to them. If you go to her office hours she answers all your questions.",
+    "gold": [
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:neutral",
+      "faculty_interaction:positive",
+      "resources:neutral"
+    ],
+    "missed": [
+      "teaching:positive"
+    ],
+    "spurious": [
+      "assessment:neutral",
+      "faculty_interaction:positive",
+      "resources:neutral"
+    ],
+    "category": "Annotation error",
+    "note": "'office hours ... answers questions' is faculty_interaction under our guidelines; gold says teaching",
+    "sample_rank": 19,
+    "error_index": 616
+  },
+  {
+    "text": "He is a very nice guy and funny. Makes class enjoyable. However, he is disorganized and is not good at making sure everyone understands the material.",
+    "gold": [
+      "teaching:conflict"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:positive"
+    ],
+    "category": "Annotation error",
+    "note": "'nice guy and funny' was Staff-Personal traits in the source (dropped by our mapping); same phrase is Attitude elsewhere",
+    "sample_rank": 20,
+    "error_index": 27
+  },
+  {
+    "text": "Day 1 of this course it seemed like it was going to be extremely overwhelming and a lot of work. Stick through it though, it's a lot easier than it seems. She's an extremely nice professor. A lot of reading, but nothing difficult. The mid-term and final have I. D. questions where you have to remember a lot of specifics but if you study you're fine.",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:positive",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "faculty_interaction:conflict",
+      "other:negative",
+      "teaching:conflict",
+      "workload:negative"
+    ],
+    "missed": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "faculty_interaction:conflict",
+      "other:negative",
+      "teaching:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied onto four aspects",
+    "sample_rank": 21,
+    "error_index": 574
+  },
+  {
+    "text": "Black this, Black that, and Black the other thing. That's all the guy can talk about all the time.",
+    "gold": [
+      "teaching:negative"
+    ],
+    "pred": [],
+    "missed": [
+      "teaching:negative"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'all the guy can talk about' = teaching negative, no aspect word",
+    "sample_rank": 22,
+    "error_index": 203
+  },
+  {
+    "text": "Interesting and fun course that doesn't weigh too heavily on your schedule. Great for any language credit requirement!",
+    "gold": [
+      "workload:positive"
+    ],
+    "pred": [],
+    "missed": [
+      "workload:positive"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'doesn't weigh too heavily on your schedule' = workload positive",
+    "sample_rank": 23,
+    "error_index": 665
+  },
+  {
+    "text": "Very easy teacher. Most of everyone got an A in the class. She will not teach you everything that you need to know for future classes with other teachers. The only topics she covers are racism and feminism. She was cool, but there are better English teachers.",
+    "gold": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "course_content:conflict",
+      "teaching:conflict"
+    ],
+    "missed": [
+      "course_content:positive",
+      "faculty_interaction:positive"
+    ],
+    "spurious": [
+      "course_content:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "teaching conflict copied onto course_content",
+    "sample_rank": 24,
+    "error_index": 429
+  },
+  {
+    "text": "It could've been a lot harder than it was, since we were assessed on the simple ideas while being presented with much harder concepts. Full-on abuse of mathematics, if you took AMATH 231 instead of MATH 227, it'll take some adapting to it. Also, some understanding of DEs( like AMATH 250) is necessary for this course.",
+    "gold": [
+      "course_content:neutral"
+    ],
+    "pred": [
+      "course_content:negative"
+    ],
+    "missed": [
+      "course_content:neutral"
+    ],
+    "spurious": [
+      "course_content:negative"
+    ],
+    "category": "Polarity on correct aspect",
+    "note": "descriptive content comment read as negative",
+    "sample_rank": 25,
+    "error_index": 225
+  },
+  {
+    "text": "Not to strict on the grading, as long as you get the idea of what is being said and can translate it then she will give you most of the points. A little bit of extra credit here and there to help keep your grade up. The homework is ridiculous though, 30 page workbook for 10 points, a paragraph in the bluebook 10 points, exams are usually 50 points",
+    "gold": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:negative",
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [
+      "teaching:positive"
+    ],
+    "spurious": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "category": "Negation",
+    "note": "'Not to strict on the grading' is praise; predicted negative",
+    "sample_rank": 26,
+    "error_index": 459
+  },
+  {
+    "text": "He is a nice guy, i'll give him that. but he doesn't give you any leverage if you don't understand the material. Atleast thats how it seemed to me. I felt like he only taught what he wanted the class to hear. I did not like his teaching methods.",
+    "gold": [
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'no leverage' read as faculty_interaction; gold keeps only teaching",
+    "sample_rank": 27,
+    "error_index": 603
+  },
+  {
+    "text": "One of my favorite courses in CE thus far. Course was pretty dry. Exams was pretty hard. But, the labs were sweet. You build a 32 bit RISCV processor in Verilog. Very challenging and massive time sink. Especially for the last lab, lots of people left it to last minute and could not finish in time( myself included). But, I feel like I learned infinite about the intricacies of both CPUs and the RISCV ISA. Talked about the project in interviews and landed a sweet job.",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "other:conflict",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict",
+      "workload:negative"
+    ],
+    "missed": [
+      "assessment:negative",
+      "course_content:negative"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "course_content:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied onto assessment and course_content (gold negative)",
+    "sample_rank": 28,
+    "error_index": 284
+  },
+  {
+    "text": "I love Dubins class!!!!",
+    "gold": [],
+    "pred": [
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'I love Dubins class!!!!' has no aspect under R9; predicted teaching",
+    "sample_rank": 29,
+    "error_index": 6
+  },
+  {
+    "text": "He is one of the best math professor I've seen, I love how he teach things with getting our attention. However since I'm not good at anything about math or calculating, I feel like there is too less time for too many questions for tests that I couldn't complete.",
+    "gold": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pred": [
+      "teaching:negative"
+    ],
+    "missed": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "spurious": [
+      "teaching:negative"
+    ],
+    "category": "Multi-aspect",
+    "note": "praise for teaching + test-time complaint merged into one negative",
+    "sample_rank": 30,
+    "error_index": 163
+  },
+  {
+    "text": "If you get the point of his class you will write a reinforcer of a review. If you don't, take it again because you missed a point that will serve you for life. Specially with your clients.",
+    "gold": [],
+    "pred": [
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "teaching:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "general remark (no aspect under R9) predicted teaching:negative",
+    "sample_rank": 31,
+    "error_index": 348
+  },
+  {
+    "text": "Incredibly boring and dry course. If it weren't for Professor Alice Gao's online notes and problem sets, this would have been a lost cause. Midterm was easy and the class did super well, and so they made the final ridiculously long and difficult to pull down the average. They succeeded :(",
+    "gold": [
+      "assessment:conflict",
+      "resources:positive"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "resources:negative"
+    ],
+    "missed": [
+      "assessment:conflict",
+      "resources:positive"
+    ],
+    "spurious": [
+      "assessment:negative",
+      "course_content:negative",
+      "resources:negative"
+    ],
+    "category": "Multi-aspect",
+    "note": "one negative tone applied to resources (gold positive) and assessment (gold conflict)",
+    "sample_rank": 32,
+    "error_index": 159
+  },
+  {
+    "text": "Not a hard course if you go to class and listen to the prof( Bill Bishop). Too many slides to cram, but they are a strong resource, especially if you annotate them during lectures. Plenty of past midterms and exams but don't expect a really high mark just from those. A lot of content that can be dry at times, but overall an enjoyable course. Labs are very long and can go wrong just about anywhere if not set up properly so get help from the TA's while you can.",
+    "gold": [
+      "course_content:conflict",
+      "other:negative",
+      "resources:conflict"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict",
+      "resources:conflict"
+    ],
+    "missed": [
+      "other:negative"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "other:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied onto spurious assessment and other",
+    "sample_rank": 33,
+    "error_index": 220
+  },
+  {
+    "text": "The course is interesting!",
+    "gold": [],
+    "pred": [
+      "course_content:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "course_content:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'The course is interesting!' is Course-Overall (no aspect); predicted course_content",
+    "sample_rank": 34,
+    "error_index": 344
+  },
+  {
+    "text": "I always knew this course wasn’t going to be easy, but online courses made it ultra hard and bad. 70 % of my time was dedicated to this course and I still didn’t learn anything!",
+    "gold": [
+      "course_content:negative",
+      "workload:negative"
+    ],
+    "pred": [
+      "course_content:conflict"
+    ],
+    "missed": [
+      "course_content:negative",
+      "workload:negative"
+    ],
+    "spurious": [
+      "course_content:conflict"
+    ],
+    "category": "Implicit aspect",
+    "note": "'70 % of my time' = workload, not named",
+    "sample_rank": 35,
+    "error_index": 94
+  },
+  {
+    "text": "really enjoy his part in the class, his questions were not very exicting at all, but the teaching process was grear",
+    "gold": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pred": [
+      "teaching:conflict"
+    ],
+    "missed": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "spurious": [
+      "teaching:conflict"
+    ],
+    "category": "Multi-aspect",
+    "note": "'questions were not very exicting' + 'teaching process was grear' merged into teaching:conflict; typos",
+    "sample_rank": 36,
+    "error_index": 389
+  },
+  {
+    "text": "He is a good professor. Lectures are great. Gives homework for points. Tests come straight from the multiple-choice questions at the back of the chapters. DO NOT SCREW UP ON HOMEWORK!",
+    "gold": [
+      "other:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:neutral",
+      "teaching:positive"
+    ],
+    "missed": [
+      "other:positive"
+    ],
+    "spurious": [
+      "assessment:neutral"
+    ],
+    "category": "Boundary confusion",
+    "note": "'Gives homework for points' is a learning activity (other); predicted assessment",
+    "sample_rank": 37,
+    "error_index": 99
+  },
+  {
+    "text": "Solid professor. Knowledgeable and enthusiastic. The midterm and final were incredibly difficult, and he's not a fan of curving. Even though it's difficult, it's fair. I ended up learning a lot.",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "teaching:conflict"
+    ],
+    "missed": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "course_content:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied; faculty_interaction missed",
+    "sample_rank": 38,
+    "error_index": 367
+  },
+  {
+    "text": "Had the course with Professor Bill Bishop. Honestly he's a legend, and truly cares about ECE students. He really tried to keep us engaged in the lecture content. High quality videos going over a lot of content that is useful for co-op. However, the course was incredibly easy. Very little critical thinking involved. It was basically memorize the slides. My routine for the course was to binge the~ 1 hour of weekly content on 2x speed, then do the weekly quiz. Our lab was replaced by a research report which was very disappointing. In summary, while the content was useful, I really wish there was more application and that we had done the labs. They should have either sent us out hardware, or required us to purchase it. It really sucked not getting to do the lab, as the research report was trivial and didn't contribute to my abilities as a CE student",
+    "gold": [
+      "assessment:negative",
+      "course_content:conflict",
+      "faculty_interaction:positive",
+      "other:negative",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:conflict",
+      "other:conflict",
+      "resources:conflict"
+    ],
+    "missed": [
+      "assessment:negative",
+      "faculty_interaction:positive",
+      "other:negative",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "spurious": [
+      "assessment:conflict",
+      "other:conflict",
+      "resources:conflict"
+    ],
+    "category": "Conflict / mixed",
+    "note": "conflict copied onto four aspects; teaching and faculty_interaction missed",
+    "sample_rank": 39,
+    "error_index": 352
+  },
+  {
+    "text": "Tom's a fantastic teacher. Has a good sense of humor, ALWAYS willing to help you. Fair grader, tests are reasonable. Is a knowledgeable instructor and is flexible with his students as long as you aren't a screw off!!!",
+    "gold": [
+      "assessment:positive",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "assessment:positive"
+    ],
+    "spurious": [],
+    "category": "Multi-aspect",
+    "note": "'Fair grader, tests are reasonable' (assessment) missed in a list of praise",
+    "sample_rank": 40,
+    "error_index": 618
+  }
+]

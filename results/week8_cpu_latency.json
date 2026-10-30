@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "calls": 50,
+  "mean_ms": 215.8,
+  "median_ms": 206.2,
+  "min_ms": 171.4,
+  "max_ms": 329.0,
+  "model_version": "transformer-absa-0.2.2"
+}

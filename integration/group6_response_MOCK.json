@@ -1,0 +1,271 @@
+{
+  "source": "MOCK - Group 5 keyword stand-in for Group 6; not Group 6's system",
+  "items": [
+    {
+      "id": "FB001",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB002",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB003",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB004",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB005",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB006",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB007",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB008",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB009",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB010",
+      "category": "academic",
+      "urgency": "high",
+      "confidence": 0.9,
+      "recommended_action": "Academic advisor follow-up"
+    },
+    {
+      "id": "FB011",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB012",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB013",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB014",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB015",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB016",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB017",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB018",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB019",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB020",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB021",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB022",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB023",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB024",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB025",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB026",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB027",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB028",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB029",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB030",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    },
+    {
+      "id": "FB031",
+      "category": "academic",
+      "urgency": "high",
+      "confidence": 0.9,
+      "recommended_action": "Academic advisor follow-up"
+    },
+    {
+      "id": "FB032",
+      "category": "academic",
+      "urgency": "high",
+      "confidence": 0.9,
+      "recommended_action": "Academic advisor follow-up"
+    },
+    {
+      "id": "FB033",
+      "category": "financial",
+      "urgency": "medium",
+      "confidence": 0.9,
+      "recommended_action": "Financial aid office"
+    },
+    {
+      "id": "FB034",
+      "category": "mental_health",
+      "urgency": "high",
+      "confidence": 0.9,
+      "recommended_action": "Counsellor follow-up"
+    },
+    {
+      "id": "FB035",
+      "category": "harassment",
+      "urgency": "high",
+      "confidence": 0.9,
+      "recommended_action": "Refer to the grievance committee"
+    },
+    {
+      "id": "FB036",
+      "category": "administrative",
+      "urgency": "medium",
+      "confidence": 0.9,
+      "recommended_action": "Route to administration"
+    },
+    {
+      "id": "FB037",
+      "category": "administrative",
+      "urgency": "medium",
+      "confidence": 0.9,
+      "recommended_action": "Route to administration"
+    },
+    {
+      "id": "FB038",
+      "category": "none",
+      "urgency": "low",
+      "confidence": 0.6,
+      "recommended_action": "No action"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3456.71it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3230.92it/s]
+TEST split, n=900  (opened 2026-10-02T18:19:19)
+  Majority class                                   0.216 [0.197, 0.237]  P=0.311 R=0.166 pol=0.587 asp=0.368 macro=0.051
+  Stratified random                                0.145 [0.128, 0.164]  P=0.148 R=0.143 pol=0.416 asp=0.349 macro=0.091
+  Lexicon + LogReg polarity (Week 2)               0.332 [0.307, 0.356]  P=0.379 R=0.295 pol=0.637 asp=0.521 macro=0.296
+  TF-IDF + LogReg (Week 2 baseline)                0.454 [0.432, 0.479]  P=0.434 R=0.477 pol=0.617 asp=0.736 macro=0.412
+  MiniLM embeddings + LogReg                       0.471 [0.443, 0.496]  P=0.620 R=0.380 pol=0.720 asp=0.655 macro=0.275
+  MiniLM embeddings + LogReg, tuned thresholds     0.494 [0.470, 0.517]  P=0.517 R=0.473 pol=0.695 asp=0.710 macro=0.335
+  DeBERTa ABSA v1 (Week 3)                         0.696 [0.676, 0.715]  P=0.705 R=0.687 pol=0.823 asp=0.845 macro=0.635
+  DeBERTa ABSA v1.1 (Week 4, the asset)            0.703 [0.684, 0.723]  P=0.714 R=0.693 pol=0.816 asp=0.862 macro=0.644
+  3-seed ensemble, tuned (experiment)              0.713 [0.693, 0.735]  P=0.737 R=0.690 pol=0.828 asp=0.861 macro=0.651
+  v1 without span supervision (ablation)           0.663 [0.642, 0.684]  P=0.674 R=0.652 pol=0.807 asp=0.821 macro=0.510
+  v1 seeds ['0.696', '0.700', '0.702'] mean 0.699 sd 0.003
+  v1.1 - TF-IDF baseline                 +0.249 [+0.225, +0.275]
+  v1 - TF-IDF baseline                   +0.241 [+0.216, +0.267]
+  v1.1 - v1                              +0.008 [+0.000, +0.015]
+  embeddings(tuned) - TF-IDF baseline    +0.039 [+0.014, +0.064]
+  v1.1 - embeddings(tuned)               +0.210 [+0.186, +0.233]
+  ensemble - v1.1                        +0.009 [-0.003, +0.021]
+  v1 - no span supervision               +0.033 [+0.017, +0.050]
+  doc majority     acc 0.507 macro-F1 0.224
+  doc tfidf        acc 0.750 macro-F1 0.722
+  doc embeddings   acc 0.714 macro-F1 0.691
+  doc transformer  acc 0.863 macro-F1 0.834
+  spans v1 rule (peak, rel 0.5)              J>=0.5 0.120 overlap 0.792 words 1
+  spans v1.1 rule (clause, max 8 words)      J>=0.5 0.552 overlap 0.900 words 6
+  pipeline check: {'model_version': 'transformer-absa-0.1.1', 'tuple_f1': 0.7034813925570228, 'matches_v1.1_row': True}

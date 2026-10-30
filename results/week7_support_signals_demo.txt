@@ -1,0 +1,25 @@
+SUPPORT SIGNALS FOR GROUP 6  DEMO-COURSE   (150 comments, model transformer-absa-0.2.2)
+
+   workload             top_concern        12 negative of 150 comments (8.0%)
+   pace                 emerging_concern    3 negative of 150 comments (2.0%)
+
+First signal exactly as sent:
+{
+  "signal_type": "academic_concern",
+  "course_id": "DEMO-COURSE",
+  "aspect": "workload",
+  "polarity": "negative",
+  "basis": "top_concern",
+  "mention_count": 12,
+  "total_comments": 150,
+  "proportion": 0.08,
+  "confidence_note": "aggregate of per-comment calibrated scores; based on 150 comments",
+  "advisory_only": true,
+  "not_for_individual_action": true
+}
+
+Caveats sent with every response:
+   - Scores are calibrated on held-out data but remain estimates.
+   - Advisory only: not a basis for decisions about an individual student or staff member.
+   - Topic clustering is not part of pipeline v1.
+   - Signals describe a course, never a student. Do not join them to any student identifier.

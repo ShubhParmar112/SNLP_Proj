@@ -1,0 +1,40 @@
+# Pinned so that a metric produced in Week 2 is reproducible in Week 8.
+# Unpinned dependencies are a common and avoidable source of "the numbers changed".
+#
+# These are the versions every reported number was produced with (Python 3.13,
+# 25 Sep 2026). The earlier pins (numpy 1.26, torch 2.3, ...) have no wheels for
+# Python 3.12+, so they were replaced by the versions actually run.
+
+# Core
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+
+# Weeks 3-4: transformer / improved approach
+# GPU build: pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+transformers==5.17.0
+tokenizers==0.23.2
+safetensors==0.8.0
+sentencepiece==0.2.2      # DeBERTa-v3 tokenizer
+protobuf==7.36.2
+tiktoken==0.14.0
+
+# Week 6: reusable asset (src/api.py)
+fastapi==0.143.5
+uvicorn==0.54.0
+pydantic==2.14.1
+starlette==1.8.0
+httpx==0.28.1             # FastAPI test client (tests/test_api.py)
+
+# Reporting: scripts/build_report.py turns docs/*.md into .docx and .pdf.
+# The PDF step drives Microsoft Word, so it needs Windows + Word + pywin32.
+matplotlib==3.11.2
+python-docx==1.2.0
+pymupdf==1.27.1
+pywin32==311; sys_platform == "win32"
+
+# Quality (do not skip - tests/ is part of the Week 8 deliverable)
+pytest==9.1.1

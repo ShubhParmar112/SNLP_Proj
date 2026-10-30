@@ -1,0 +1,26 @@
+TEST n=900  tuple-F1 0.704 [0.683, 0.723]  exact-comment 0.451  errors in 494 comments  (transformer-absa-0.2.2)
+  teaching             F1 0.802 [0.770, 0.833] n=492  {'spurious': 51, 'wrong_polarity': 66, 'correct': 408, 'missed': 18}
+  faculty_interaction  F1 0.798 [0.755, 0.837] n=237  {'correct': 204, 'spurious': 56, 'missed': 19, 'wrong_polarity': 14}
+  course_content       F1 0.651 [0.608, 0.695] n=408  {'correct': 267, 'spurious': 48, 'missed': 44, 'wrong_polarity': 97}
+  pace                 F1 0.649 [0.428, 0.818] n=21  {'correct': 12, 'wrong_polarity': 2, 'missed': 7, 'spurious': 2}
+  assessment           F1 0.671 [0.609, 0.726] n=227  {'correct': 149, 'wrong_polarity': 37, 'missed': 41, 'spurious': 31}
+  workload             F1 0.627 [0.530, 0.717] n=78  {'spurious': 20, 'missed': 26, 'correct': 47, 'wrong_polarity': 5}
+  resources            F1 0.487 [0.398, 0.576] n=100  {'correct': 48, 'spurious': 30, 'missed': 33, 'wrong_polarity': 19}
+  other                F1 0.540 [0.451, 0.620] n=122  {'spurious': 17, 'missed': 46, 'correct': 58, 'wrong_polarity': 18}
+  polarity confusion: {'positive': {'positive': 721, 'negative': 6, 'neutral': 7, 'conflict': 19}, 'negative': {'positive': 10, 'negative': 385, 'neutral': 14, 'conflict': 25}, 'neutral': {'positive': 48, 'negative': 28, 'neutral': 31, 'conflict': 9}, 'conflict': {'positive': 56, 'negative': 34, 'neutral': 2, 'conflict': 56}}
+  doc confusion: {'positive': {'positive': 417, 'neutral': 38, 'negative': 1}, 'neutral': {'positive': 37, 'neutral': 135, 'negative': 17}, 'negative': {'positive': 1, 'neutral': 33, 'negative': 221}}
+  slice length_words: 1-10 n=109 F1 0.717; 11-40 n=369 F1 0.728; 41-80 n=360 F1 0.707; 81+ n=62 F1 0.611
+  slice review_type: course review n=442 F1 0.635; teacher review n=458 F1 0.759
+  slice gold_aspects: 0 n=67 F1 0.000; 1 n=282 F1 0.669; 2 n=340 F1 0.750; 3 n=211 F1 0.683
+  slice has_negation: False n=474 F1 0.739; True n=426 F1 0.675
+  slice has_contrast_word: False n=515 F1 0.760; True n=385 F1 0.652
+  robust original                     F1 0.704 unchanged 1.00
+  robust typos (10% of longer words)  F1 0.678 unchanged 0.78
+  robust all lowercase                F1 0.700 unchanged 0.90
+  robust no punctuation               F1 0.692 unchanged 0.78
+  probes negation   4/6  tuple-F1 0.857
+  probes contrast   5/6  tuple-F1 0.963
+  probes implicit   2/5  tuple-F1 0.667
+  probes sarcasm    0/4  tuple-F1 0.250
+  probes short form 6/6  tuple-F1 1.000
+  probes hinglish   0/5  tuple-F1 0.500

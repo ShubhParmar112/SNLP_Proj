@@ -1,0 +1,14 @@
+{
+  "n_items": 38,
+  "n_train": 30,
+  "n_train_with_negative_aspect": 15,
+  "n_synthetic": 8,
+  "n_redacted": 2,
+  "splits_used": [
+    "train"
+  ],
+  "files": [
+    "integration/group6_request.json",
+    "integration/group6_request_with_analysis.json"
+  ]
+}

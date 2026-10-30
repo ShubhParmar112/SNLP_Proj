@@ -1,0 +1,11 @@
+VALIDATION split, n=900 (test split untouched)
+  Majority class                       tuple-F1 0.225 [0.206, 0.245]  P=0.324 R=0.173  pol-acc=0.611  aspect-F1=0.369
+  TF-IDF LogReg baseline (Week 1-2)    tuple-F1 0.476 [0.453, 0.501]  P=0.459 R=0.494  pol-acc=0.638  aspect-F1=0.745
+  Transformer ABSA v1 (Week 3)         tuple-F1 0.712 [0.692, 0.733]  P=0.718 R=0.707  pol-acc=0.838  aspect-F1=0.850
+  difference +0.236  95% CI [+0.212, +0.261]
+  doc sentiment majority     acc 0.490  macro-F1 0.219
+  doc sentiment baseline     acc 0.737  macro-F1 0.710
+  doc sentiment transformer  acc 0.850  macro-F1 0.831
+  spans: {'n_compared': 1425, 'share_jaccard_ge_0.5': 0.1375438596491228, 'share_any_overlap': 0.7663157894736842, 'mean_jaccard': 0.19257734658998604}
+  latency: {'single_call_mean': 23.3, 'batched_per_comment': 2.7, 'device': 'cuda'}
+  week-2 error recheck: {'Rare category': {'n': 1, 'fixed': 1, 'improved': 1, 'worse': 0}, 'Implicit aspect': {'n': 7, 'fixed': 3, 'improved': 4, 'worse': 2}, 'Polarity on correct aspect': {'n': 6, 'fixed': 2, 'improved': 5, 'worse': 0}, 'Conflict / mixed': {'n': 11, 'fixed': 1, 'improved': 10, 'worse': 1}, 'Boundary confusion': {'n': 7, 'fixed': 3, 'improved': 2, 'worse': 1}, 'Multi-aspect': {'n': 5, 'fixed': 2, 'improved': 5, 'worse': 0}, 'Annotation error': {'n': 2, 'fixed': 0, 'improved': 0, 'worse': 0}, 'Negation': {'n': 1, 'fixed': 0, 'improved': 0, 'worse': 0}}

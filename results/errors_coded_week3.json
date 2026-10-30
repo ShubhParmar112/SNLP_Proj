@@ -1,0 +1,351 @@
+[
+  {
+    "feedback_id": "ER05636",
+    "text": "He is the worse teacher I have ever had. Very unorganized. Anatomy is hard subject but if you take from him he will make it more harder. Quizzes every class session and he doesn't even tell u which chapter the quiz is going to be from. No power points, he says he will send them to u but it doesn't happen. Tests are hell a hard",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "category": "Annotation error",
+    "note": "'No power points ... he says he will send them' is resources:negative under our guidelines; gold omits it",
+    "sample_rank": 1,
+    "error_index": 327
+  },
+  {
+    "feedback_id": "ER03990",
+    "text": "Professor Pisaturo is very clear about what she expects from students. Yes, she can be nit-picky but generally it's when students aren't doing the homework and are AWOL for no good reason. In the end, my interest in Italian skyrocketed as I progressed through Beginner Italian I and II. Also, if I needed help, Professor Pisaturo was there to help",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'my interest in Italian skyrocketed' read as course_content",
+    "sample_rank": 2,
+    "error_index": 57
+  },
+  {
+    "feedback_id": "ER03544",
+    "text": "The content is somewhat interesting- it at least opens your mind up to some new paradigms. The emphasis on a really odd code style( outdenting, for(;;), etc.) is a bit unfortunate. It would've been slightly more useful if a practical language was used instead of a pedagogical one( uC++).",
+    "gold": [
+      "course_content:conflict",
+      "resources:neutral"
+    ],
+    "pred": [
+      "course_content:positive",
+      "resources:negative"
+    ],
+    "category": "Conflict / mixed",
+    "note": "course_content conflict predicted as positive: the 'odd code style' half missed",
+    "sample_rank": 3,
+    "error_index": 12
+  },
+  {
+    "feedback_id": "ER05962",
+    "text": "He is very nice. He assigns a lot of formal papers and reflections which are hard but if you go see him before you pass it in he will help you on it. Read and take notes or else you will be lost. Nice guy, just hard class, a lot of philosophical thinking",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive"
+    ],
+    "category": "Multi-aspect",
+    "note": "teaching:negative missed in a four-aspect review",
+    "sample_rank": 4,
+    "error_index": 379
+  },
+  {
+    "feedback_id": "ER04511",
+    "text": "The hard part for this class is the readings. So many pages to read each week and the reading notes grading are really arbitrary. For test, You just need to do the readings and remember sparse information from the lecture, meaning the lectures don't have substantial context but they could be interesting to attend.",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "other:conflict",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "other:conflict",
+      "resources:negative",
+      "teaching:negative",
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "readings -> resources and lectures -> teaching; gold files both under other (Learning activity)",
+    "sample_rank": 5,
+    "error_index": 140
+  },
+  {
+    "feedback_id": "ER04438",
+    "text": "Skipped all the actual review material and went straight to the assessments. Finished it in like 3 days( took me longer than others because I only dedicated a small amount of time per day to the course)",
+    "gold": [
+      "workload:positive"
+    ],
+    "pred": [],
+    "category": "Implicit aspect",
+    "note": "'Finished it in like 3 days' = workload:positive, never named",
+    "sample_rank": 6,
+    "error_index": 125
+  },
+  {
+    "feedback_id": "ER04356",
+    "text": "pretty easy class, interesting weekly lectures, and easy assignments. i'd say the marking was fair and as long as you participate, you'll get the marks and understand. a lot of reading and a lot of lecture material( online), but you can get away with skimming everything.",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "other:positive",
+      "resources:neutral",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:positive",
+      "other:positive",
+      "resources:negative",
+      "teaching:positive",
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'interesting weekly lectures' predicted teaching; gold is other (Learning activity)",
+    "sample_rank": 7,
+    "error_index": 114
+  },
+  {
+    "feedback_id": "ER04078",
+    "text": "Good course to understand some fundamentals about macroeconomics. Prof. would always post example practice questions to work on and assignments are pretty much a carbon-copy of these so easy enough to get high grades. But you still need to do your own fair share of thinking for some of the tougher questions. Six assignments and no exams or quizzes so a pretty easy course to take, especially if you're on Co-Op.",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:positive"
+    ],
+    "category": "Implicit aspect",
+    "note": "'Prof. would always post example practice questions' = teaching:positive",
+    "sample_rank": 8,
+    "error_index": 71
+  },
+  {
+    "feedback_id": "ER05948",
+    "text": "Prof. Cameron is a very clear lecturer and has a pleasent and inviting style to her. It's been said that a person only truly understands something when they can explain it simply, and Angela Cameron has this covered well. That said, she covers a whole lot of information in a lecture, so be sure to do the readings if you want to keep up!",
+    "gold": [
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "resources:neutral",
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'pleasant and inviting style' read as faculty_interaction as well as teaching",
+    "sample_rank": 9,
+    "error_index": 377
+  },
+  {
+    "feedback_id": "ER03964",
+    "text": "Use library Text Books.",
+    "gold": [],
+    "pred": [
+      "resources:positive"
+    ],
+    "category": "Annotation error",
+    "note": "'Use library Text Books.' is a suggestion (R8: resources negative); gold has no aspect",
+    "sample_rank": 10,
+    "error_index": 52
+  },
+  {
+    "feedback_id": "ER05760",
+    "text": "Probably the most interesting course in 1B. Somewhat challenging though; do tons of practice before the midterm quizzes and the final. The material is easy to understand, but you'd have to be quick at solving questions if you want to finish the midterms / finals in the allotted time.",
+    "gold": [
+      "assessment:neutral",
+      "course_content:negative",
+      "resources:positive"
+    ],
+    "pred": [
+      "course_content:conflict"
+    ],
+    "category": "Multi-aspect",
+    "note": "three gold aspects collapsed into one course_content:conflict",
+    "sample_rank": 11,
+    "error_index": 346
+  },
+  {
+    "feedback_id": "ER06394",
+    "text": "Overall great Professor! She is hands on, enthusiastic, and dedicated to her students. More passion than other professors I have ever had. I like that she responds to emails quickly Negatives: WAY too much writing, too many references to have to go to and tie it all together. I am NOT an Entrepreneur major. Just lighten the load a bit !!!!",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:positive",
+      "workload:negative"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "resources:negative",
+      "teaching:positive",
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'too many references' read as resources; gold keeps it under workload",
+    "sample_rank": 12,
+    "error_index": 456
+  },
+  {
+    "feedback_id": "ER05367",
+    "text": "If you have to take Calculus as a Business school major, TAKE WITH THIS PROFESSOR. He reviews all of the basic algebra you need to know. Explains everything step-by-step. Supplements lectures with detailed worksheets. You can use homework sheets on quizzes. Tests. Partial credit! Go to class and pass!",
+    "gold": [
+      "course_content:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'detailed worksheets' read as resources:positive; gold says course_content:neutral",
+    "sample_rank": 13,
+    "error_index": 279
+  },
+  {
+    "feedback_id": "ER03916",
+    "text": "Prof. Radin is a really an expert person in here major, she knows what she is doing and also try to make you a great person by telling you all what you need to become a successful person. She needs to stop talking about her family and to be MORE ORGANIZED. no review for exams, couple of easy assignments and a group project. DO NOT BE LATE",
+    "gold": [
+      "assessment:positive",
+      "other:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "assessment:positive",
+      "teaching:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "teaching conflict predicted positive: 'needs to be MORE ORGANIZED' missed",
+    "sample_rank": 14,
+    "error_index": 44
+  },
+  {
+    "feedback_id": "ER05492",
+    "text": "GREAT teacher! WOW cannot describe it in words. He is super helpful, fun and conferences are a piece of cake, and you learn a lot! TAKE HIM, he is truly one of the best.",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "faculty_interaction:positive",
+      "other:positive",
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'conferences are a piece of cake' read as assessment",
+    "sample_rank": 15,
+    "error_index": 302
+  },
+  {
+    "feedback_id": "ER04957",
+    "text": "Nice course. Assignments and quizzes were easy but the midterm and final were kind difficult because we didn't get much time. If you prepare for it, shouldn't be too hard.",
+    "gold": [
+      "assessment:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'Nice course.' has no aspect under R9; predicted course_content",
+    "sample_rank": 16,
+    "error_index": 216
+  },
+  {
+    "feedback_id": "ER03601",
+    "text": "Sighs. Honestly, I hated this course- maybe online teaching just didn't work for the content and type of teaching style this course needs. Not enough technical guidance, just a couple of tutorials and you're expected to teach yourself the bulk of the programs used since the classes largely focus more on design theory. The rubric and marking scheme is rather unfair in my opinion- a high A is only achievable with\" award-worthy, industry-ready work\", which is a) unfeasible for a 101 course and b) especially unfeasible given the amount of teaching done and the spreading of the deadlines, in which they basically fling projects at you until you somehow are expected to become an Adobe Suite master. Not everyone who goes into this course is proficient in photography or illustration, and no amount of assistance is given to these people to set them on par with the more proficient students, resulting in many being extremely demotivated. Maybe some sort of class separation by skill level would've worked better? Either way, this class honestly made me reconsider my entire decision to take up GBDA :(",
+    "gold": [
+      "assessment:negative",
+      "faculty_interaction:negative",
+      "other:negative",
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:negative",
+      "other:negative",
+      "workload:negative"
+    ],
+    "category": "Multi-aspect",
+    "note": "long negative review: two aspects missed, two spurious",
+    "sample_rank": 17,
+    "error_index": 16
+  },
+  {
+    "feedback_id": "ER03578",
+    "text": "Prof. Lampert is REALLY passionate about jazz history and is upset that many students don't take the class seriously. He will comment on that every so often. Gives few exams but gives a review sheet right before them so you know exactly what's on it. Listening quizzes to identify instruments also. Very easy class and so relaxed. Take for sure",
+    "gold": [
+      "assessment:positive",
+      "course_content:positive",
+      "faculty_interaction:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "category": "Multi-aspect",
+    "note": "review sheet read as resources; assessment missed",
+    "sample_rank": 18,
+    "error_index": 15
+  },
+  {
+    "feedback_id": "ER03944",
+    "text": "Great course with interesting content. FINALLY, chemistry has some real world applications. Midterm was long but reasonable, final exam was the worst thing I've written to date. There is a small presentation as well which was not too bad at all",
+    "gold": [
+      "assessment:negative",
+      "course_content:positive",
+      "other:positive"
+    ],
+    "pred": [
+      "assessment:conflict",
+      "course_content:positive",
+      "other:positive"
+    ],
+    "category": "Annotation error",
+    "note": "'Midterm ... reasonable, final ... the worst' is conflict by the SemEval definition; gold says negative",
+    "sample_rank": 19,
+    "error_index": 47
+  },
+  {
+    "feedback_id": "ER04341",
+    "text": "He is one of the best math professor I've seen, I love how he teach things with getting our attention. However since I'm not good at anything about math or calculating, I feel like there is too less time for too many questions for tests that I couldn't complete.",
+    "gold": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "pred": [
+      "teaching:positive"
+    ],
+    "category": "Multi-aspect",
+    "note": "assessment:negative after 'However' missed (teaching:positive now right; the baseline got it wrong)",
+    "sample_rank": 20,
+    "error_index": 111
+  }
+]

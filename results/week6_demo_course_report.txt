@@ -1,0 +1,39 @@
+COURSE REPORT  DEMO-COURSE   (150 comments, model transformer-absa-0.2.2)
+
+Overall mood: 77 positive, 29 neutral, 44 negative
+
+TOP STRENGTHS
+   teaching              79 mentions   net +0.28
+        "Exellent teacher, helps you apply this stuff the real world."
+        "Great in class exercises and very funny prof."
+   course_content        64 mentions   net +0.44
+        "Read the text, know the concepts, easy if you read the text ahead and participate"
+        "Very easy course and can be fun too."
+   faculty_interaction   44 mentions   net +0.52
+        "Prompt grading and helpful feedback!"
+        "Very interesting class, and [INSTRUCTOR] is also very helpful."
+
+TOP CONCERNS
+   workload              14 mentions   net -0.71
+        "CONS:( 1) Too many readings for a first-time learner of econ.( 2) One collective zoom office hour( 1 hour long) at the beginning of the week felt very unfair( 3) Found a need for more OHs each week and a MS teams GC.( 4) Felt isolated from ..."
+        "Way too much work assigned, and a terrible textbook that you need to focus on for hours just to understand what's being" explained"."
+
+EMERGING CONCERNS (fewer than 8 mentions, but negative)
+   pace                   3 mentions   net -1.00
+        "I found the course was just one fact after another, and the way they're laid out in the online version, you're rushing to keep up and struggling not to fall asleep because of the lack of any expression in the voice talking whatsoever."
+        "But it feels like we actually " learn " at the end of class( the last 10 minutes or so) feeling a bit rushed."
+
+Every aspect:
+   teaching              79   +47 -25 neutral 2 mixed 5
+   course_content        64   +43 -15 neutral 4 mixed 2
+   faculty_interaction   44   +32 -9 neutral 0 mixed 3
+   assessment            38   +17 -15 neutral 1 mixed 5
+   resources             18   +13 -5 neutral 0 mixed 0
+   other                 15   +7 -2 neutral 6 mixed 0
+   workload              14   +2 -12 neutral 0 mixed 0
+   pace                   3   +0 -3 neutral 0 mixed 0
+
+Caveats shown with every report:
+   - Scores are calibrated on held-out data but remain estimates.
+   - Advisory only: not a basis for decisions about an individual student or staff member.
+   - Topic clustering is not part of pipeline v1.

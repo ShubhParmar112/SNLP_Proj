@@ -1,0 +1,46 @@
+{
+  "decision_settings": {
+    "model_version": "transformer-absa-0.2.1",
+    "dataset_version": "v1.1-edurabsa",
+    "weights": "D:\\snlp-feedback\\checkpoints\\deberta-v3-base_sw0.5_s42_d1.1",
+    "thresholds": {
+      "teaching": 0.2,
+      "faculty_interaction": 0.5,
+      "course_content": 0.5,
+      "pace": 0.55,
+      "assessment": 0.5,
+      "workload": 0.6,
+      "resources": 0.6,
+      "other": 0.7
+    },
+    "span_rule": {
+      "rel": 0.5,
+      "clause_max_words": 8
+    },
+    "span_rule_name": "clause, max 8 words",
+    "min_mentions": {
+      "absolute": 3,
+      "share": 0.05
+    },
+    "chosen_on": "validation split (900 comments)",
+    "frozen_at": "2026-10-02T18:47:16"
+  },
+  "decision_settings_sha256": "a3d966203e9f0214eb6c3eccba254eb6cd3ff3d8bbe1ca7108c774f5bc10d132",
+  "embedding": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "class_weight": "None",
+    "thresholds": {
+      "teaching": 0.4,
+      "faculty_interaction": 0.3,
+      "course_content": 0.6,
+      "pace": 0.4,
+      "assessment": 0.45,
+      "workload": 0.2,
+      "resources": 0.35,
+      "other": 0.4
+    }
+  },
+  "ensemble_thresholds": null,
+  "asset_uses_ensemble": false,
+  "asset_uses_ensemble_reason": "3x inference cost and 3x GPU memory; reported as an experiment only"
+}

@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3285.17it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3196.85it/s]
+TEST split, n=900  (opened 2026-10-02T18:47:32)
+  Majority class                                   0.216 [0.196, 0.238]  P=0.310 R=0.166 pol=0.567 asp=0.381 macro=0.050
+  Stratified random                                0.147 [0.130, 0.165]  P=0.149 R=0.144 pol=0.413 asp=0.355 macro=0.090
+  Lexicon + LogReg polarity (Week 2)               0.332 [0.307, 0.356]  P=0.379 R=0.296 pol=0.625 asp=0.532 macro=0.287
+  TF-IDF + LogReg (Week 2 baseline)                0.452 [0.427, 0.476]  P=0.432 R=0.472 pol=0.612 asp=0.738 macro=0.408
+  MiniLM embeddings + LogReg                       0.474 [0.446, 0.500]  P=0.619 R=0.383 pol=0.719 asp=0.658 macro=0.264
+  MiniLM embeddings + LogReg, tuned thresholds     0.500 [0.476, 0.523]  P=0.527 R=0.475 pol=0.699 asp=0.715 macro=0.341
+  DeBERTa ABSA v1 (Week 3)                         0.704 [0.683, 0.724]  P=0.707 R=0.702 pol=0.828 asp=0.850 macro=0.652
+  DeBERTa ABSA v1.1 (Week 4, the asset)            0.704 [0.683, 0.723]  P=0.699 R=0.708 pol=0.822 asp=0.856 macro=0.653
+  v1.1 - TF-IDF baseline                 +0.252 [+0.225, +0.279]
+  v1 - TF-IDF baseline                   +0.253 [+0.226, +0.278]
+  v1.1 - v1                              -0.001 [-0.006, +0.004]
+  embeddings(tuned) - TF-IDF baseline    +0.048 [+0.024, +0.075]
+  v1.1 - embeddings(tuned)               +0.204 [+0.180, +0.228]
+  doc majority     acc 0.507 macro-F1 0.224
+  doc tfidf        acc 0.750 macro-F1 0.722
+  doc embeddings   acc 0.714 macro-F1 0.691
+  doc transformer  acc 0.859 macro-F1 0.831
+  spans v1 rule (peak, rel 0.5)              J>=0.5 0.118 overlap 0.795 words 1
+  spans v1.1 rule (clause, max 8 words)      J>=0.5 0.554 overlap 0.898 words 6
+  pipeline check: {'model_version': 'transformer-absa-0.2.1', 'tuple_f1': 0.7036272485992332, 'matches_v1.1_row': True}
+  handout_example_v1.1: [('teaching', 'positive'), ('pace', 'negative'), ('assessment', 'negative')]
+  handout_example_section21: [('teaching', 'positive'), ('pace', 'negative')]

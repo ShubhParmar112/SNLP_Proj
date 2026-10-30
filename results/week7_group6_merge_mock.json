@@ -1,0 +1,48 @@
+{
+  "reply_file": "group6_response_MOCK.json",
+  "is_mock": true,
+  "n_sent": 38,
+  "n_returned_valid": 38,
+  "problems": {
+    "missing_id": 0
+  },
+  "n_flagged": 8,
+  "by_category": {
+    "none": 30,
+    "academic": 3,
+    "financial": 1,
+    "mental_health": 1,
+    "harassment": 1,
+    "administrative": 2
+  },
+  "by_urgency_flagged": {
+    "high": 5,
+    "medium": 3
+  },
+  "flagged_train_comments": 1,
+  "flagged_synthetic_comments": 7,
+  "synthetic_category_matches": "7/8",
+  "group5_aspects_in_flagged_comments": {
+    "academic": {
+      "course_content:negative": 2,
+      "teaching:negative": 1,
+      "faculty_interaction:negative": 1
+    },
+    "financial": {
+      "teaching:negative": 1
+    },
+    "mental_health": {},
+    "harassment": {
+      "teaching:negative": 1,
+      "faculty_interaction:negative": 1
+    },
+    "administrative": {
+      "teaching:negative": 1,
+      "faculty_interaction:negative": 1,
+      "teaching:positive": 1,
+      "pace:negative": 1,
+      "assessment:negative": 1
+    }
+  },
+  "note": "Counts only: no comment text or id is reported. Advisory: Group 6's categories are suggestions for human review, not decisions. MOCK reply: tests the plumbing only, says nothing about Group 6's system."
+}

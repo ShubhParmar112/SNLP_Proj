@@ -1,0 +1,141 @@
+
+========================================================================
+1. LOAD AND VALIDATE
+========================================================================
+Validation passed: data/raw/annotations.csv
+Comments            : 5998
+Aspect annotations  : 11215
+Comments w/o aspect : 466
+Mean aspects/comment: 1.87
+
+Document sentiment distribution:
+  positive   3013  (50.2%)
+  negative   1568  (26.1%)
+  neutral    1417  (23.6%)
+
+Aspect frequency:
+  teaching               3305
+  faculty_interaction    1582
+  course_content         2718
+  pace                    141
+  assessment             1513
+  workload                522
+  resources               663
+  other                   771
+
+Polarity distribution (aspect level):
+  positive   5853  (52.2%)
+  negative   3414  (30.4%)
+  conflict   1047  (9.3%)
+  neutral     901  (8.0%)
+
+========================================================================
+2. SPLIT (iterative stratification, near-duplicate grouped)
+========================================================================
+Near-duplicate groups: 5998 comments -> 5979 groups (kept together to prevent leakage)
+Using the frozen split in C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\data\processed\splits.json
+  train       4198  (70.0%)
+  validation   900  (15.0%)
+  test         900  (15.0%)
+
+Per-label balance across splits:
+  label                   total  train   val  test
+  teaching                 3305   2321   492   492
+  faculty_interaction      1582   1108   237   237
+  course_content           2718   1902   408   408
+  pace                      141     99    21    21
+  assessment               1513   1059   227   227
+  workload                  522    366    78    78
+  resources                 663    464    99   100
+  other                     771    527   122   122
+
+========================================================================
+3. ASPECT LEXICON (built from TRAINING SPLIT ONLY)
+========================================================================
+Terms per aspect: assessment=19, course_content=18, faculty_interaction=17, pace=18, resources=21, teaching=11, workload=18
+Provenance written -> C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\data\processed\lexicon_provenance.md
+
+========================================================================
+4. TASK A - DOCUMENT SENTIMENT
+========================================================================
+Majority class (positive): acc=0.507  macro-F1=0.224   <-- the number to beat
+TF-IDF + LogReg      : acc=0.750  macro-F1=0.722
+
+  per class:
+    positive   P=0.885 R=0.794 F1=0.837 n=456
+    neutral    P=0.490 R=0.656 F1=0.561 n=189
+    negative   P=0.794 R=0.741 F1=0.767 n=255
+
+========================================================================
+5. TASK B - ASPECT CATEGORY DETECTION
+========================================================================
+Learned (OvR LogReg) : micro-F1=0.738  macro-F1(all)=0.653  macro-F1(adequate support)=0.653
+Lexicon only         : micro-F1=0.532
+
+  per category (learned model):
+    teaching               P=0.884 R=0.870 F1=0.877 n=492
+    faculty_interaction    P=0.657 R=0.840 F1=0.737 n=237
+    course_content         P=0.780 R=0.782 F1=0.781 n=408
+    pace                   P=1.000 R=0.429 F1=0.600 n=21
+    assessment             P=0.664 R=0.767 F1=0.712 n=227
+    workload               P=0.417 R=0.513 F1=0.460 n=78
+    resources              P=0.465 R=0.590 F1=0.520 n=100
+    other                  P=0.483 R=0.598 F1=0.535 n=122
+
+========================================================================
+6. TASK C - ABSA TUPLE EXTRACTION  (the headline task)
+========================================================================
+Majority class                   micro-F1 = 0.216 [0.196, 0.238]   P=0.310 R=0.166
+Stratified random                micro-F1 = 0.147 [0.130, 0.165]   P=0.149 R=0.144
+Lexicon + LogReg polarity        micro-F1 = 0.332 [0.307, 0.356]   P=0.379 R=0.296
+TF-IDF LogReg (full baseline)    micro-F1 = 0.452 [0.427, 0.476]   P=0.432 R=0.472
+
+Polarity accuracy on correctly detected aspects (separates 'wrong aspect' from 'wrong sentiment'):
+  Majority class                   0.567 (n=492)
+  Stratified random                0.413 (n=589)
+  Lexicon + LogReg polarity        0.625 (n=797)
+  TF-IDF LogReg (full baseline)    0.612 (n=1301)
+
+========================================================================
+7. 5-FOLD CV ON TRAIN+VAL (development estimate)
+========================================================================
+ABSA micro-F1 = 0.473 +/- 0.004 over 5 folds
+  folds: 0.466, 0.471, 0.475, 0.475, 0.479
+  Report the mean +/- sd, not a single split. A wide spread here means the corpus is too small for a confident single-split claim.
+
+========================================================================
+8. ABLATIONS (evidence, not assumption)
+========================================================================
+  negation marking OFF: micro-F1 = 0.452
+  negation marking ON : micro-F1 = 0.452
+  word n-grams only    : micro-F1 = 0.446
+  word + char n-grams  : micro-F1 = 0.452
+  class_weight=None    : acc=0.756 macro-F1=0.711
+  class_weight=balanced: acc=0.750 macro-F1=0.722
+
+========================================================================
+9. ERROR SAMPLE FOR MANUAL ANALYSIS (validation split)
+========================================================================
+657 error(s) written -> C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\results\errors_for_analysis.json
+Fill the 'category' field by hand using Evaluation_Protocol.md §6.
+
+  text : Very nicely laid out. Amazing course. Super engaging and easy to learn
+  gold : []
+  pred : ['course_content:positive']
+
+  text : to learn this course well, pick a easy graders
+  gold : []
+  pred : ['course_content:positive']
+
+  text : just make sure you do all the assignments 100%, its basically a midterm.
+  gold : []
+  pred : ['assessment:neutral']
+
+========================================================================
+10. OUTPUTS
+========================================================================
+  C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\results\metrics.json
+  C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\results\results_tables.md  <- paste into the report
+  C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\results\errors_for_analysis.json
+  C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\data\processed\splits.json
+  C:\Users\Krish\SynologyDrive\NMIMS\SEM 11\Projects\SNLP Sem 11 Project\Group5_Student_Feedback_Intelligence (till week 5)\Group5_Student_Feedback_Intelligence\data\processed\aspect_lexicon.json

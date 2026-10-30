@@ -1,0 +1,7 @@
+feedback_id,feedback_text,annotator_id,doc_sentiment,aspect_category,polarity,aspect_term,span_start,span_end,uncertain,double_annotated,notes
+F001,"The lectures were informative but the pace was too fast.",A_E029,negative,teaching,positive,lectures were informative,4,29,0,1,EXAMPLE ROW - two aspects means two rows
+F001,"The lectures were informative but the pace was too fast.",A_E029,negative,pace,negative,the pace was too fast,34,55,0,1,EXAMPLE ROW
+F002,"Assignments were difficult but genuinely useful.",A_E029,neutral,assessment,conflict,difficult but genuinely useful,17,47,0,0,EXAMPLE ROW - same aspect both polarities = conflict NOT neutral
+F003,"Good course.",A_E029,positive,,,,,,0,0,EXAMPLE ROW - evaluative but names no aspect; leave aspect_category empty
+F004,"There were four assignments this semester.",A_E029,neutral,assessment,neutral,four assignments this semester,11,41,0,0,EXAMPLE ROW - aspect mentioned with no evaluation = neutral
+F005,"Another three-hour lecture, exactly what we needed.",A_E029,negative,pace,negative,Another three-hour lecture,0,26,1,0,EXAMPLE ROW - sarcasm; uncertain=1 routes this to adjudication

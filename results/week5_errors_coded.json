@@ -1,0 +1,919 @@
+[
+  {
+    "feedback_id": "ER05546",
+    "source": "course review",
+    "text": "Had Prof. Babaie. Unfortunately, it is next to impossible to understand his lectures so you might as well just rely on the slides and learning content from mindlessly searching on Google. However, he does care a lot and the content is super fun and useful, if you understand what you are doing.",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:negative"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "resources:neutral",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "course_content:positive",
+      "resources:neutral"
+    ],
+    "category": "Annotation gap / mapping",
+    "note": "'the content is super fun and useful' -> course_content:positive is right; gold omits it",
+    "sample_rank": 1,
+    "error_index": 327
+  },
+  {
+    "feedback_id": "ER03993",
+    "source": "teacher review",
+    "text": "The professor assigns a BOAT LOAD of readings that it becomes unbearable. She also will lecture the full 2 hours and even go over class time( She diverges A LOT and you don't know what she's going to put on the quizzes). On the bright side there isn't a final, only short quizzes every week with extra credit.",
+    "gold": [
+      "teaching:negative",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "teaching:negative"
+    ],
+    "missed": [
+      "workload:negative"
+    ],
+    "spurious": [
+      "assessment:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'BOAT LOAD of readings' is workload; predicted assessment:negative instead",
+    "sample_rank": 2,
+    "error_index": 57
+  },
+  {
+    "feedback_id": "ER03610",
+    "source": "teacher review",
+    "text": "Easiest class on the planet. We don't really talk about what you would think an intro gov class would but it is an awesome class. Extra-credit movie nights and study guides and lecture style class oh my! Also, I find it extremely impressive that he never comes off a being biased.",
+    "gold": [
+      "course_content:positive",
+      "faculty_interaction:positive",
+      "other:positive",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "course_content:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "faculty_interaction:positive",
+      "other:positive",
+      "resources:positive"
+    ],
+    "spurious": [],
+    "category": "Missed aspect in long review",
+    "note": "three minor aspects (fairness, movie nights, study guides) missed in a long review",
+    "sample_rank": 3,
+    "error_index": 12
+  },
+  {
+    "feedback_id": "ER05868",
+    "source": "course review",
+    "text": "( Learned this remotely due to COVID). This course is so useful to anyone looking to become a researcher or scientist in the future as it teaches you how to communicate scientific research. However, my professor was so unnecessarily strict on grading the assignments by nitpicking every little thing. I had many other science courses to complete, so I didn't have the time to do the discussion boards worth a good chunk of marks, and I rushed and got them completed at the end( minimum 250 words each). There were so many lectures that I did not have the time to watch. I could not get a 90% on the major annotated bibliography/ report/ presentation/ poster assignments even though they were all well-done, given the workload I had. I would always get really high marks on these types of assignments in high school, and I was doing the best I could. My professor literally wanted every little thing to be perfect, but I couldn't realistically make my work that high-quality due to my course load, I'm still surprised I even got those assignments done in the first place...",
+    "gold": [
+      "course_content:positive",
+      "other:neutral",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:positive",
+      "other:negative",
+      "resources:negative",
+      "teaching:negative",
+      "workload:negative"
+    ],
+    "missed": [
+      "other:neutral"
+    ],
+    "spurious": [
+      "assessment:negative",
+      "other:negative",
+      "resources:negative",
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "strict grading predicted as assessment (defensible) plus three spurious aspects",
+    "sample_rank": 4,
+    "error_index": 379
+  },
+  {
+    "feedback_id": "ER04506",
+    "source": "course review",
+    "text": "Linear Algebra is clearly an important course. I personally did not like the way it was taught and directed. The types of exam material were just there to screw you over.",
+    "gold": [
+      "assessment:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "resources:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'exam material' read as resources",
+    "sample_rank": 5,
+    "error_index": 140
+  },
+  {
+    "feedback_id": "ER04392",
+    "source": "teacher review",
+    "text": "She has said some nice things about my style of writing. When she says something nice, she makes you feel really good about it. I think she knows that she is disorganized& makes it up by going easy on a few things.",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "teaching:conflict"
+    ],
+    "spurious": [
+      "teaching:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "teaching conflict ('nice things' + 'disorganized') predicted positive",
+    "sample_rank": 6,
+    "error_index": 125
+  },
+  {
+    "feedback_id": "ER04332",
+    "source": "teacher review",
+    "text": "Did not like her at all. She's extremely unorganized, rude, grades based on her own opinions. She talks your ear off and says the same things over and over again. Does not explain assignments well and you kind of just have to wing it. She also is constantly marketing her business to her students. Very outdated ideals. Would NOT recommend.",
+    "gold": [
+      "assessment:negative",
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [
+      "assessment:negative"
+    ],
+    "spurious": [],
+    "category": "Missed aspect in long review",
+    "note": "assessment:negative ('grades based on her own opinions') missed in a long negative review",
+    "sample_rank": 7,
+    "error_index": 114
+  },
+  {
+    "feedback_id": "ER04065",
+    "source": "teacher review",
+    "text": "this instructor has a lot of very useful knowledge, but talked more about his glory days as a race car mechanic than he did on teaching us what we needed to know about the real world of rebuilding engines! He cherry picked the class on who he wanted to teach things to and the rest was left out in the cold. He manipulated the class to suit himself!",
+    "gold": [
+      "faculty_interaction:negative",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "teaching:conflict"
+    ],
+    "missed": [
+      "faculty_interaction:negative"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'cherry picked the class on who he wanted to teach' = faculty_interaction:negative",
+    "sample_rank": 8,
+    "error_index": 71
+  },
+  {
+    "feedback_id": "ER05859",
+    "source": "course review",
+    "text": "midterms are tough, study lots, it was an enjoyable course if you are interested in biology, but many questions on midterms are minor things, such as whether things moved from cytosol out, or if it was other way around, so make sure you know your stuff!",
+    "gold": [
+      "assessment:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "workload:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'study lots' read as workload",
+    "sample_rank": 9,
+    "error_index": 377
+  },
+  {
+    "feedback_id": "ER03956",
+    "source": "course review",
+    "text": "5 quizzes every two weeks 8% each, 40% final, 10% bridge project, rest was online quizzes and participation. Bridge project takes way too much time given how its only worth 10% of your final mark. Fun project but its when all the other major projects are due",
+    "gold": [
+      "other:negative"
+    ],
+    "pred": [
+      "workload:negative"
+    ],
+    "missed": [
+      "other:negative"
+    ],
+    "spurious": [
+      "workload:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "project time cost predicted workload; gold files the project under other",
+    "sample_rank": 10,
+    "error_index": 52
+  },
+  {
+    "feedback_id": "ER05682",
+    "source": "teacher review",
+    "text": "She is only for history majors. 3 tests and 1 paper and 9 points for extra credit total. Nice person but seriously needs to chill out on grading. Asking questions ends like this\" good question let me find out\" which is never. If you are not a history major please don't take this class, It will ruin your grade.",
+    "gold": [
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:positive"
+    ],
+    "category": "Annotation gap / mapping",
+    "note": "'Nice person' is a personal trait (excluded by our mapping); predicted faculty_interaction",
+    "sample_rank": 11,
+    "error_index": 346
+  },
+  {
+    "feedback_id": "ER06304",
+    "source": "course review",
+    "text": "i liked this course but just know you need to put in a LOT of effort to do well. MAKE SURE YOU DO THE STUDY QUESTIONS BECAUSE THEY WILL BE ON THE TESTS. the sheer amount of content is very overwhelming but the tests are very fairly structured with a mix of easy multiple choice and some short answer questions. i scored poorly on the tests( 58 on the first test and 69 on the second) but there are lots of opportunities to make up for your test mark with other assessments. notetonics and BASS were my saving grace( also don't worry about the group work, it is structured so that there are no freeloaders). haven't received my final mark yet but from my calculations, I think I got an 80.",
+    "gold": [
+      "assessment:positive",
+      "course_content:negative",
+      "other:positive",
+      "resources:positive"
+    ],
+    "pred": [
+      "assessment:positive",
+      "course_content:neutral",
+      "other:positive"
+    ],
+    "missed": [
+      "course_content:negative",
+      "resources:positive"
+    ],
+    "spurious": [
+      "course_content:neutral"
+    ],
+    "category": "Neutral read as polar",
+    "note": "course_content predicted neutral, gold negative; resources missed",
+    "sample_rank": 12,
+    "error_index": 456
+  },
+  {
+    "feedback_id": "ER05297",
+    "source": "course review",
+    "text": "very straight forward course theres nothing to really get confused about but really honestly truly do everything you can early so you can ask questions cuz it can make the difference between a 60 or a 100 on a lab. not totally easy if youre not particularly math or computers inclined",
+    "gold": [
+      "course_content:positive"
+    ],
+    "pred": [
+      "course_content:negative"
+    ],
+    "missed": [
+      "course_content:positive"
+    ],
+    "spurious": [
+      "course_content:negative"
+    ],
+    "category": "Conflict / mixed",
+    "note": "'nothing to get confused about ... not totally easy' read as negative; gold positive",
+    "sample_rank": 13,
+    "error_index": 279
+  },
+  {
+    "feedback_id": "ER03878",
+    "source": "teacher review",
+    "text": "I have her for behav. neuro and she is terrible at explaining. Shows us almost irrelevant videos and doesn't understand questions asked. Very vague with concepts- students have to explain to other students about the material. Has an annoying and nervous habit... do switch out if you get her.",
+    "gold": [
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'doesn't understand questions asked' read as faculty_interaction (defensible)",
+    "sample_rank": 14,
+    "error_index": 44
+  },
+  {
+    "feedback_id": "ER05408",
+    "source": "course review",
+    "text": "Mark heavily dependent on TA preference. Group members are a pain to work with.",
+    "gold": [
+      "assessment:neutral",
+      "other:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative"
+    ],
+    "missed": [
+      "assessment:neutral",
+      "other:negative"
+    ],
+    "spurious": [
+      "faculty_interaction:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "short comment: TA grading read as faculty_interaction; assessment and other missed",
+    "sample_rank": 15,
+    "error_index": 302
+  },
+  {
+    "feedback_id": "ER04954",
+    "source": "course review",
+    "text": "MATH 227 is the science faculty's course that introduces multivariate calculus and vector calculus. The concepts in this course such as double/ triple integration in polar/ cylindrical/ spherical coordinates prove to be very useful for later courses, so try to pick up on those! Vector calculus is very important for electromagnetism as well if you wish to take that. This course may be more time consuming and challenging than your other calculus courses so don't feel too bad if you don't get it right away!",
+    "gold": [
+      "course_content:conflict",
+      "workload:negative"
+    ],
+    "pred": [
+      "course_content:positive",
+      "workload:negative"
+    ],
+    "missed": [
+      "course_content:conflict"
+    ],
+    "spurious": [
+      "course_content:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "course_content conflict predicted positive",
+    "sample_rank": 16,
+    "error_index": 216
+  },
+  {
+    "feedback_id": "ER03658",
+    "source": "course review",
+    "text": "I found the course was just one fact after another, and the way they're laid out in the online version, you're rushing to keep up and struggling not to fall asleep because of the lack of any expression in the voice talking whatsoever. I haven't taken the exam yet but I've received the outline, and I don't think it could possibly be finished in two and a half hours, the amount of essays small and large we have to write plus the random dates, fill in the blanks and information needed... it doesn't seem like a 200 level course at all.",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "pace:negative",
+      "teaching:negative",
+      "workload:negative"
+    ],
+    "pred": [
+      "course_content:negative",
+      "pace:negative",
+      "teaching:negative"
+    ],
+    "missed": [
+      "assessment:negative",
+      "workload:negative"
+    ],
+    "spurious": [],
+    "category": "Missed aspect in long review",
+    "note": "assessment and workload missed in a long, truncated review",
+    "sample_rank": 17,
+    "error_index": 16
+  },
+  {
+    "feedback_id": "ER03644",
+    "source": "teacher review",
+    "text": "he is never in the room and is always late",
+    "gold": [
+      "teaching:negative"
+    ],
+    "pred": [
+      "faculty_interaction:negative",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:negative"
+    ],
+    "category": "Boundary confusion",
+    "note": "'never in the room and always late' read as faculty_interaction (defensible)",
+    "sample_rank": 18,
+    "error_index": 15
+  },
+  {
+    "feedback_id": "ER03905",
+    "source": "teacher review",
+    "text": "This class is so much fun! It requires a lot of partner work& attendance is mandatory, but he gives extra credit. Take this class because you won't regret it!!",
+    "gold": [
+      "other:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "other:neutral",
+      "teaching:positive",
+      "workload:neutral"
+    ],
+    "missed": [],
+    "spurious": [
+      "workload:neutral"
+    ],
+    "category": "Boundary confusion",
+    "note": "'a lot of partner work, attendance mandatory' read as workload",
+    "sample_rank": 19,
+    "error_index": 47
+  },
+  {
+    "feedback_id": "ER04317",
+    "source": "teacher review",
+    "text": "McInerney is a great prof, particularly for the intro micro course. Her presentations are well-prepared and well-organized, and she tries to relate the material to life in the Burg, which is cool. Very nice, available for help, and crystal clear. I highly recommend!",
+    "gold": [
+      "faculty_interaction:positive",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "resources:positive"
+    ],
+    "spurious": [],
+    "category": "Boundary confusion",
+    "note": "'presentations are well-prepared' is resources in gold; predicted only teaching",
+    "sample_rank": 20,
+    "error_index": 111
+  },
+  {
+    "feedback_id": "ER04357",
+    "source": "teacher review",
+    "text": "Great prof overall, very enthusiastic about her field and it really does show. Attendance is a mandatory as there are clicker questions but don't waste your money on the textbook. Lectures are long at times but if you have an interest then it won't be too bad! One of the most potent and straightforward profs on campus!",
+    "gold": [
+      "resources:neutral",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "resources:neutral",
+      "teaching:positive"
+    ],
+    "missed": [
+      "teaching:conflict"
+    ],
+    "spurious": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "teaching conflict predicted positive; extra faculty_interaction",
+    "sample_rank": 21,
+    "error_index": 119
+  },
+  {
+    "feedback_id": "ER05173",
+    "source": "teacher review",
+    "text": "At first work load seems like a lot, but as long as you stay on top and don't get behind with the multiple assignments she gives in a week. Directions are kind of confusing to the assignments but when asking for help she explains it with you step by step one on one. Very little grammar presentations but lots of writing.",
+    "gold": [
+      "assessment:negative",
+      "faculty_interaction:positive",
+      "workload:negative"
+    ],
+    "pred": [
+      "assessment:negative",
+      "resources:negative",
+      "teaching:positive",
+      "workload:negative"
+    ],
+    "missed": [
+      "faculty_interaction:positive"
+    ],
+    "spurious": [
+      "resources:negative",
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'explains it with you step by step one on one' = faculty_interaction; predicted teaching",
+    "sample_rank": 22,
+    "error_index": 258
+  },
+  {
+    "feedback_id": "ER05451",
+    "source": "teacher review",
+    "text": "Took her for math 85 and math 90. Awesome teacher. She makes class entertaining and will stay late to help you understand the material. Take her for math!",
+    "gold": [
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "teaching:positive"
+    ],
+    "missed": [
+      "faculty_interaction:positive"
+    ],
+    "spurious": [],
+    "category": "Implicit aspect",
+    "note": "'will stay late to help you understand' = faculty_interaction, not named",
+    "sample_rank": 23,
+    "error_index": 308
+  },
+  {
+    "feedback_id": "ER03617",
+    "source": "teacher review",
+    "text": "Learning is stifled in this class. This class can be very easy but this professor makes it difficult. Her teaching somewhat goes contrary to the text and she piles on tons of work. Her sylabus is unclear and does not list all of the coursework concisely. She acts as though she has some phycological issues.",
+    "gold": [
+      "course_content:negative",
+      "resources:negative",
+      "teaching:negative"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:negative",
+      "resources:negative",
+      "teaching:negative",
+      "workload:negative"
+    ],
+    "missed": [
+      "course_content:negative"
+    ],
+    "spurious": [
+      "course_content:positive",
+      "faculty_interaction:negative",
+      "workload:negative"
+    ],
+    "category": "Conflict / mixed",
+    "note": "'can be very easy but this professor makes it difficult': content polarity flipped",
+    "sample_rank": 24,
+    "error_index": 13
+  },
+  {
+    "feedback_id": "ER05339",
+    "source": "course review",
+    "text": "well, it's mandatory, and I would say it's OK. you need those ideas to go on with your CS career, but I don't think it matters as much as other courses. but again, it's mandatory, you have to do it.",
+    "gold": [
+      "course_content:conflict"
+    ],
+    "pred": [
+      "course_content:positive"
+    ],
+    "missed": [
+      "course_content:conflict"
+    ],
+    "spurious": [
+      "course_content:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "'it's OK ... you need those ideas ... doesn't matter as much' (conflict) read positive",
+    "sample_rank": 25,
+    "error_index": 287
+  },
+  {
+    "feedback_id": "ER04249",
+    "source": "course review",
+    "text": "This is an interesting course with lots of content. It isn't too difficult and it builds a lot on the Amath 250 material.",
+    "gold": [
+      "course_content:neutral"
+    ],
+    "pred": [
+      "course_content:positive"
+    ],
+    "missed": [
+      "course_content:neutral"
+    ],
+    "spurious": [
+      "course_content:positive"
+    ],
+    "category": "Neutral read as polar",
+    "note": "'interesting course ... isn't too difficult' gold neutral, predicted positive",
+    "sample_rank": 26,
+    "error_index": 101
+  },
+  {
+    "feedback_id": "ER05797",
+    "source": "course review",
+    "text": "Don't be fooled by the exams being multiple choice... you really need to study for the exams. Overall a very interesting course, and especially with BJ Rye as the professor, she was incredible!",
+    "gold": [
+      "assessment:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:negative",
+      "teaching:positive"
+    ],
+    "missed": [
+      "assessment:neutral"
+    ],
+    "spurious": [
+      "assessment:negative"
+    ],
+    "category": "Neutral read as polar",
+    "note": "exam advice ('you really need to study') gold neutral, predicted negative",
+    "sample_rank": 27,
+    "error_index": 366
+  },
+  {
+    "feedback_id": "ER05586",
+    "source": "teacher review",
+    "text": "She's awesome! Taught a lot of real-life lessons in the class. No tests, only a long-ish midterm paper and 4 short responses. Definitely recommended for anybody who needs an easy grade and who doesn't mind passing the time in a conversation driven lesson.",
+    "gold": [
+      "course_content:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "course_content:positive",
+      "other:positive",
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "other:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "'conversation driven lesson' read as other",
+    "sample_rank": 28,
+    "error_index": 332
+  },
+  {
+    "feedback_id": "ER05757",
+    "source": "course review",
+    "text": "Try to study ahead of time and you will be fine. The materials are interesting although the videos on Mobious can be boring sometimes, but a good course overall, ask on piazza anything you want",
+    "gold": [
+      "course_content:positive",
+      "resources:conflict"
+    ],
+    "pred": [
+      "course_content:positive",
+      "resources:positive"
+    ],
+    "missed": [
+      "resources:conflict"
+    ],
+    "spurious": [
+      "resources:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "resources conflict ('materials interesting, videos boring') predicted positive",
+    "sample_rank": 29,
+    "error_index": 359
+  },
+  {
+    "feedback_id": "ER04947",
+    "source": "teacher review",
+    "text": "Prof. Threlkeld was a tough grader but a good teacher. She definitely gets the college writing process across. She can be a bit intimidating, but she encourages using her office hours a lot. Reading the syllabus is a must in her class.",
+    "gold": [
+      "faculty_interaction:conflict",
+      "resources:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "faculty_interaction:conflict",
+      "teaching:conflict"
+    ],
+    "missed": [
+      "resources:positive"
+    ],
+    "spurious": [],
+    "category": "Missed aspect in long review",
+    "note": "'Reading the syllabus is a must' (resources) missed",
+    "sample_rank": 30,
+    "error_index": 214
+  },
+  {
+    "feedback_id": "ER04321",
+    "source": "course review",
+    "text": "This course isn't taught as efficiently as possible, and the evaluations are a little arbitrary, but it is good information to know",
+    "gold": [
+      "assessment:negative",
+      "course_content:positive"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:positive",
+      "teaching:negative"
+    ],
+    "missed": [],
+    "spurious": [
+      "teaching:negative"
+    ],
+    "category": "Annotation gap / mapping",
+    "note": "'isn't taught as efficiently as possible' -> teaching:negative is right; gold omits it",
+    "sample_rank": 31,
+    "error_index": 112
+  },
+  {
+    "feedback_id": "ER05021",
+    "source": "course review",
+    "text": "Boring as all get out, but the assignments that make you use excel functions is really useful, being in co-op there are a lot of jobs that want you to be able to use excel very well.",
+    "gold": [
+      "assessment:positive",
+      "resources:positive"
+    ],
+    "pred": [
+      "assessment:positive"
+    ],
+    "missed": [
+      "resources:positive"
+    ],
+    "spurious": [],
+    "category": "Boundary confusion",
+    "note": "'assignments that make you use excel' is resources in gold; missed",
+    "sample_rank": 32,
+    "error_index": 229
+  },
+  {
+    "feedback_id": "ER05407",
+    "source": "teacher review",
+    "text": "Prof Newburg is awesome! He's so funny and really tries to engage the class. I love the books we're reading and the films we watch. His comments on my papers are SO helpful. I'm definitely learning a lot in his class!",
+    "gold": [
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "pred": [
+      "faculty_interaction:positive",
+      "resources:positive",
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "faculty_interaction:positive"
+    ],
+    "category": "Annotation gap / mapping",
+    "note": "'His comments on my papers are SO helpful' = feedback on work = faculty_interaction under our guidelines; gold omits it",
+    "sample_rank": 33,
+    "error_index": 301
+  },
+  {
+    "feedback_id": "ER04515",
+    "source": "teacher review",
+    "text": "Prof. Gordon is a good guy with a lot of relevant experience. He makes it very clear he cares about the success of his students. The only issue I had with the class was the lack of clarity given on assignments throughout the semester. It would have been helpful to receive examples of A quality case studies.",
+    "gold": [
+      "assessment:negative",
+      "faculty_interaction:positive",
+      "resources:neutral",
+      "teaching:positive"
+    ],
+    "pred": [
+      "assessment:negative",
+      "faculty_interaction:positive",
+      "teaching:positive"
+    ],
+    "missed": [
+      "resources:neutral"
+    ],
+    "spurious": [],
+    "category": "Boundary confusion",
+    "note": "'lack of clarity on assignments, examples' (resources:neutral) missed",
+    "sample_rank": 34,
+    "error_index": 142
+  },
+  {
+    "feedback_id": "ER06062",
+    "source": "teacher review",
+    "text": "This is a very difficult class and requires a lot studying to receive a good grade. Biswas is a very nice lady( willing to help) and did give some extra credit opportunities, but it doesn't make up for the fact that lectures are VERY boring( given in the form of Powerpoints) and the tests are extremely hard because they cover a lot of material.",
+    "gold": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "teaching:conflict"
+    ],
+    "pred": [
+      "assessment:negative",
+      "course_content:negative",
+      "faculty_interaction:positive",
+      "resources:negative",
+      "teaching:positive"
+    ],
+    "missed": [
+      "teaching:conflict"
+    ],
+    "spurious": [
+      "resources:negative",
+      "teaching:positive"
+    ],
+    "category": "Conflict / mixed",
+    "note": "teaching conflict ('nice' + 'VERY boring') predicted positive",
+    "sample_rank": 35,
+    "error_index": 414
+  },
+  {
+    "feedback_id": "ER06240",
+    "source": "teacher review",
+    "text": "4 online quizzes and 4 in class tests( 1 make up offered towards the end). He doesn't work much with you on the grades and all the tests are scantron based. Know your definitions and you'll do great. Look over all slides( He only teaches from powerpoints which he uploads to blackboard). He also sounds like Kermit the frog. Good luck!",
+    "gold": [
+      "course_content:positive",
+      "teaching:negative"
+    ],
+    "pred": [
+      "course_content:positive",
+      "teaching:neutral"
+    ],
+    "missed": [
+      "teaching:negative"
+    ],
+    "spurious": [
+      "teaching:neutral"
+    ],
+    "category": "Neutral read as polar",
+    "note": "'only teaches from powerpoints' gold teaching:negative, predicted neutral",
+    "sample_rank": 36,
+    "error_index": 445
+  },
+  {
+    "feedback_id": "ER03350",
+    "source": "course review",
+    "text": "If you take this course and regret it, email me at normnormnorm@ gmail. com and I will personally e-transfer you$ 100, that's how confident I am that you will not regret taking this course",
+    "gold": [],
+    "pred": [
+      "teaching:positive"
+    ],
+    "missed": [],
+    "spurious": [
+      "teaching:positive"
+    ],
+    "category": "Boundary confusion",
+    "note": "overall course praise (no aspect under R9) predicted teaching; also contains an email address written with spaces that the PII regex missed",
+    "sample_rank": 37,
+    "error_index": 3
+  },
+  {
+    "feedback_id": "ER05904",
+    "source": "course review",
+    "text": "Bird material, but unbearably boring. Only looked at the course whenever an assignment was coming up, but the 30 + pages of readings you get per assignment could have been explained in 3 pages. This course is a neglected middle child who bothers you every 2 weeks. Not worth.",
+    "gold": [
+      "resources:conflict"
+    ],
+    "pred": [
+      "course_content:positive",
+      "faculty_interaction:negative",
+      "resources:negative"
+    ],
+    "missed": [
+      "resources:conflict"
+    ],
+    "spurious": [
+      "course_content:positive",
+      "faculty_interaction:negative",
+      "resources:negative"
+    ],
+    "category": "Sarcasm / figurative",
+    "note": "'a neglected middle child who bothers you every 2 weeks' - figurative; resources conflict missed, three spurious aspects",
+    "sample_rank": 38,
+    "error_index": 388
+  },
+  {
+    "feedback_id": "ER06048",
+    "source": "course review",
+    "text": "Attend lectures and do exercises after class. A fair amount of memorization is needed and necessary to get 85 +.",
+    "gold": [
+      "course_content:neutral"
+    ],
+    "pred": [
+      "teaching:neutral"
+    ],
+    "missed": [
+      "course_content:neutral"
+    ],
+    "spurious": [
+      "teaching:neutral"
+    ],
+    "category": "Boundary confusion",
+    "note": "'Attend lectures and do exercises' read as teaching:neutral (lectures = teaching in v1.1)",
+    "sample_rank": 39,
+    "error_index": 412
+  },
+  {
+    "feedback_id": "ER04133",
+    "source": "course review",
+    "text": "I am, beyond upset that i trusted other students on flow to adequately describe this course.. 93% easy is absolute bull. So the content is not all that bad, but its not EASY by any means. Add this to the fact that you have to fill in 100 marks of non multiple choice questions in a 50 minute midterm and you do not have \" an easy 90 \". The reason why a lot of people likely thought that this course was easy, is because there is a circulating google doc that has all the previous midterms/ tests in it. Therefore, if you have an extensive social group, you were bound to get the doc early, and study only according to the doc, and therefore were likely to get a solid 100% for solely memorizing what you knew would be tested. However, if you are like me, and had to do it the old fashioned way and try to study everything and only focusing heavily on the stuff that he stressed in class, it is a much different story. Now i wasn't expecting extremely easy, but i was hoping it would balance out my other 4th year courses and it is currently my lowest grade out of all 6. So if you are considering taking this course because you need a higher level course, but still want to get a good grade relatively easily, Would not recommend.",
+    "gold": [
+      "assessment:neutral",
+      "course_content:neutral"
+    ],
+    "pred": [
+      "course_content:conflict",
+      "teaching:negative"
+    ],
+    "missed": [
+      "assessment:neutral",
+      "course_content:neutral"
+    ],
+    "spurious": [
+      "course_content:conflict",
+      "teaching:negative"
+    ],
+    "category": "Neutral read as polar",
+    "note": "content neutral read as conflict; assessment neutral missed; extra teaching:negative",
+    "sample_rank": 40,
+    "error_index": 81
+  }
+]

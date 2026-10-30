@@ -1,0 +1,965 @@
+{
+  "split": "test",
+  "n": 900,
+  "opened": "2026-10-02T18:19:19",
+  "frozen_settings": {
+    "decision_settings": {
+      "model_version": "transformer-absa-0.1.1",
+      "weights": "D:\\snlp-feedback\\checkpoints\\deberta-v3-base_sw0.5_s42",
+      "thresholds": {
+        "teaching": 0.2,
+        "faculty_interaction": 0.8,
+        "course_content": 0.4,
+        "pace": 0.65,
+        "assessment": 0.45,
+        "workload": 0.65,
+        "resources": 0.8,
+        "other": 0.75
+      },
+      "span_rule": {
+        "rel": 0.5,
+        "clause_max_words": 8
+      },
+      "span_rule_name": "clause, max 8 words",
+      "min_mentions": {
+        "absolute": 3,
+        "share": 0.05
+      },
+      "chosen_on": "validation split (900 comments)",
+      "frozen_at": "2026-10-02T18:18:05"
+    },
+    "decision_settings_sha256": "f8641f5afef34e69686e047beb2f6a35da92b5fd25f4860b07a5982eeafff805",
+    "embedding": {
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "class_weight": "None",
+      "thresholds": {
+        "teaching": 0.3,
+        "faculty_interaction": 0.3,
+        "course_content": 0.6,
+        "pace": 0.35,
+        "assessment": 0.45,
+        "workload": 0.2,
+        "resources": 0.35,
+        "other": 0.45
+      }
+    },
+    "ensemble_thresholds": {
+      "teaching": 0.4,
+      "faculty_interaction": 0.5,
+      "course_content": 0.7,
+      "pace": 0.45,
+      "assessment": 0.55,
+      "workload": 0.75,
+      "resources": 0.6,
+      "other": 0.8
+    },
+    "asset_uses_ensemble": false,
+    "asset_uses_ensemble_reason": "3x inference cost and 3x GPU memory; reported as an experiment only"
+  },
+  "task_c": [
+    {
+      "model": "Majority class",
+      "group": "reference",
+      "micro_f1": 0.21621621621621623,
+      "precision": 0.3111111111111111,
+      "recall": 0.16568047337278108,
+      "ci": {
+        "point": 0.21621621621621623,
+        "ci_low": 0.197062612473052,
+        "ci_high": 0.23666635111899575
+      },
+      "macro_f1": 0.050835148874364564,
+      "polarity_acc_on_detected": 0.5870020964360587,
+      "aspect_micro_f1": 0.36833976833976834,
+      "per_category": {
+        "teaching": {
+          "precision": 0.3111111111111111,
+          "recall": 0.5870020964360587,
+          "f1": 0.4066811909949165,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "Stratified random",
+      "group": "reference",
+      "micro_f1": 0.14504965392717425,
+      "precision": 0.1475811390079608,
+      "recall": 0.142603550295858,
+      "ci": {
+        "point": 0.14504965392717425,
+        "ci_low": 0.128148076481524,
+        "ci_high": 0.16369316977532852
+      },
+      "macro_f1": 0.09089678370649876,
+      "polarity_acc_on_detected": 0.41551724137931034,
+      "aspect_micro_f1": 0.3490821546795065,
+      "per_category": {
+        "teaching": {
+          "precision": 0.23678646934460887,
+          "recall": 0.2348008385744235,
+          "f1": 0.23578947368421052,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.17889908256880735,
+          "recall": 0.16455696202531644,
+          "f1": 0.17142857142857143,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.14628297362110312,
+          "recall": 0.14950980392156862,
+          "f1": 0.1478787878787879,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.09259259259259259,
+          "recall": 0.0881057268722467,
+          "f1": 0.09029345372460497,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.013888888888888888,
+          "recall": 0.01282051282051282,
+          "f1": 0.013333333333333332,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.03296703296703297,
+          "recall": 0.03,
+          "f1": 0.03141361256544503,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.0390625,
+          "recall": 0.035211267605633804,
+          "f1": 0.037037037037037035,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "Lexicon + LogReg polarity (Week 2)",
+      "group": "baseline",
+      "micro_f1": 0.3315579227696404,
+      "precision": 0.3789954337899543,
+      "recall": 0.29467455621301775,
+      "ci": {
+        "point": 0.3315579227696404,
+        "ci_low": 0.3071273837437934,
+        "ci_high": 0.3559834594278393
+      },
+      "macro_f1": 0.2961487725437294,
+      "polarity_acc_on_detected": 0.6368286445012787,
+      "aspect_micro_f1": 0.5206391478029294,
+      "per_category": {
+        "teaching": {
+          "precision": 0.5466666666666666,
+          "recall": 0.429769392033543,
+          "f1": 0.48122065727699526,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.6666666666666666,
+          "recall": 0.31223628691983124,
+          "f1": 0.42528735632183906,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.33497536945812806,
+          "recall": 0.16666666666666666,
+          "f1": 0.22258592471358427,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.4473684210526316,
+          "recall": 0.8095238095238095,
+          "f1": 0.576271186440678,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.26975476839237056,
+          "recall": 0.43612334801762115,
+          "f1": 0.33333333333333337,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.2222222222222222,
+          "recall": 0.10256410256410256,
+          "f1": 0.14035087719298245,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.14673913043478262,
+          "recall": 0.27,
+          "f1": 0.19014084507042256,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "TF-IDF + LogReg (Week 2 baseline)",
+      "group": "baseline",
+      "micro_f1": 0.4544685649844939,
+      "precision": 0.4340333871836295,
+      "recall": 0.47692307692307695,
+      "ci": {
+        "point": 0.4544685649844939,
+        "ci_low": 0.43201528752476126,
+        "ci_high": 0.4785800844531115
+      },
+      "macro_f1": 0.4118520567708369,
+      "polarity_acc_on_detected": 0.6171516079632465,
+      "aspect_micro_f1": 0.736396955173386,
+      "per_category": {
+        "teaching": {
+          "precision": 0.6773504273504274,
+          "recall": 0.6645702306079665,
+          "f1": 0.6708994708994709,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.5379537953795379,
+          "recall": 0.6877637130801688,
+          "f1": 0.6037037037037036,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.36674816625916873,
+          "recall": 0.36764705882352944,
+          "f1": 0.3671970624235007,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 1.0,
+          "recall": 0.42857142857142855,
+          "f1": 0.6,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.31297709923664124,
+          "recall": 0.36123348017621143,
+          "f1": 0.3353783231083845,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.23958333333333334,
+          "recall": 0.2948717948717949,
+          "f1": 0.26436781609195403,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.2125984251968504,
+          "recall": 0.27,
+          "f1": 0.2378854625550661,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.1912568306010929,
+          "recall": 0.24647887323943662,
+          "f1": 0.21538461538461537,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "MiniLM embeddings + LogReg",
+      "group": "comparison",
+      "micro_f1": 0.4711926605504588,
+      "precision": 0.6202898550724638,
+      "recall": 0.37988165680473374,
+      "ci": {
+        "point": 0.4711926605504588,
+        "ci_low": 0.44301477885425933,
+        "ci_high": 0.49619204374448656
+      },
+      "macro_f1": 0.2745887117553453,
+      "polarity_acc_on_detected": 0.7197309417040358,
+      "aspect_micro_f1": 0.6546788990825688,
+      "per_category": {
+        "teaching": {
+          "precision": 0.7540983606557377,
+          "recall": 0.6750524109014675,
+          "f1": 0.7123893805309734,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.6455026455026455,
+          "recall": 0.5147679324894515,
+          "f1": 0.5727699530516432,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.48936170212765956,
+          "recall": 0.3382352941176471,
+          "f1": 0.4,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.42857142857142855,
+          "recall": 0.18502202643171806,
+          "f1": 0.25846153846153846,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.25,
+          "recall": 0.01282051282051282,
+          "f1": 0.024390243902439022,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.36363636363636365,
+          "recall": 0.04,
+          "f1": 0.07207207207207207,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.5416666666666666,
+          "recall": 0.09154929577464789,
+          "f1": 0.1566265060240964,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "MiniLM embeddings + LogReg, tuned thresholds",
+      "group": "comparison",
+      "micro_f1": 0.4938195302843016,
+      "precision": 0.5168175937904269,
+      "recall": 0.4727810650887574,
+      "ci": {
+        "point": 0.4938195302843016,
+        "ci_low": 0.4702956946237787,
+        "ci_high": 0.5170840079974701
+      },
+      "macro_f1": 0.33480861743522206,
+      "polarity_acc_on_detected": 0.6953872932985204,
+      "aspect_micro_f1": 0.7101359703337453,
+      "per_category": {
+        "teaching": {
+          "precision": 0.694980694980695,
+          "recall": 0.7547169811320755,
+          "f1": 0.7236180904522612,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.5308641975308642,
+          "recall": 0.7257383966244726,
+          "f1": 0.6131907308377896,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.4666666666666667,
+          "recall": 0.3602941176470588,
+          "f1": 0.40663900414937765,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.3695652173913043,
+          "recall": 0.29955947136563876,
+          "f1": 0.3309002433090024,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.24691358024691357,
+          "recall": 0.2564102564102564,
+          "f1": 0.25157232704402516,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.25,
+          "recall": 0.15,
+          "f1": 0.18749999999999997,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.265625,
+          "recall": 0.11971830985915492,
+          "f1": 0.16504854368932037,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "DeBERTa ABSA v1 (Week 3)",
+      "group": "improved",
+      "micro_f1": 0.6958345819598443,
+      "precision": 0.7049180327868853,
+      "recall": 0.6869822485207101,
+      "ci": {
+        "point": 0.6958345819598443,
+        "ci_low": 0.6755765451294539,
+        "ci_high": 0.715431965791373
+      },
+      "macro_f1": 0.6348705013669211,
+      "polarity_acc_on_detected": 0.823404255319149,
+      "aspect_micro_f1": 0.8450704225352113,
+      "per_category": {
+        "teaching": {
+          "precision": 0.8179871520342612,
+          "recall": 0.80083857442348,
+          "f1": 0.809322033898305,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.7064846416382252,
+          "recall": 0.8734177215189873,
+          "f1": 0.7811320754716982,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.6700251889168766,
+          "recall": 0.6519607843137255,
+          "f1": 0.6608695652173913,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.6470588235294118,
+          "recall": 0.5238095238095238,
+          "f1": 0.5789473684210527,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.7081081081081081,
+          "recall": 0.5770925110132159,
+          "f1": 0.6359223300970873,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.6176470588235294,
+          "recall": 0.5384615384615384,
+          "f1": 0.5753424657534247,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.5,
+          "recall": 0.44,
+          "f1": 0.46808510638297873,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.5909090909090909,
+          "recall": 0.5492957746478874,
+          "f1": 0.5693430656934306,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "DeBERTa ABSA v1.1 (Week 4, the asset)",
+      "group": "improved",
+      "micro_f1": 0.7034813925570228,
+      "precision": 0.7137637028014616,
+      "recall": 0.693491124260355,
+      "ci": {
+        "point": 0.7034813925570228,
+        "ci_low": 0.6835647389130256,
+        "ci_high": 0.7232125376741133
+      },
+      "macro_f1": 0.6437271160326034,
+      "polarity_acc_on_detected": 0.8161559888579387,
+      "aspect_micro_f1": 0.8619447779111644,
+      "per_category": {
+        "teaching": {
+          "precision": 0.7884231536926147,
+          "recall": 0.8280922431865828,
+          "f1": 0.8077709611451942,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.7898832684824902,
+          "recall": 0.8565400843881856,
+          "f1": 0.8218623481781376,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.6401869158878505,
+          "recall": 0.6715686274509803,
+          "f1": 0.6555023923444976,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.6875,
+          "recall": 0.5238095238095238,
+          "f1": 0.5945945945945946,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.6698564593301436,
+          "recall": 0.6167400881057269,
+          "f1": 0.6422018348623854,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.6721311475409836,
+          "recall": 0.5256410256410257,
+          "f1": 0.5899280575539568,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.6119402985074627,
+          "recall": 0.41,
+          "f1": 0.49101796407185627,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.6504854368932039,
+          "recall": 0.47183098591549294,
+          "f1": 0.5469387755102041,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "3-seed ensemble, tuned (experiment)",
+      "group": "experiment",
+      "micro_f1": 0.7127139364303179,
+      "precision": 0.7370417193426043,
+      "recall": 0.6899408284023668,
+      "ci": {
+        "point": 0.7127139364303179,
+        "ci_low": 0.693218073762334,
+        "ci_high": 0.7349149070178173
+      },
+      "macro_f1": 0.6505249101806119,
+      "polarity_acc_on_detected": 0.8275372604684174,
+      "aspect_micro_f1": 0.8612469437652812,
+      "per_category": {
+        "teaching": {
+          "precision": 0.8028747433264887,
+          "recall": 0.8197064989517819,
+          "f1": 0.8112033195020746,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.7666666666666667,
+          "recall": 0.8734177215189873,
+          "f1": 0.8165680473372781,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.7146666666666667,
+          "recall": 0.6568627450980392,
+          "f1": 0.6845466155810983,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.7058823529411765,
+          "recall": 0.5714285714285714,
+          "f1": 0.6315789473684211,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.6956521739130435,
+          "recall": 0.6343612334801763,
+          "f1": 0.663594470046083,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.7307692307692307,
+          "recall": 0.48717948717948717,
+          "f1": 0.5846153846153846,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.5443037974683544,
+          "recall": 0.43,
+          "f1": 0.4804469273743017,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.6631578947368421,
+          "recall": 0.44366197183098594,
+          "f1": 0.5316455696202532,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    },
+    {
+      "model": "v1 without span supervision (ablation)",
+      "group": "experiment",
+      "micro_f1": 0.6626578472639808,
+      "precision": 0.6735941320293398,
+      "recall": 0.6520710059171597,
+      "ci": {
+        "point": 0.6626578472639808,
+        "ci_low": 0.641960186414733,
+        "ci_high": 0.683897304697641
+      },
+      "macro_f1": 0.509890149817025,
+      "polarity_acc_on_detected": 0.8067349926793558,
+      "aspect_micro_f1": 0.8214070956103428,
+      "per_category": {
+        "teaching": {
+          "precision": 0.7991803278688525,
+          "recall": 0.8176100628930818,
+          "f1": 0.8082901554404145,
+          "support": 477,
+          "low_support": false
+        },
+        "faculty_interaction": {
+          "precision": 0.782258064516129,
+          "recall": 0.8185654008438819,
+          "f1": 0.8,
+          "support": 237,
+          "low_support": false
+        },
+        "course_content": {
+          "precision": 0.6102088167053364,
+          "recall": 0.6446078431372549,
+          "f1": 0.6269368295589989,
+          "support": 408,
+          "low_support": false
+        },
+        "pace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21,
+          "low_support": false
+        },
+        "assessment": {
+          "precision": 0.6727272727272727,
+          "recall": 0.6519823788546255,
+          "f1": 0.6621923937360179,
+          "support": 227,
+          "low_support": false
+        },
+        "workload": {
+          "precision": 0.5616438356164384,
+          "recall": 0.5256410256410257,
+          "f1": 0.543046357615894,
+          "support": 78,
+          "low_support": false
+        },
+        "resources": {
+          "precision": 0.3793103448275862,
+          "recall": 0.33,
+          "f1": 0.35294117647058826,
+          "support": 100,
+          "low_support": false
+        },
+        "other": {
+          "precision": 0.3707865168539326,
+          "recall": 0.2323943661971831,
+          "f1": 0.2857142857142857,
+          "support": 142,
+          "low_support": false
+        }
+      }
+    }
+  ],
+  "v1_seeds": {
+    "f1": [
+      0.6958345819598443,
+      0.7001774098166765,
+      0.7021849745585154
+    ],
+    "mean": 0.6993989887783454,
+    "sd": 0.0032459707367752965
+  },
+  "paired": {
+    "v1.1 - TF-IDF baseline": {
+      "diff": 0.2490128275725289,
+      "ci_low": 0.22516940176911399,
+      "ci_high": 0.27450124863483827,
+      "p_b_not_better": 0.0
+    },
+    "v1 - TF-IDF baseline": {
+      "diff": 0.24136601697535037,
+      "ci_low": 0.2163748880283492,
+      "ci_high": 0.2670691966566759,
+      "p_b_not_better": 0.0
+    },
+    "v1.1 - v1": {
+      "diff": 0.007646810597178533,
+      "ci_low": 0.00026703166091471,
+      "ci_high": 0.015166694835154064,
+      "p_b_not_better": 0.017
+    },
+    "embeddings(tuned) - TF-IDF baseline": {
+      "diff": 0.039350965299807694,
+      "ci_low": 0.014018439779848834,
+      "ci_high": 0.06412203771131536,
+      "p_b_not_better": 0.002
+    },
+    "v1.1 - embeddings(tuned)": {
+      "diff": 0.2096618622727212,
+      "ci_low": 0.186453878239575,
+      "ci_high": 0.23333292815849363,
+      "p_b_not_better": 0.0
+    },
+    "ensemble - v1.1": {
+      "diff": 0.009232543873295085,
+      "ci_low": -0.002629251555940351,
+      "ci_high": 0.021097869344276984,
+      "p_b_not_better": 0.062
+    },
+    "v1 - no span supervision": {
+      "diff": 0.03317673469586346,
+      "ci_low": 0.016543333257343952,
+      "ci_high": 0.04977353403925114,
+      "p_b_not_better": 0.0
+    }
+  },
+  "task_a": {
+    "majority": {
+      "accuracy": 0.5066666666666667,
+      "macro_f1": 0.224188790560472,
+      "per_class": {
+        "positive": {
+          "precision": 0.5066666666666667,
+          "recall": 1.0,
+          "f1": 0.672566371681416,
+          "support": 456
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 189
+        },
+        "negative": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 255
+        }
+      }
+    },
+    "tfidf": {
+      "accuracy": 0.75,
+      "macro_f1": 0.7216048241409073,
+      "per_class": {
+        "positive": {
+          "precision": 0.8850855745721271,
+          "recall": 0.793859649122807,
+          "f1": 0.8369942196531792,
+          "support": 456
+        },
+        "neutral": {
+          "precision": 0.4901185770750988,
+          "recall": 0.656084656084656,
+          "f1": 0.5610859728506787,
+          "support": 189
+        },
+        "negative": {
+          "precision": 0.7941176470588235,
+          "recall": 0.7411764705882353,
+          "f1": 0.7667342799188641,
+          "support": 255
+        }
+      }
+    },
+    "embeddings": {
+      "accuracy": 0.7144444444444444,
+      "macro_f1": 0.6910255143982432,
+      "per_class": {
+        "positive": {
+          "precision": 0.8575063613231552,
+          "recall": 0.7390350877192983,
+          "f1": 0.7938751472320377,
+          "support": 456
+        },
+        "neutral": {
+          "precision": 0.45353159851301117,
+          "recall": 0.6455026455026455,
+          "f1": 0.5327510917030568,
+          "support": 189
+        },
+        "negative": {
+          "precision": 0.773109243697479,
+          "recall": 0.7215686274509804,
+          "f1": 0.7464503042596349,
+          "support": 255
+        }
+      }
+    },
+    "transformer": {
+      "accuracy": 0.8633333333333333,
+      "macro_f1": 0.8343500924018988,
+      "per_class": {
+        "positive": {
+          "precision": 0.9023354564755839,
+          "recall": 0.9320175438596491,
+          "f1": 0.9169363538295577,
+          "support": 456
+        },
+        "neutral": {
+          "precision": 0.6752577319587629,
+          "recall": 0.6931216931216931,
+          "f1": 0.6840731070496083,
+          "support": 189
+        },
+        "negative": {
+          "precision": 0.9404255319148936,
+          "recall": 0.8666666666666667,
+          "f1": 0.9020408163265307,
+          "support": 255
+        }
+      }
+    }
+  },
+  "spans": {
+    "v1 rule (peak, rel 0.5)": {
+      "n": 1436,
+      "share_jaccard_ge_0.5": 0.11977715877437325,
+      "share_any_overlap": 0.791782729805014,
+      "mean_jaccard": 0.18623764060417364,
+      "median_words_pred": 1.0,
+      "median_words_gold": 6.0
+    },
+    "v1.1 rule (clause, max 8 words)": {
+      "n": 1436,
+      "share_jaccard_ge_0.5": 0.5515320334261838,
+      "share_any_overlap": 0.8997214484679665,
+      "mean_jaccard": 0.5309740257493683,
+      "median_words_pred": 6.0,
+      "median_words_gold": 6.0
+    }
+  },
+  "pipeline_check": {
+    "model_version": "transformer-absa-0.1.1",
+    "tuple_f1": 0.7034813925570228,
+    "matches_v1.1_row": true
+  }
+}

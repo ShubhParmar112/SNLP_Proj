@@ -1,0 +1,224 @@
+{
+  "split": "validation",
+  "n": 900,
+  "support": {
+    "teaching": 478,
+    "faculty_interaction": 237,
+    "course_content": 408,
+    "pace": 21,
+    "assessment": 227,
+    "workload": 78,
+    "resources": 99,
+    "other": 142
+  },
+  "embedding": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "class_weight_candidates": {
+      "None": {
+        "tuple_f1": 0.4698436336559941,
+        "precision": 0.6335341365461847,
+        "recall": 0.37337278106508875,
+        "polarity_acc_on_detected": 0.7337209302325581
+      },
+      "balanced": {
+        "tuple_f1": 0.3686187845303867,
+        "precision": 0.29417989417989415,
+        "recall": 0.493491124260355,
+        "polarity_acc_on_detected": 0.5828092243186582
+      }
+    },
+    "class_weight": "None",
+    "thresholds": {
+      "teaching": 0.3,
+      "faculty_interaction": 0.3,
+      "course_content": 0.6,
+      "pace": 0.35,
+      "assessment": 0.45,
+      "workload": 0.2,
+      "resources": 0.35,
+      "other": 0.45
+    },
+    "tuning": {
+      "argmax_v1": 0.4698436336559941,
+      "global": {
+        "threshold": 0.35,
+        "f1": 0.49524940617577196
+      },
+      "per_aspect": {
+        "f1": 0.5065666041275798,
+        "tuned_aspects": [
+          "teaching",
+          "faculty_interaction",
+          "course_content",
+          "assessment",
+          "workload",
+          "resources",
+          "other"
+        ],
+        "shared_global": [
+          "pace"
+        ]
+      }
+    },
+    "tuned": {
+      "tuple_f1": 0.5065666041275798,
+      "precision": 0.5371352785145889,
+      "recall": 0.47928994082840237,
+      "polarity_acc_on_detected": 0.7019064124783362
+    }
+  },
+  "transformer_v1.1": {
+    "thresholds": {
+      "teaching": 0.2,
+      "faculty_interaction": 0.8,
+      "course_content": 0.4,
+      "pace": 0.65,
+      "assessment": 0.45,
+      "workload": 0.65,
+      "resources": 0.8,
+      "other": 0.75
+    },
+    "tuning": {
+      "argmax_v1": 0.7121980316134804,
+      "global": {
+        "threshold": 0.65,
+        "f1": 0.7121535181236675
+      },
+      "per_aspect": {
+        "f1": 0.7201917315757937,
+        "tuned_aspects": [
+          "teaching",
+          "faculty_interaction",
+          "course_content",
+          "assessment",
+          "workload",
+          "resources",
+          "other"
+        ],
+        "shared_global": [
+          "pace"
+        ]
+      }
+    },
+    "v1": {
+      "tuple_f1": 0.7121980316134804,
+      "precision": 0.7179795550210463,
+      "recall": 0.7065088757396449,
+      "polarity_acc_on_detected": 0.8378947368421052
+    },
+    "v1.1": {
+      "tuple_f1": 0.7201917315757937,
+      "precision": 0.7293689320388349,
+      "recall": 0.7112426035502959,
+      "polarity_acc_on_detected": 0.8364648573416841
+    }
+  },
+  "ensemble_3_seeds": {
+    "thresholds": {
+      "teaching": 0.4,
+      "faculty_interaction": 0.5,
+      "course_content": 0.7,
+      "pace": 0.45,
+      "assessment": 0.55,
+      "workload": 0.75,
+      "resources": 0.6,
+      "other": 0.8
+    },
+    "tuning": {
+      "argmax_v1": 0.7303877366997295,
+      "global": {
+        "threshold": 0.45,
+        "f1": 0.7264260768335273
+      },
+      "per_aspect": {
+        "f1": 0.7348438456827924,
+        "tuned_aspects": [
+          "teaching",
+          "faculty_interaction",
+          "course_content",
+          "assessment",
+          "workload",
+          "resources",
+          "other"
+        ],
+        "shared_global": [
+          "pace"
+        ]
+      }
+    },
+    "argmax": {
+      "tuple_f1": 0.7303877366997295,
+      "precision": 0.7422113622480146,
+      "recall": 0.7189349112426036,
+      "polarity_acc_on_detected": 0.8490566037735849
+    },
+    "tuned": {
+      "tuple_f1": 0.7348438456827924,
+      "precision": 0.7614213197969543,
+      "recall": 0.7100591715976331,
+      "polarity_acc_on_detected": 0.8486562942008486
+    }
+  },
+  "span_rule": {
+    "candidates": {
+      "peak rel=0.5 (v1)": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.1370911621433542,
+        "share_any_overlap": 0.7689631176061239,
+        "mean_jaccard": 0.19334447366494076,
+        "median_words_pred": 1.0,
+        "median_words_gold": 6.0
+      },
+      "peak rel=0.01": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.23103688239387613,
+        "share_any_overlap": 0.802366040361865,
+        "mean_jaccard": 0.30114245856303967,
+        "median_words_pred": 1.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 6 words": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.5414057063326374,
+        "share_any_overlap": 0.8608211551844119,
+        "mean_jaccard": 0.5141290655547804,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 8 words": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.5518441196938065,
+        "share_any_overlap": 0.8656924147529576,
+        "mean_jaccard": 0.5301022522719369,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 10 words": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.5497564370215727,
+        "share_any_overlap": 0.8691718858733473,
+        "mean_jaccard": 0.5366865371516559,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 14 words": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.5427974947807933,
+        "share_any_overlap": 0.871955462769659,
+        "mean_jaccard": 0.5392324510394823,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, no cap": {
+        "n": 1437,
+        "share_jaccard_ge_0.5": 0.5407098121085595,
+        "share_any_overlap": 0.871955462769659,
+        "mean_jaccard": 0.5371691319752284,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      }
+    },
+    "chosen": "clause, max 8 words",
+    "criterion": "share of spans with token Jaccard >= 0.5"
+  }
+}

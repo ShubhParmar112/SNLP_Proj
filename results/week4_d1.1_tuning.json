@@ -1,0 +1,178 @@
+{
+  "split": "validation",
+  "n": 900,
+  "support": {
+    "teaching": 492,
+    "faculty_interaction": 237,
+    "course_content": 408,
+    "pace": 21,
+    "assessment": 227,
+    "workload": 78,
+    "resources": 99,
+    "other": 122
+  },
+  "embedding": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "class_weight_candidates": {
+      "None": {
+        "tuple_f1": 0.47202667654686914,
+        "precision": 0.6275862068965518,
+        "recall": 0.37826603325415675,
+        "polarity_acc_on_detected": 0.7296678121420389
+      },
+      "balanced": {
+        "tuple_f1": 0.3645994261752373,
+        "precision": 0.2901299613628381,
+        "recall": 0.49049881235154397,
+        "polarity_acc_on_detected": 0.5760111576011158
+      }
+    },
+    "class_weight": "None",
+    "thresholds": {
+      "teaching": 0.4,
+      "faculty_interaction": 0.3,
+      "course_content": 0.6,
+      "pace": 0.4,
+      "assessment": 0.45,
+      "workload": 0.2,
+      "resources": 0.35,
+      "other": 0.4
+    },
+    "tuning": {
+      "argmax_v1": 0.47202667654686914,
+      "global": {
+        "threshold": 0.4,
+        "f1": 0.49890727443022176
+      },
+      "per_aspect": {
+        "f1": 0.506953223767383,
+        "tuned_aspects": [
+          "teaching",
+          "faculty_interaction",
+          "course_content",
+          "assessment",
+          "workload",
+          "resources",
+          "other"
+        ],
+        "shared_global": [
+          "pace"
+        ]
+      }
+    },
+    "tuned": {
+      "tuple_f1": 0.506953223767383,
+      "precision": 0.5418918918918919,
+      "recall": 0.47624703087885983,
+      "polarity_acc_on_detected": 0.7004366812227074
+    }
+  },
+  "transformer_v1.1": {
+    "thresholds": {
+      "teaching": 0.2,
+      "faculty_interaction": 0.5,
+      "course_content": 0.5,
+      "pace": 0.55,
+      "assessment": 0.5,
+      "workload": 0.6,
+      "resources": 0.6,
+      "other": 0.7
+    },
+    "tuning": {
+      "argmax_v1": 0.7144983626079191,
+      "global": {
+        "threshold": 0.55,
+        "f1": 0.7148809523809524
+      },
+      "per_aspect": {
+        "f1": 0.7184638109305761,
+        "tuned_aspects": [
+          "teaching",
+          "faculty_interaction",
+          "course_content",
+          "assessment",
+          "workload",
+          "resources",
+          "other"
+        ],
+        "shared_global": [
+          "pace"
+        ]
+      }
+    },
+    "v1": {
+      "tuple_f1": 0.7144983626079191,
+      "precision": 0.7164179104477612,
+      "recall": 0.7125890736342043,
+      "polarity_acc_on_detected": 0.8344923504867872
+    },
+    "v1.1": {
+      "tuple_f1": 0.7184638109305761,
+      "precision": 0.7148736037624926,
+      "recall": 0.7220902612826603,
+      "polarity_acc_on_detected": 0.8351648351648352
+    }
+  },
+  "span_rule": {
+    "candidates": {
+      "peak rel=0.5 (v1)": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.13186813186813187,
+        "share_any_overlap": 0.7630494505494505,
+        "mean_jaccard": 0.19055573654035157,
+        "median_words_pred": 1.0,
+        "median_words_gold": 6.0
+      },
+      "peak rel=0.01": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.22321428571428573,
+        "share_any_overlap": 0.7939560439560439,
+        "mean_jaccard": 0.29137707951713443,
+        "median_words_pred": 1.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 6 words": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.5309065934065934,
+        "share_any_overlap": 0.8571428571428571,
+        "mean_jaccard": 0.5088475993035803,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 8 words": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.5473901098901099,
+        "share_any_overlap": 0.8633241758241759,
+        "mean_jaccard": 0.5261355641193175,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 10 words": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.5460164835164835,
+        "share_any_overlap": 0.8653846153846154,
+        "mean_jaccard": 0.5329194203624662,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, max 14 words": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.540521978021978,
+        "share_any_overlap": 0.867445054945055,
+        "mean_jaccard": 0.5344749899967608,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      },
+      "clause, no cap": {
+        "n": 1456,
+        "share_jaccard_ge_0.5": 0.5370879120879121,
+        "share_any_overlap": 0.867445054945055,
+        "mean_jaccard": 0.5320535562400999,
+        "median_words_pred": 5.0,
+        "median_words_gold": 6.0
+      }
+    },
+    "chosen": "clause, max 8 words",
+    "criterion": "share of spans with token Jaccard >= 0.5"
+  }
+}

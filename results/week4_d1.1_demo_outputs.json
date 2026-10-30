@@ -1,0 +1,250 @@
+{
+  "handout_example_v1.1": {
+    "feedback_id": "HANDOUT-1",
+    "model_version": "transformer-absa-0.2.1",
+    "schema_version": "1.0",
+    "doc_sentiment": {
+      "label": "negative",
+      "score": 0.9305,
+      "score_type": "uncalibrated_probability"
+    },
+    "aspects": [
+      {
+        "aspect": "teaching",
+        "polarity": "positive",
+        "aspect_score": 0.979,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.6078,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "The lectures were very informative",
+          "start": 0,
+          "end": 34
+        }
+      },
+      {
+        "aspect": "pace",
+        "polarity": "negative",
+        "aspect_score": 0.9944,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.9947,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "the pace was too fast",
+          "start": 40,
+          "end": 61
+        }
+      },
+      {
+        "aspect": "assessment",
+        "polarity": "negative",
+        "aspect_score": 0.9989,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.9919,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "the assignments were difficult",
+          "start": 66,
+          "end": 96
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "handout_example_section21": {
+    "feedback_id": "HANDOUT-2",
+    "model_version": "transformer-absa-0.2.1",
+    "schema_version": "1.0",
+    "doc_sentiment": {
+      "label": "neutral",
+      "score": 0.9997,
+      "score_type": "uncalibrated_probability"
+    },
+    "aspects": [
+      {
+        "aspect": "teaching",
+        "polarity": "positive",
+        "aspect_score": 0.9935,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.6838,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "The lectures were good",
+          "start": 0,
+          "end": 22
+        }
+      },
+      {
+        "aspect": "pace",
+        "polarity": "negative",
+        "aspect_score": 0.9818,
+        "aspect_score_type": "uncalibrated_probability",
+        "polarity_score": 0.9708,
+        "polarity_score_type": "uncalibrated_probability",
+        "span": {
+          "text": "the pace was fast",
+          "start": 27,
+          "end": 44
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "course_report_all_test_comments": {
+    "course_id": "TEST-SPLIT-500",
+    "model_version": "transformer-absa-0.2.1",
+    "n_analyzed": 500,
+    "n_failed": 0,
+    "failures": [],
+    "sentiment_distribution": {
+      "positive": 256,
+      "neutral": 114,
+      "negative": 130
+    },
+    "aspect_summary": [
+      {
+        "aspect": "teaching",
+        "mentions": 305,
+        "polarity_distribution": {
+          "positive": 186,
+          "negative": 88,
+          "neutral": 5,
+          "conflict": 26
+        },
+        "net_sentiment": 0.321,
+        "representative_examples": [
+          "He is an excellent teacher.",
+          "Exellent teacher, helps you apply this stuff the real world.",
+          "Really good advice."
+        ]
+      },
+      {
+        "aspect": "course_content",
+        "mentions": 209,
+        "polarity_distribution": {
+          "positive": 132,
+          "negative": 44,
+          "neutral": 20,
+          "conflict": 13
+        },
+        "net_sentiment": 0.421,
+        "representative_examples": [
+          "Very easy course to do well in if you attend lectures.",
+          "Fairly interesting course, and really easy if you did well in your first and second year math courses.",
+          "Easy class and interesting"
+        ]
+      },
+      {
+        "aspect": "faculty_interaction",
+        "mentions": 158,
+        "polarity_distribution": {
+          "positive": 109,
+          "negative": 42,
+          "neutral": 0,
+          "conflict": 7
+        },
+        "net_sentiment": 0.424,
+        "representative_examples": [
+          "Great teacher really cares about the class and the material",
+          "She is always down to help, goes over exactly what is on the test.",
+          "Super nice and very approachable."
+        ]
+      },
+      {
+        "aspect": "assessment",
+        "mentions": 116,
+        "polarity_distribution": {
+          "positive": 56,
+          "negative": 46,
+          "neutral": 2,
+          "conflict": 12
+        },
+        "net_sentiment": 0.086,
+        "representative_examples": [
+          "Easy participation marks and the tests are fairly easy too!",
+          "She's a little boring in lectures but the homework is easy and the tests are straight off the study guide.",
+          "His tests are fair and his lectures are easy to understand."
+        ]
+      },
+      {
+        "aspect": "other",
+        "mentions": 56,
+        "polarity_distribution": {
+          "positive": 32,
+          "negative": 16,
+          "neutral": 8,
+          "conflict": 0
+        },
+        "net_sentiment": 0.286,
+        "representative_examples": [
+          "Great class, awesome lab component as well.",
+          "The Co-op sections from CECA helped.",
+          "Lots of interesting class discussions, adequate amount of work, easy and broad-topic projects so you can do what you do best."
+        ]
+      },
+      {
+        "aspect": "resources",
+        "mentions": 52,
+        "polarity_distribution": {
+          "positive": 27,
+          "negative": 22,
+          "neutral": 3,
+          "conflict": 0
+        },
+        "net_sentiment": 0.096,
+        "representative_examples": [
+          "Course notes are very useful and the course is well designed.",
+          "Gives study guide which is very helpful for exams.",
+          "I also love having the lecture through a video."
+        ]
+      },
+      {
+        "aspect": "workload",
+        "mentions": 37,
+        "polarity_distribution": {
+          "positive": 3,
+          "negative": 30,
+          "neutral": 4,
+          "conflict": 0
+        },
+        "net_sentiment": -0.73,
+        "representative_examples": [
+          "Holy crap this class is hard- sooo much work..",
+          "The lab reports( each one like 10 pages) took a lot of time.",
+          "The assignments in this course are a huge time sink."
+        ]
+      },
+      {
+        "aspect": "pace",
+        "mentions": 9,
+        "polarity_distribution": {
+          "positive": 0,
+          "negative": 9,
+          "neutral": 0,
+          "conflict": 0
+        },
+        "net_sentiment": -1.0,
+        "representative_examples": [
+          "But it feels like we actually \" learn \" at the end of class( the last 10 minutes or so) feeling a bit rushed.",
+          "I found the course was just one fact after another, and the way they're laid out in the online version, you're rushing to keep up and struggling not to fall asleep because of the lack of any expression in the voice talking whatsoever.",
+          "Goes off on non-accounting tangents and hurries lecture."
+        ]
+      }
+    ],
+    "min_mentions_for_ranking": 25,
+    "top_positive_aspects": [
+      "teaching",
+      "course_content",
+      "faculty_interaction"
+    ],
+    "top_concerns": [
+      "workload"
+    ],
+    "topics": [],
+    "caveats": [
+      "Scores are uncalibrated; do not read them as probabilities.",
+      "Advisory only: not a basis for decisions about an individual student or staff member.",
+      "Topic clustering is not part of pipeline v1."
+    ]
+  }
+}

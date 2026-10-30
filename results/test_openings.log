@@ -1,0 +1,10 @@
+# Every time the test split has been opened. Scripts append to this file.
+# The first two lines are carried over from the earlier records:
+#   week 2 = results/metrics.json "generated" in the Week 1-2 folder
+#   week 4 = results/week4_test_openings.log in the Week 4 folder
+2026-09-25T13:25:09  test split opened  run_baseline.py on data/raw/annotations.csv (dataset v1.0, Week 2)
+2026-10-02T18:19:19  test split opened  evaluate_week4.py (dataset v1.0, Week 4), settings sha256 f8641f5afef34e69
+2026-10-02T18:38:35  test split opened  run_baseline.py on data/raw/annotations.csv
+2026-10-02T18:47:32  test split opened  evaluate_week4.py (week4_d1.1), settings sha256 a3d966203e9f0214
+2026-10-18T16:59:51  test split opened  calibrate.py (measuring calibration fitted on validation; no decisions)
+2026-10-18T17:01:58  test split opened  evaluate_week5.py (error analysis and robustness; no decisions)
