@@ -238,10 +238,11 @@ const demo = [
   ["Start the service", "python src\\api.py, then open 127.0.0.1:8000/docs"],
   ["The handout example", "teaching +, pace −, assessment −, with evidence words and calibrated scores"],
   ["A whole course", "150 real comments: strengths, top concern workload, emerging concern pace"],
+  ["Another group calls it", "examples/client_example.py: a separate program invoking our API over HTTP"],
   ["Group 6 signals", "POST /v1/support-signals: course-level, advisory flags, no comments"],
 ];
 demo.forEach(([t, d], i) => {
-  const y = 1.2 + i * 0.78;
+  const y = 1.15 + i * 0.63;
   numberDot(s, 0.5, y + 0.06, String(i + 1), HEX.accent1);
   tb(s, t, { x: 1.1, y, w: 2.6, h: 0.55, fontSize: 15, bold: true, color: C.text2, valign: "middle" });
   tb(s, d, { x: 3.7, y, w: 5.8, h: 0.55, fontSize: 14, valign: "middle" });

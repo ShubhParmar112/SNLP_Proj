@@ -26,15 +26,18 @@ Open the browser at **`http://127.0.0.1:8000/docs`**. The bare address shows “
 
 Check: `http://127.0.0.1:8000/v1/health` shows `"status": "ok"`.
 
-## 2.  Running order (fits slide 8, about 3 minutes)
+## 2.  Running order
+
+Each team has a **15-minute slot**. A workable split: the 10 slides in about 8 minutes, this demo in about 5, and 2 minutes for questions. The demo starts at slide 8.
 
 | Step | Show | Say |
 |---|---|---|
 | 1 | `/docs` page, the list of endpoints | “Any group can call this over HTTP. Every endpoint is documented and can be tried here.” |
 | 2 | `POST /v1/analyze-feedback` → Try it out → example **“Handout example (works)”** → Execute | “The handout's own sentence. Three aspects, each with its polarity, the words that show it, and a calibrated confidence.” |
 | 3 | **Window 2:** `python examples\demo_course_report.py` | “150 real comments treated as one course: top strengths, the top concern, and an emerging concern that is rare but negative.” |
-| 4 | **Window 2:** `python examples\demo_support_signals.py` | “What Group 6 receives: course-level signals only, flagged advisory, with no comment and no id.” |
-| 5 | `/docs` → example **“Sarcasm (known failure)”** → Execute | “Our required failure. Sarcasm is read literally, so nothing is found. Sarcasm and Hinglish never appear in the English training reviews.” |
+| 4 | **Window 2:** `python examples\client_example.py` | “This is how another group invokes our asset: a separate program, standard library only, calling our API over HTTP. Health check, one comment, a batch, an error in the documented format, and the timing.” |
+| 5 | **Window 2:** `python examples\demo_support_signals.py` | “What Group 6 receives: course-level signals only, flagged advisory, with no comment and no id.” |
+| 6 | `/docs` → example **“Sarcasm (known failure)”** → Execute | “Our required failure. Sarcasm is read literally, so nothing is found. Sarcasm and Hinglish never appear in the English training reviews.” |
 
 ## 3.  What you should see
 
@@ -55,9 +58,11 @@ Point out honestly that the model is sure the *lectures* are discussed (0.91), b
 - Top concern: workload, 14 mentions, net −0.71.
 - Emerging concern: pace, 3 mentions, all negative.
 
-**Step 4**, Group 6 signals (`results/week7_support_signals_demo.txt`): workload as a top concern (12 negative of 150, 8.0%), pace as an emerging concern (3 of 150), each with `advisory_only: true` and `not_for_individual_action: true`.
+**Step 4**, another application calling the API (`results/week8_client_run.txt`): health check `"status": "ok"`; both analysis calls return `200`; an empty comment returns `400` with `EMPTY_TEXT`; mean round trip over 20 calls was 145 ms on this laptop's CPU.
 
-**Step 5**, the failure: “Oh great, another surprise quiz on Monday.” returns **no aspects**. The correct answer is assessment: negative. To show a second failure, use **“Hinglish (known failure)”**: “Sir ka padhane ka tareeka bahut accha hai.” also returns no aspects. Its document sentiment comes out positive, so the model senses the tone but cannot place it.
+**Step 5**, Group 6 signals (`results/week7_support_signals_demo.txt`): workload as a top concern (12 negative of 150, 8.0%), pace as an emerging concern (3 of 150), each with `advisory_only: true` and `not_for_individual_action: true`.
+
+**Step 6**, the failure: “Oh great, another surprise quiz on Monday.” returns **no aspects**. The correct answer is assessment: negative. To show a second failure, use **“Hinglish (known failure)”**: “Sir ka padhane ka tareeka bahut accha hai.” also returns no aspects. Its document sentiment comes out positive, so the model senses the tone but cannot place it.
 
 ## 4.  If something goes wrong
 
