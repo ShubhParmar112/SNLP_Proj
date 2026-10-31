@@ -199,7 +199,7 @@ Behaviour probes pass 17 of 32: short form-style comments 6/6, contrast 5/6, neg
 
 ## 13.  Reusability
 
-The handout's reusable-asset test (§21) is answered at the top of `README.md`. In short:
+The code is public at **github.com/ShubhParmar112/SNLP_Proj**; the trained model is attached to its release `v1.0`. The handout's reusable-asset test (§21) is answered at the top of `README.md`. In short:
 
 - **Input:** one anonymised comment, or up to 500 comments for a course, as JSON.
 - **Output:** aspects, polarity, calibrated scores and evidence per comment; a course report per batch.
@@ -263,7 +263,7 @@ For a production system:
 
 ## Appendix A.  Reproducing every number
 
-Python 3.13, `pip install -r requirements.txt`, and the trained model unzipped into `models/`. Training needs an NVIDIA GPU; nothing else does.
+Clone github.com/ShubhParmar112/SNLP_Proj; Python 3.13, `pip install -r requirements.txt`, and the trained model from release `v1.0` unzipped into `models/`. Training needs an NVIDIA GPU; nothing else does.
 
 ```
 python src/build_dataset.py                    # dataset v1.1 -> data/raw/annotations.csv

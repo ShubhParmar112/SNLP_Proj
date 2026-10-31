@@ -6,6 +6,10 @@ E029 · E030 · E031 · E033 · E034 · E035
 A reusable NLP component that extracts **aspect-based sentiment** from textual student
 feedback and aggregates it into course-level insight.
 
+**Repository:** https://github.com/ShubhParmar112/SNLP_Proj  ·  **Trained model:** release
+`v1.0` of this repository (`Group5_trained_model_s42_d1.1.zip`, 738 MB)  ·  **Final report:**
+`docs/Group5_Final_Report.pdf`  ·  **Demo script:** `docs/Group5_Demo_Script.pdf`
+
 ## If another group wanted to use our component tomorrow (handout §21)
 
 | What they need | Answer |
@@ -51,15 +55,19 @@ shallow ones; chasing all seven is the most common way these projects lose marks
 
 ## Setting up on a new laptop
 
+0. Get the code: `git clone https://github.com/ShubhParmar112/SNLP_Proj.git`. On Windows,
+   clone into a short path such as `C:\SNLP\`: Windows cannot start programs whose full path
+   is longer than 260 characters, and the venv lives inside this folder.
 1. Install Python 3.13, then from this folder:
    `python -m venv .venv`, then `.venv\Scripts\activate`, then `pip install -r requirements.txt`.
    This gives the CPU build of PyTorch, which is enough to run the API, the demo and the tests.
    Retraining needs an NVIDIA GPU; see the comment in `requirements.txt`.
-2. The trained model is **not** in this folder (738 MB). Unzip
-   `Group5_trained_model_s42_d1.1.zip` so that this path exists:
+2. The trained model is **not** in the repository (738 MB). Download
+   `Group5_trained_model_s42_d1.1.zip` from the repository's release `v1.0`
+   (https://github.com/ShubhParmar112/SNLP_Proj/releases) and unzip it so that this path exists:
    `models\deberta-v3-base_sw0.5_s42_d1.1\model.pt`. The code finds `models\`
    automatically; `src/config.py` explains the lookup order.
-3. Check everything: `python -m pytest tests -q` should end with **31 passed**.
+3. Check everything: `python -m pytest tests -q` should end with **35 passed**.
 4. Run the service: `python src\api.py`, then open `http://127.0.0.1:8000/docs`.
 
 The `data/raw/annotations.csv` and `data/external/` files are included in the team
